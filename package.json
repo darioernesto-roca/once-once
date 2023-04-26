@@ -1,0 +1,31 @@
+{
+  "name": "ivo-pabon-psicoterapia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev:css": "sass sass/main.scss public/css/mainSass.css -w",
+    "start": "node src/app.js",
+    "dev": "concurrently \"npm run dev:css\" \"nodemon src/app.js\"",
+    "build": "npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-validator": "^6.15.0",
+    "nodemailer": "^6.9.1",
+    "nodemailer-mailgun-transport": "^2.1.5",
+    "sass": "^1.60.0",
+    "vite": "^4.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "dotenv": "^16.0.3"
+  }
+}

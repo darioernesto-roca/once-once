@@ -1,0 +1,24 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/public/img/assets/banner.jpg);
+    background-size: cover;
+    height: 400px;
+  }
+  
+  .banner h2 {
+    width: 50%;
+    font-style: 30px;
+    padding: 10px 0;
+  }
+  
+  .banner {
+   font-size: 16px;
+  }
+  
+  .banner h2 span {
+    color: #ea3f2d;
+  }

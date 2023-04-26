@@ -1,0 +1,39 @@
+.hero {
+    background-image: url(/public/img/assets/hero2.png);
+    height: 90vh;
+    width: 100vw;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: bottom 110% right 25%;
+    background-color: #d7d5c7;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 768px;
+  }
+  
+  .hero h4 {
+    padding-bottom: 15px;
+  }
+  
+  .hero h1 {
+    color: #c99e35;
+  }
+  
+  .hero button {
+    background-image: url(/public/img/assets/hero-button.png);
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    color: #ea3f2d;
+    border: 0;
+    padding: 60px 80px 60px 80px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+  
+  }

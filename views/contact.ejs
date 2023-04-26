@@ -1,0 +1,70 @@
+<section class="page__container"></section>
+<h1 class="page-title"><%- title %></h1>
+<% if (typeof success_msg !== 'undefined' && success_msg) { %>
+  <div >
+    <p class="success-msg"><%= success_msg %></p>
+    <p class="success-link"><a href="/inicio">Regresar a Inicio</a></p>
+  </div>
+  <% } %>
+      <div class="form-container">
+      <h2 class="form-title">Agenda tu cita aquí 📩</h2>
+      <p class="header-paragraph">👋, si te interesa conversar, aquí estaré, deja tus datos en el siguiente formulario y te escribiré de vuelta.</p>
+        <form class="contact-form" action="/contacto" method="POST">
+            <div class="form-group">
+                <label class="form-label" for="name">Nombre</label>
+                <input class="form-input" id="name" name="name" type="text" placeholder="Escribe tu nombre completo" required <% if (errors && errors.name) { %>
+                  class="form__input--error"
+                <% } %>>
+                <% if (errors && errors.name) { %>
+                  <p class="form__error"><%= errors.name.msg %></p>
+                <% } %>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Teléfono</label>
+              <input class="form-input" id="phone" type="phone" name="phone" placeholder="Digita un número de teléfono"
+                  <% if (errors && errors.phone) { %>
+                    class="form__input--error"
+                  <% } %>>
+                <% if (errors && errors.phone) { %>
+                  <p class="form__error"><%= errors.phone.msg %></p>
+                <% } %>
+          </div>
+            <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" id="email" name="email" type="email" placeholder="Escribe tu Email" required <% if (errors && errors.email) { %>
+                  class="form__input--error"
+                <% } %>>
+                <% if (errors && errors.email) { %>
+                  <p class="form__error"><%= errors.email.msg %></p>
+                <% } %>
+            </div>
+            <div class="form-group">
+              <div class="help">Por favor selecciona el tipo de servicio en el que te encuentras interesado.</div>
+                <label for="service">Servicios</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Selecciona uno</option>
+                    <option value="Terapia individual">Terapia individual</option>
+                    <option value="Terapia de pareja">Terapia de pareja</option>
+                    <option value="Terapia familiar">Terapia familiar</option>
+                    <option value="Terapia de grupo">Terapia de grupo</option>
+                    <option value="Terapia institucional">Terapia institucional</option>
+                    <option value="Clase magistral o conferencia">Clase magistral o conferencia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea class="form-textarea" name="message" id="message" cols="40" rows="10" placeholder="Háblame sobre ti y describe brevemente el tema del cuál quieres hablar"></textarea>
+                <div class="help">El mensaje no puede tener más de 500 palabras.</div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" type="checkbox" name="terms" required>
+                    <span>Acepto <a class="link__terms" href="/terminos-y-condiciones">términos y condiciones</a></span>
+                </label>
+            </div>
+            <div class="button-container">
+                <input type="submit" value="Enviar" class="send-button">
+            </div>
+        </form>
+
+</section>

@@ -1,0 +1,30 @@
+<div class="page__container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Inicio</a> |</li>
+      <li class="breadcrumb-item"><a href="/blog">Blog</a> |</li>
+      <li class="breadcrumb-item breadcrumb-active" aria-current="page">
+        <%= post.title %>
+      </li>
+    </ol>
+  </nav>
+  
+  <div class="post__cover-container">
+    <img class="post__image" src="<%= post.image %>" alt="<%= post.title %>">
+  </div>
+  
+  <div class="post__sections-container">
+    <% title=post.title %>
+  
+      <h1 class="page-title">
+        <%= post.title %>
+      </h1>
+  
+      <div class="regular-paragraph"><%- post.content %></div>
+  
+      <span class="post__author">Autor: Ivo Pabón.</span>
+      <span class="post__date">Elaborado el <%= post.date %></span>
+  
+  
+  </div>
+</div>
