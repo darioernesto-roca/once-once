@@ -6,21 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/draft.css">
     <link rel="icon" href="public/img/logo/favicon-once-once.jpg">
-    <title>Draft</title>
+    <title>Once Once</title>
 </head>
 <body>
     <header class="header">
-        <a href="#"><img src="public/img/logo/logo-once-once.svg" alt="Logo Once Once" class="logo"></a>
-        <div>
-            <ul class="navbar">
-                <li><a href="/inicio.html" class="active">Inicio</a></li>
-                <li><a href="/shop.html">Shop</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="/nosotros.html">Nosotros</a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
-                <li class="bag-li"><a href="/carrito-de-compras.html"><img class="bag-icon" src="public/img/assets/bag-icon.svg" alt=""></a></li>
-            </ul>
-        </div>
+        <nav class="menu">
+            <section class="menu__container">
+                <a href="#"><img src="public/img/logo/logo-once-once.svg" class="logo" alt="Logo Once Once" class="Once Once"></a>
+                <ul class="menu__links">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Inicio</a>
+                    </li>
+        
+                    <li class="menu__item menu__item--show">
+                        <a href="#" class="menu__link">Boys <img src="public/img/assets/arrow.svg" alt="arrow" class="menu__arrow"></a>
+        
+                        <ul class="menu__nesting">
+                            <li class="menu__inside">
+                                <a href="#" class="menu__link menu__link--inside">Bautizo</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="#" class="menu__link menu__link--inside">Pajecitos</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="#" class="menu__link menu__link--inside">Toda ocasión</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li class="menu__item  menu__item--show">
+                        <a href="#" class="menu__link">Girls  <img src="public/img/assets/arrow.svg" alt="arrow" class="menu__arrow"></a>
+        
+                        <ul class="menu__nesting">
+                            <li class="menu__inside">
+                                <a href="#" class="menu__link menu__link--inside">Vestidos</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="#" class="menu__link menu__link--inside">Sets</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="#" class="menu__link menu__link--inside">Bebés</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Nosotros</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Contacto</a>
+                    </li>
+                    <li class="bag-li menu__item"><a href="/carrito-de-compras.html" class="menu__link"><img class="bag-icon" src="public/img/assets/bag-icon.svg" alt="Bag Icon"></a>
+
+                    </li>
+                    <a href="#" id="close" class="menu__link"><img src="public/img/assets/xmark.svg" alt="X mark Icon" class="close"></a>
+
+        
+                </ul>
+                <div class="menu__hamburger">
+                    <img src="public/img/assets/outdent-icon.svg" alt="Menú" class="menu__img">
+                </div>
+            </section>
+        
+        </nav>
     </header>
     <main>
         <section class="hero">
@@ -136,7 +187,7 @@
         </section>
         <section class="banner section-m1">
             <h4>Hechos a la medida</h4>
-            <h2><span>¡Viste a tu hijo como se merece!</span> Confeccionamos ropa a medida para que tus hijos brillen.</h2>
+            <h2><span>¡Viste a tu hijo como se merece!</span> Cómodo fresco y elegante</h2>
             <button class="normal">Saber más</button>
         </section>
         <section class="feature-products section-p1">
@@ -233,8 +284,52 @@
         </section>
     </main>
     <footer class="section-p1">
+        <div class="col">
+            <a href="/index.html"><img src="public/img/logo/logo-once-once.svg" alt="Logo Once Once" class="logo"></a>
+            <h4>Contacto</h4>
+            <p><strong>Dirección:</strong> Calle 11 # 8 - 47, Novalito (Dentro de Bella Boda)</p>
+            <p><strong>Teléfono:</strong>+57 304 3761576</p>
+            <p><strong>Con cita previa para tener el gusto de atenderte</strong></p>
+            <div class="follow">
+                <h4>Síguenos en</h4>
+                <div class="social-icons">
+                    <img src="public/img/assets/facebook-icon.png" alt="Facebook icon" class="social-img">
+                    <img src="public/img/assets/ing.png" alt="Instagram icon" class="social-img">
+                    <img src="public/img/assets/twitter-icon.png" alt="Twitter icon" class="social-img">
+                    <img src="public/img/assets/linkedin-icon.png" alt="LinkedIn icon" class="social-img">
+                </div>
+            </div>
+        </div>
 
+        <div class="col">
+            <h4>Sobre nosotros</h4>
+            <a href="#">¿Quiénes somos?</a>
+            <a href="#">Información sobre domicilios</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos y Condiciones</a>
+            <a href="#">Contáctanos</a>
+        </div>
 
+        <div class="col">
+            <h4>Mi cuenta</h4>
+            <a href="#">Regístrate</a>
+            <a href="#">Ver Carrito de Compras</a>
+            <a href="#">Mi Lista de Deseos</a>
+            <a href="#">Rastrea Tu Pedido</a>
+            <a href="#">Ayuda</a>
+        </div>
+
+        <div class="col payment-methods">
+            <h4>Métodos Seguros de Pago</h4>
+            <p>Pagos con Tarjetas de Crédito</p>
+            <img src="public/img/assets/credit-cards-payment.png" alt="Métodos de Pago Tarjetas de Crédito">
+            <p>Pagos por Efecty y PSE</p>
+            <img src="public/img/assets/pse-efecty-payment.png" alt="Métodos de Pago Efecty y PSE">
+        </div>
+        <div class="copyright">
+            <p><a href="https://github.com/darioernesto-roca" target="_blank">Desarrollado por Dario Ernesto Roca. 2023</a> | Todos los derechos Reservados</p>
+        </div>
     </footer>
+    <script src="/script.js"></script>
 </body>
 </html>
