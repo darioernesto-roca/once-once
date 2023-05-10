@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'FreightDis Pro';
-  src: url('/public/font/freightdispro-regular.ttf');
+  src: url('/font/freightdispro-regular.ttf');
 }
 
 /*
@@ -93,7 +93,18 @@ button.black {
   transition: 0.3s;
 }
 
-
+/* WhatsApp icon */
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
 
 
 /*sass/components/logo*/
@@ -114,6 +125,57 @@ button.black {
   width: 60px;
 }
 
+
+.top__header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #222;
+  font-size: 0.9em;
+  padding: 0.8em;
+}
+
+.top__header__phone,
+.top__header__email {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 5px;
+}
+
+.top__header__phone:before,
+.top__header__email:before {
+  content: "";
+  display: inline-block;
+  color: #ea3f2d;
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  background-size: cover;
+}
+
+.top__header__phone:before {
+  background-image: url(/img/phone.svg);
+}
+
+.top__header__email:before {
+  background-image: url(/img/email.svg);
+}
+
+.top__header__link {
+  color: #222;
+  text-decoration: none;
+}
+
+.top__header__link:hover {
+  color: #ea3f2d;
+  font-weight: 600;
+}
+
+.top__header__link:visited {
+  color: #222;
+}
 
 /* sass/layout _header.scss*/
 
@@ -211,7 +273,7 @@ button.black {
 /* sass/layout/_homepage.scss*/
 
 .hero {
-  background-image: url(/public/img/assets/hero2.png);
+  background-image: url(/img/assets/hero2.png);
   height: 90vh;
   width: 100vw;
   background-size: 55%;
@@ -235,7 +297,7 @@ button.black {
 }
 
 .hero button {
-  background-image: url(/public/img/assets/hero-button.png);
+  background-image: url(/img/assets/hero-button.png);
   background-color: transparent;
   background-size: contain;
   background-position: center;
@@ -388,7 +450,7 @@ button.black {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(/public/img/assets/banner.jpg);
+  background-image: url(/img/assets/banner.jpg);
   background-size: cover;
   height: 400px;
 }
@@ -423,14 +485,14 @@ button.black {
   justify-content: center;
   align-items: flex-start;
   min-width: 40%;
-  background-image: url(/public/img/assets/sm-banner-2.jpg);
+  background-image: url(/img/assets/sm-banner-2.jpg);
   background-size: cover;
   height: 50vh;
   padding: 30px;
 }
 
 .sm-banner .banner-box-1 {
-  background-image: url(/public/img/assets/sm-banner-1.jpg);
+  background-image: url(/img/assets/sm-banner-1.jpg);
 }
 
 .sm-banner .banner-box:hover button {
@@ -539,6 +601,11 @@ footer .copyright {
 }
 
 @media (max-width:800px){
+
+  .top__header {
+    display: none;
+  }
+
   .navbar {
     display: flex;
     flex-direction: column;
@@ -799,7 +866,7 @@ footer .copyright {
       position: fixed;
       max-width: 400px;
       width: 100%;
-      top: 80px;
+      top: 85px;
       bottom: 0;
       right: 400px;
       justify-content: stretch;
@@ -807,14 +874,14 @@ footer .copyright {
       overflow-y: auto;
       display: grid;
       grid-auto-rows: max-content;
-      transform: translateX(100%);
+      transform: translateX(200%);
       padding-top: 60px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.137);
   }
   
 
   .menu__links--show{
-      transform: translateX(200%);
+      transform: translateX(100%);
       width: 100%;
   }
 

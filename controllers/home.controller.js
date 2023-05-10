@@ -1,20 +1,24 @@
 // home.controller.js
-require('dotenv').config();
-const nodemailer = require("nodemailer");
-const mg = require("nodemailer-mailgun-transport");
-const { validationResult } = require("express-validator");
+
+// require('dotenv').config();
+// const nodemailer = require("nodemailer");
+// const mg = require("nodemailer-mailgun-transport");
+// const { validationResult } = require("express-validator");
 
 
 exports.index = (req, res) => {
   const errors = req.query.errors;
   res.render("home", {
-    title: "Ivo Pabón | Psicoterapia",
+    title: "Once Once",
     errors,
     success_msg: req.query.success,
   });
 };
 
 // Sets Nodemailer transporter with Mailgun credentials
+
+/*
+
 const auth = {
   auth: {
     api_key: process.env.MAILGUN_API_KEY,
@@ -67,3 +71,5 @@ exports.sendEmail = async (req, res) => {
     res.render("home", { error_msg: "Error al enviar el mensaje" });
   }
 };
+
+*/
