@@ -15,6 +15,7 @@ app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+
 // Static folder
 app.use(express.static(path.join(__dirname, "../public")));
 
@@ -29,3 +30,5 @@ app.set("view engine", "ejs");
 
 // Set routes
 app.use(routes);
+
+

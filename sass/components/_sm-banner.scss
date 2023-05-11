@@ -1,53 +1,53 @@
 .sm-banner {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 0 auto;
-  }
-  
-  .sm-banner .banner-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    min-width: 580px;
-    background-image: url(/public/img/assets/sm-banner-2.jpg);
-    background-size: cover;
-    height: 50vh;
-    padding: 30px;
-  }
-  
-  .sm-banner .banner-box-1 {
-    background-image: url(/public/img/assets/sm-banner-1.jpg);
-  }
-  
-  .sm-banner .banner-box:hover button {
-    color: #fff;
-    background-color: #ea3f2d;
-    border: solid 1px #ea3f2d;
-  }
-  
-  .sm-banner .banner-box h2,
-  .sm-banner .banner-box h4,
-  .sm-banner .banner-box span {
-    width: 50%;
-  }
-  
-  .sm-banner .banner-box h2{
-    font-size: 28px;
-    font-weight: 800;
-  }
-  .sm-banner .banner-box h4 {
-    color: #555;
-    font-size: 20px;
-    font-weight: 300;
-  }
-  
-  .sm-banner .banner-box span {
-    color: #555;
-    font-size: 14px;
-    font-weight: 500;
-    padding-bottom: 15px;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 40%;
+  background-image: url(/img/assets/sm-banner-2.jpg);
+  background-size: cover;
+  height: 50vh;
+  padding: 30px;
+}
+
+.sm-banner .banner-box-1 {
+  background-image: url(/img/assets/sm-banner-1.jpg);
+}
+
+.sm-banner .banner-box:hover button {
+  color: #fff;
+  background-color: #ea3f2d;
+  border: solid 1px #ea3f2d;
+}
+
+.sm-banner .banner-box h2,
+.sm-banner .banner-box h4,
+.sm-banner .banner-box span {
+  width: 50%;
+}
+
+.sm-banner .banner-box h2{
+  font-size: 28px;
+  font-weight: 800;
+}
+.sm-banner .banner-box h4 {
+  color: #555;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.sm-banner .banner-box span {
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}

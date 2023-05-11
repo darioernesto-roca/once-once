@@ -1,0 +1,50 @@
+.top__header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #222;
+    font-size: 0.9em;
+    padding: 0.8em;
+  }
+  
+  .top__header__phone,
+  .top__header__email {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+  }
+  
+  .top__header__phone:before,
+  .top__header__email:before {
+    content: "";
+    display: inline-block;
+    color: #ea3f2d;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    background-size: cover;
+  }
+  
+  .top__header__phone:before {
+    background-image: url(/img/phone.svg);
+  }
+  
+  .top__header__email:before {
+    background-image: url(/img/email.svg);
+  }
+  
+  .top__header__link {
+    color: #222;
+    text-decoration: none;
+  }
+  
+  .top__header__link:hover {
+    color: #ea3f2d;
+    font-weight: 600;
+  }
+  
+  .top__header__link:visited {
+    color: #222;
+  }

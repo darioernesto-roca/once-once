@@ -4,25 +4,27 @@
     const menu = document.querySelector('.menu__hamburger');
     const close = document.querySelector('.close'); 
 
-    const addClick = ()=>{
-        listElements.forEach(element =>{
-            element.addEventListener('click', ()=>{
-
-                
-                let subMenu = element.children[1];
-                let height = 0;
-                element.classList.toggle('menu__item--active');
-
-
-                if(subMenu.clientHeight === 0){
-                    height = subMenu.scrollHeight;
-                }
-
-                subMenu.style.height = `${height}px`;
-
-            });
+    const addMouseEnter = () => {
+        listElements.forEach(element => {
+          element.addEventListener('mouseenter', () => {
+            let subMenu = element.children[1];
+            let height = 0;
+            element.classList.add('menu__item--active');
+      
+            if (subMenu.clientHeight === 0) {
+              height = subMenu.scrollHeight;
+            }
+      
+            subMenu.style.height = `${height}px`;
+          });
         });
-    }
+      };
+
+    const removeMouseEnter = () => {
+    listElements.forEach(element => {
+        element.removeEventListener('mouseenter', null);
+    });
+    };
 
     const deleteStyleHeight = ()=>{
         listElements.forEach(element=>{
@@ -36,20 +38,22 @@
     }
 
 
-    window.addEventListener('resize', ()=>{
-        if(window.innerWidth > 800){
-            deleteStyleHeight();
-            if(list.classList.contains('menu__links--show'))
-                list.classList.remove('menu__links--show');
-
-        }else{
-            addClick();
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 800) {
+          deleteStyleHeight();
+          if (list.classList.contains('menu__links--show')) {
+            list.classList.remove('menu__links--show');
+          }
+        } else {
+          removeMouseEnter();
+          addMouseEnter();
         }
-    });
-
-    if(window.innerWidth <= 800){
-        addClick();
-    }
+      });
+      
+      if (window.innerWidth <= 800) {
+        removeMouseEnter();
+        addMouseEnter();
+      }
 
     menu.addEventListener('click', ()=> list.classList.toggle('menu__links--show'));
     close.addEventListener('click', ()=> list.classList.toggle('menu__links--show'));

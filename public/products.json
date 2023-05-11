@@ -1,0 +1,62 @@
+{
+  "productsDB": {
+    "products": [
+      {
+        "id": 1,
+        "title": "Traje para niña blanco",
+        "description": "La comunicación es una parte fundamental de las relaciones familiares. La comunicación efectiva puede ayudar a resolver conflictos, fomentar la comprensión y la empatía, y promover relaciones familiares saludables y duraderas. Si la comunicación en su familia es desafiante, no dude en buscar ayuda profesional.",
+        "price": "$180000",
+        "image": "/img/products/1.png"
+      },
+      {
+        "id": 2,
+        "title": "Traje para niña blanco",
+        "description": "La terapia de pareja es una forma de psicoterapia que se centra en la relación entre dos personas. La terapia de pareja puede ser útil para resolver conflictos y mejorar la comunicación en una relación, así como para ayudar a las parejas a manejar problemas emocionales y sexuales. En este blog se puede hablar sobre los principios y técnicas de la terapia de pareja, así como en la aplicación en la práctica clínica y los beneficios potenciales para las parejas que buscan mejorar su relación.",
+        "price": "$180000",
+        "image": "/img/products/2.png"
+      },
+      {
+        "id": 3,
+        "title": "Traje para niña blanco",
+        "description": "La terapia de pareja es una forma de psicoterapia que se centra en la relación entre dos personas. La terapia de pareja puede ser útil para resolver conflictos y mejorar la comunicación en una relación, así como para ayudar a las parejas a manejar problemas emocionales y sexuales. En este blog se puede hablar sobre los principios y técnicas de la terapia de pareja, así como en la aplicación en la práctica clínica y los beneficios potenciales para las parejas que buscan mejorar su relación.",
+        "price": "$180000",
+        "image": "/img/products/3.png"
+      },
+      {
+        "id": 4,
+        "title": "Traje para niña blanco",
+        "description": "La terapia de pareja es una forma de psicoterapia que se centra en la relación entre dos personas. La terapia de pareja puede ser útil para resolver conflictos y mejorar la comunicación en una relación, así como para ayudar a las parejas a manejar problemas emocionales y sexuales. En este blog se puede hablar sobre los principios y técnicas de la terapia de pareja, así como en la aplicación en la práctica clínica y los beneficios potenciales para las parejas que buscan mejorar su relación.",
+        "price": "$180000",
+        "image": "/img/products/4.png"
+      },
+      {
+        "id": 5,
+        "title": "Traje para niña blanco",
+        "description": "La terapia de pareja es una forma de psicoterapia que se centra en la relación entre dos personas. La terapia de pareja puede ser útil para resolver conflictos y mejorar la comunicación en una relación, así como para ayudar a las parejas a manejar problemas emocionales y sexuales. En este blog se puede hablar sobre los principios y técnicas de la terapia de pareja, así como en la aplicación en la práctica clínica y los beneficios potenciales para las parejas que buscan mejorar su relación.",
+        "price": "$180000",
+        "image": "/img/products/5.png"
+      },
+      {
+        "id": 6,
+        "title": "Traje para niña blanco",
+        "description": "La terapia de pareja es una forma de psicoterapia que se centra en la relación entre dos personas. La terapia de pareja puede ser útil para resolver conflictos y mejorar la comunicación en una relación, así como para ayudar a las parejas a manejar problemas emocionales y sexuales. En este blog se puede hablar sobre los principios y técnicas de la terapia de pareja, así como en la aplicación en la práctica clínica y los beneficios potenciales para las parejas que buscan mejorar su relación.",
+        "price": "$180000",
+        "image": "/img/products/6.png"
+      },
+      {
+        "id": 7,
+        "title": "Traje para niña blanco",
+        "description": "La terapia de pareja es una forma de psicoterapia que se centra en la relación entre dos personas. La terapia de pareja puede ser útil para resolver conflictos y mejorar la comunicación en una relación, así como para ayudar a las parejas a manejar problemas emocionales y sexuales. En este blog se puede hablar sobre los principios y técnicas de la terapia de pareja, así como en la aplicación en la práctica clínica y los beneficios potenciales para las parejas que buscan mejorar su relación.",
+        "price": "$180000",
+        "image": "/img/products/7.png"
+      },
+      {
+        "id": 8,
+        "title": "Traje para niña blanco",
+        "description": "La terapia de pareja es una forma de psicoterapia que se centra en la relación entre dos personas. La terapia de pareja puede ser útil para resolver conflictos y mejorar la comunicación en una relación, así como para ayudar a las parejas a manejar problemas emocionales y sexuales. En este blog se puede hablar sobre los principios y técnicas de la terapia de pareja, así como en la aplicación en la práctica clínica y los beneficios potenciales para las parejas que buscan mejorar su relación.",
+        "price": "$180000",
+        "image": "/img/products/8.png"
+      }
+    ]
+  }
+}

@@ -1,9 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const homeController = require("../controllers/home.controller");
+const girlsController = require("../controllers/girls.controller");
 
-router.get("/", homeController.index);
-router.get("/inicio", homeController.index);
+router.get("/", girlsController.index);
 
 
 // Route to process the form sending

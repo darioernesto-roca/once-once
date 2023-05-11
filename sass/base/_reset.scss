@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Castoro+Titling&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto&display=swap");
 
+@font-face {
+  font-family: 'FreightDis Pro';
+  src: url('/font/freightdispro-regular.ttf');
+}
+
 /*
 Color logo: #ea3f2d strong orange
 */
@@ -9,15 +14,16 @@ Color logo: #ea3f2d strong orange
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'FreightDis Pro', sans-serif;
+  letter-spacing: 1.5px;
 }
 
 body {
     background-color: whitesmoke;
-    width: 100%;
-    min-width: 768px;
+    width: 100vw;
+    min-width: 335px;
+    margin: 0 auto;
 }
-
 
 h1 {
   font-size: 50px;
@@ -63,14 +69,14 @@ button.normal {
   background-color: #ea3f2d;
   border-radius: 4px;
   cursor: pointer;
-  border: none;
+  border: solid 2px #ea3f2d;
   outline: none;
   transition: 0.3s;
 }
 
 button.normal:hover {
   background-color: #fff;
-  color: #1a1a1a;
+  color: #ea3f2d;
   border: solid 2px #ea3f2d;
 }
 

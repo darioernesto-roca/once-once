@@ -1,16 +1,17 @@
 @use 'base/reset';
-@use 'base/typography';
 
-@use 'layout/bag';
-@use 'layout/feature';
-@use 'layout/logo';
-@use 'layout/navbar';
-@use 'layout/product';
-
-@use 'pages/header';
-@use 'pages/homepage';
-
-
+@use 'components/bag';
+@use 'components/banner';
+@use 'components/feature';
+@use 'components/hero';
+@use 'components/logo';
+@use 'components/menu';
+@use 'components/products';
+@use 'components/sm-banner';
+@use 'components/top-header';
 @use 'components/whatsapp-icon';
+
+@use 'layout/header';
+@use 'layout/footer';
 
 @use 'utilities/responsive';
