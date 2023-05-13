@@ -1,5 +1,9 @@
-<section class="feature-products section-p1">
+<section class="page-header boys">
   <h2>Boys</h2>
+
+</section>
+
+<section class="feature-products section-p1">
   <p>Colección Once Once - Sueños de Niñez. Para momentos memorables</p>
   <div class="product-container">
     <% products.forEach(product=> { %>
@@ -13,5 +17,16 @@
       <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
     </div>
     <% }) %>
+    <% products.forEach(product=> { %>
+      <div class="product">
+        <img src="<%= product.image %>" alt="<%= product.title %>">
+        <div class="description">
+          <span>Once Once</span>
+          <h5><%= product.title %></h5>
+          <h4><%= product.price %></h4>
+        </div>
+        <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
+      </div>
+      <% }) %>
   </div>
 </section>

@@ -323,6 +323,36 @@ button.black {
   display: none;
 }
 
+.page-header {
+  margin: 40px 0;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.boys {
+  background-image: url(/img/assets/page-header-boys.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.girls {
+  background-image: url(/img/assets/page-header-girls.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+  .boys,
+.girls {
+    background-size: cover;
+  }
+}
 .feature-products {
   text-align: center;
 }
@@ -500,6 +530,10 @@ button.black {
 
 .top__header__link:visited {
   color: #222;
+}
+
+.pagination img {
+  max-height: 50px;
 }
 
 /* WhatsApp icon */
