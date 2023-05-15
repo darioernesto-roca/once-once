@@ -49,8 +49,10 @@
     align-items: center;
   }
   
-  .menu__link:hover{
+  .menu__link:hover,
+  .menu__link--inside:hover{
     background-color: hsl(53, 17%, 87%);
+    color: #ea3f2d;
   }
   
   
@@ -75,10 +77,6 @@
   
   .menu__link--inside{
     padding: 30px 100px 30px 20px;
-  }
-  
-  .menu__link--inside:hover{
-    background-color: hsl(53, 17%, 87%);
   }
   
   .menu__hamburger{

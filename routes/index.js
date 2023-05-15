@@ -5,6 +5,7 @@ const router = express.Router();
 const homeRoutes = require('./home.routes');
 const boysRoutes = require('./boys.routes');
 const girlsRoutes = require('./girls.routes');
+const sproductRoutes = require('./sproduct.routes');
 
 // const postRoutes = require('./post.routes');
 // const serviceRoutes = require('./services.routes');
@@ -17,6 +18,7 @@ router.use('/', homeRoutes);
 router.use('/inicio', homeRoutes);
 router.use('/boys', boysRoutes);
 router.use('/girls', girlsRoutes);
+router.use('/sproduct', sproductRoutes);
 
 
 // router.use('/boys', boysRoutes);

@@ -5,7 +5,9 @@
   src: url("/font/freightdispro-regular.ttf");
 }
 /*
-Color logo: #ea3f2d strong orange
+
+Color logo: #ea3f2d strong orange Cinnabar
+Color icons: #a03037 red Stiletto
 */
 * {
   margin: 0;
@@ -275,8 +277,10 @@ button.black {
   align-items: center;
 }
 
-.menu__link:hover {
+.menu__link:hover,
+.menu__link--inside:hover {
   background-color: hsl(53deg, 17%, 87%);
+  color: #ea3f2d;
 }
 
 .menu__arrow {
@@ -300,10 +304,6 @@ button.black {
 
 .menu__link--inside {
   padding: 30px 100px 30px 20px;
-}
-
-.menu__link--inside:hover {
-  background-color: hsl(53deg, 17%, 87%);
 }
 
 .menu__hamburger {
@@ -511,11 +511,11 @@ button.black {
 }
 
 .top__header__phone:before {
-  background-image: url(/img/phone.svg);
+  background-image: url(/img/assets/phone.svg);
 }
 
 .top__header__email:before {
-  background-image: url(/img/email.svg);
+  background-image: url(/img/assets/email.svg);
 }
 
 .top__header__link {
@@ -532,8 +532,92 @@ button.black {
   color: #222;
 }
 
+.pagination {
+  text-align: center;
+  font-size: 2em;
+}
+
+.pagination a {
+  text-decoration: none;
+  background-color: #a03037;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+}
+
 .pagination img {
-  max-height: 50px;
+  max-height: 18px;
+}
+
+.prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+.prodetails .single-pro-image {
+  width: 40%;
+  margin-right: 50px;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+.main-img {
+  width: 100%;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+}
+
+.small-img {
+  width: 100%;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+}
+
+.prodetails .single-pro-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+.prodetails .single-pro-details h4 {
+  padding: 40px 0 20px 0;
+}
+
+.prodetails .single-pro-details h2 {
+  font-size: 26px;
+}
+
+.prodetails .single-pro-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.prodetails .single-pro-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.prodetails .single-pro-details input:focus {
+  outline: none;
+}
+
+.prodetails .single-pro-details p {
+  line-height: 25px;
 }
 
 /* WhatsApp icon */
