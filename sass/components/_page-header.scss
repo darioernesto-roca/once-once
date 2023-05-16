@@ -8,23 +8,36 @@
     flex-direction: column;
 }
 
-.boys {
+.boys-header {
     background-image: url(/img/assets/page-header-boys.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.girls {
+.girls-header {
     background-image: url(/img/assets/page-header-girls.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+.blog-header {
+    background-image: url(/img/assets/blog-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blog-header h2 {
+    font-family: 'Allison', cursive;
+    font-size: 100px;
+    color: #fff;
+}
+
 @media (max-width: 600px) {
-    .boys,
-    .girls {
+    .boys-header,
+    .girls-header {
         background-size: cover;
     }
 }

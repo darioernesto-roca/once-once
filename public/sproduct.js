@@ -1,5 +1,5 @@
 const $mainImg = document.getElementById("main-img");
-const $smallImg = document.getElementById("small-img");
+const $smallImg = document.getElementsByClassName("small-img");
 
 $smallImg[0].onclick = function() {
     $mainImg.src = $smallImg[0].src;
