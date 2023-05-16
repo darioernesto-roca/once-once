@@ -1,61 +1,271 @@
 {
   "productsDB": {
-    "products": [
+    "boys": [
       {
         "id": 1,
-        "title": "Traje para niña blanco",
-        "description": "La comunicación es una parte fundamental de las relaciones familiares. La comunicación efectiva puede ayudar a resolver conflictos, fomentar la comprensión y la empatía, y promover relaciones familiares saludables y duraderas. Si la comunicación en su familia es desafiante, no dude en buscar ayuda profesional.",
-        "price": "$180000",
-        "image": "/img/products/1.png"
+        "title": "Camisa de lino para niño",
+        "category": "Boys",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra camisa de niño de lino, una prenda cómoda y elegante para cualquier ocasión. Confeccionada en lino de alta calidad, esta camisa es fresca y transpirable, perfecta para mantener a tu hijo cómodo durante todo el día. Su diseño clásico con cuello de solapa y botones frontales le da un aspecto refinado, mientras que su ajuste ligeramente entallado realza su silueta sin limitar su movimiento. Disponible en varios colores y estampados, esta camisa se combina fácilmente con diferentes prendas y su durabilidad garantiza una apariencia impecable incluso después de múltiples lavados. Además, al ser una prenda de lino, es respetuosa con el medio ambiente, convirtiéndola en una elección consciente. Añade estilo y frescura al guardarropa de tu hijo con esta encantadora camisa de lino.",
+        "price": 180000,
+        "image1": "/img/products/boys/boys1A.png",
+        "image2": "/img/products/boys/boys1B.png",
+        "image3": "/img/products/boys/boys1C.png",
+        "image4": "/img/products/boys/boys1D.png"
       },
       {
         "id": 2,
-        "title": "Traje para niña blanco",
-        "description": "La terapia de pareja es una forma de psicoterapia que se centra en la relación entre dos personas. La terapia de pareja puede ser útil para resolver conflictos y mejorar la comunicación en una relación, así como para ayudar a las parejas a manejar problemas emocionales y sexuales. En este blog se puede hablar sobre los principios y técnicas de la terapia de pareja, así como en la aplicación en la práctica clínica y los beneficios potenciales para las parejas que buscan mejorar su relación.",
-        "price": "$180000",
-        "image": "/img/products/2.png"
+        "title": "Camisa de lino para niño",
+        "category": "Boys",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra camisa de niño de lino, una prenda cómoda y elegante para cualquier ocasión. Confeccionada en lino de alta calidad, esta camisa es fresca y transpirable, perfecta para mantener a tu hijo cómodo durante todo el día. Su diseño clásico con cuello de solapa y botones frontales le da un aspecto refinado, mientras que su ajuste ligeramente entallado realza su silueta sin limitar su movimiento. Disponible en varios colores y estampados, esta camisa se combina fácilmente con diferentes prendas y su durabilidad garantiza una apariencia impecable incluso después de múltiples lavados. Además, al ser una prenda de lino, es respetuosa con el medio ambiente, convirtiéndola en una elección consciente. Añade estilo y frescura al guardarropa de tu hijo con esta encantadora camisa de lino.",
+        "price": 180000,
+        "image1": "/img/products/boys/boys2A.png",
+        "image2": "/img/products/boys/boys2B.png",
+        "image3": "/img/products/boys/boys2C.png",
+        "image4": "/img/products/boys/boys2D.png"
       },
       {
         "id": 3,
-        "title": "Traje para niña blanco",
-        "description": "La terapia de pareja es una forma de psicoterapia que se centra en la relación entre dos personas. La terapia de pareja puede ser útil para resolver conflictos y mejorar la comunicación en una relación, así como para ayudar a las parejas a manejar problemas emocionales y sexuales. En este blog se puede hablar sobre los principios y técnicas de la terapia de pareja, así como en la aplicación en la práctica clínica y los beneficios potenciales para las parejas que buscan mejorar su relación.",
-        "price": "$180000",
-        "image": "/img/products/3.png"
+        "title": "Camisa de lino para niño",
+        "category": "Boys",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra camisa de niño de lino, una prenda cómoda y elegante para cualquier ocasión. Confeccionada en lino de alta calidad, esta camisa es fresca y transpirable, perfecta para mantener a tu hijo cómodo durante todo el día. Su diseño clásico con cuello de solapa y botones frontales le da un aspecto refinado, mientras que su ajuste ligeramente entallado realza su silueta sin limitar su movimiento. Disponible en varios colores y estampados, esta camisa se combina fácilmente con diferentes prendas y su durabilidad garantiza una apariencia impecable incluso después de múltiples lavados. Además, al ser una prenda de lino, es respetuosa con el medio ambiente, convirtiéndola en una elección consciente. Añade estilo y frescura al guardarropa de tu hijo con esta encantadora camisa de lino.",
+        "price": 180000,
+        "image1": "/img/products/boys/boys3A.png",
+        "image2": "/img/products/boys/boys3B.png",
+        "image3": "/img/products/boys/boys3C.png",
+        "image4": "/img/products/boys/boys3D.png"
       },
       {
         "id": 4,
-        "title": "Traje para niña blanco",
-        "description": "La terapia de pareja es una forma de psicoterapia que se centra en la relación entre dos personas. La terapia de pareja puede ser útil para resolver conflictos y mejorar la comunicación en una relación, así como para ayudar a las parejas a manejar problemas emocionales y sexuales. En este blog se puede hablar sobre los principios y técnicas de la terapia de pareja, así como en la aplicación en la práctica clínica y los beneficios potenciales para las parejas que buscan mejorar su relación.",
-        "price": "$180000",
-        "image": "/img/products/4.png"
+        "title": "Camisa de lino para niño",
+        "category": "Boys",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra camisa de niño de lino, una prenda cómoda y elegante para cualquier ocasión. Confeccionada en lino de alta calidad, esta camisa es fresca y transpirable, perfecta para mantener a tu hijo cómodo durante todo el día. Su diseño clásico con cuello de solapa y botones frontales le da un aspecto refinado, mientras que su ajuste ligeramente entallado realza su silueta sin limitar su movimiento. Disponible en varios colores y estampados, esta camisa se combina fácilmente con diferentes prendas y su durabilidad garantiza una apariencia impecable incluso después de múltiples lavados. Además, al ser una prenda de lino, es respetuosa con el medio ambiente, convirtiéndola en una elección consciente. Añade estilo y frescura al guardarropa de tu hijo con esta encantadora camisa de lino.",
+        "price": 180000,
+        "image1": "/img/products/boys/boys4A.png",
+        "image2": "/img/products/boys/boys4B.png",
+        "image3": "/img/products/boys/boys4C.png",
+        "image4": "/img/products/boys/boys4D.png"
       },
       {
         "id": 5,
-        "title": "Traje para niña blanco",
-        "description": "La terapia de pareja es una forma de psicoterapia que se centra en la relación entre dos personas. La terapia de pareja puede ser útil para resolver conflictos y mejorar la comunicación en una relación, así como para ayudar a las parejas a manejar problemas emocionales y sexuales. En este blog se puede hablar sobre los principios y técnicas de la terapia de pareja, así como en la aplicación en la práctica clínica y los beneficios potenciales para las parejas que buscan mejorar su relación.",
-        "price": "$180000",
-        "image": "/img/products/5.png"
+        "title": "Camisa de lino para niño",
+        "category": "Boys",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra camisa de niño de lino, una prenda cómoda y elegante para cualquier ocasión. Confeccionada en lino de alta calidad, esta camisa es fresca y transpirable, perfecta para mantener a tu hijo cómodo durante todo el día. Su diseño clásico con cuello de solapa y botones frontales le da un aspecto refinado, mientras que su ajuste ligeramente entallado realza su silueta sin limitar su movimiento. Disponible en varios colores y estampados, esta camisa se combina fácilmente con diferentes prendas y su durabilidad garantiza una apariencia impecable incluso después de múltiples lavados. Además, al ser una prenda de lino, es respetuosa con el medio ambiente, convirtiéndola en una elección consciente. Añade estilo y frescura al guardarropa de tu hijo con esta encantadora camisa de lino.",
+        "price": 180000,
+        "image1": "/img/products/boys/boys5A.png",
+        "image2": "/img/products/boys/boys5B.png",
+        "image3": "/img/products/boys/boys5C.png",
+        "image4": "/img/products/boys/boys5D.png"
       },
       {
         "id": 6,
-        "title": "Traje para niña blanco",
-        "description": "La terapia de pareja es una forma de psicoterapia que se centra en la relación entre dos personas. La terapia de pareja puede ser útil para resolver conflictos y mejorar la comunicación en una relación, así como para ayudar a las parejas a manejar problemas emocionales y sexuales. En este blog se puede hablar sobre los principios y técnicas de la terapia de pareja, así como en la aplicación en la práctica clínica y los beneficios potenciales para las parejas que buscan mejorar su relación.",
-        "price": "$180000",
-        "image": "/img/products/6.png"
+        "title": "Camisa de lino para niño",
+        "category": "Boys",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra camisa de niño de lino, una prenda cómoda y elegante para cualquier ocasión. Confeccionada en lino de alta calidad, esta camisa es fresca y transpirable, perfecta para mantener a tu hijo cómodo durante todo el día. Su diseño clásico con cuello de solapa y botones frontales le da un aspecto refinado, mientras que su ajuste ligeramente entallado realza su silueta sin limitar su movimiento. Disponible en varios colores y estampados, esta camisa se combina fácilmente con diferentes prendas y su durabilidad garantiza una apariencia impecable incluso después de múltiples lavados. Además, al ser una prenda de lino, es respetuosa con el medio ambiente, convirtiéndola en una elección consciente. Añade estilo y frescura al guardarropa de tu hijo con esta encantadora camisa de lino.",
+        "price": 180000,
+        "image1": "/img/products/boys/boys6A.png",
+        "image2": "/img/products/boys/boys6B.png",
+        "image3": "/img/products/boys/boys6C.png",
+        "image4": "/img/products/boys/boys6D.png"
       },
       {
         "id": 7,
-        "title": "Traje para niña blanco",
-        "description": "La terapia de pareja es una forma de psicoterapia que se centra en la relación entre dos personas. La terapia de pareja puede ser útil para resolver conflictos y mejorar la comunicación en una relación, así como para ayudar a las parejas a manejar problemas emocionales y sexuales. En este blog se puede hablar sobre los principios y técnicas de la terapia de pareja, así como en la aplicación en la práctica clínica y los beneficios potenciales para las parejas que buscan mejorar su relación.",
-        "price": "$180000",
-        "image": "/img/products/7.png"
+        "title": "Camisa de lino para niño",
+        "category": "Boys",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra camisa de niño de lino, una prenda cómoda y elegante para cualquier ocasión. Confeccionada en lino de alta calidad, esta camisa es fresca y transpirable, perfecta para mantener a tu hijo cómodo durante todo el día. Su diseño clásico con cuello de solapa y botones frontales le da un aspecto refinado, mientras que su ajuste ligeramente entallado realza su silueta sin limitar su movimiento. Disponible en varios colores y estampados, esta camisa se combina fácilmente con diferentes prendas y su durabilidad garantiza una apariencia impecable incluso después de múltiples lavados. Además, al ser una prenda de lino, es respetuosa con el medio ambiente, convirtiéndola en una elección consciente. Añade estilo y frescura al guardarropa de tu hijo con esta encantadora camisa de lino.",
+        "price": 180000,
+        "image1": "/img/products/boys/boys7A.png",
+        "image2": "/img/products/boys/boys7B.png",
+        "image3": "/img/products/boys/boys7C.png",
+        "image4": "/img/products/boys/boys7D.png"
       },
       {
         "id": 8,
-        "title": "Traje para niña blanco",
-        "description": "La terapia de pareja es una forma de psicoterapia que se centra en la relación entre dos personas. La terapia de pareja puede ser útil para resolver conflictos y mejorar la comunicación en una relación, así como para ayudar a las parejas a manejar problemas emocionales y sexuales. En este blog se puede hablar sobre los principios y técnicas de la terapia de pareja, así como en la aplicación en la práctica clínica y los beneficios potenciales para las parejas que buscan mejorar su relación.",
-        "price": "$180000",
-        "image": "/img/products/8.png"
+        "title": "Camisa de lino para niño",
+        "category": "Boys",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra camisa de niño de lino, una prenda cómoda y elegante para cualquier ocasión. Confeccionada en lino de alta calidad, esta camisa es fresca y transpirable, perfecta para mantener a tu hijo cómodo durante todo el día. Su diseño clásico con cuello de solapa y botones frontales le da un aspecto refinado, mientras que su ajuste ligeramente entallado realza su silueta sin limitar su movimiento. Disponible en varios colores y estampados, esta camisa se combina fácilmente con diferentes prendas y su durabilidad garantiza una apariencia impecable incluso después de múltiples lavados. Además, al ser una prenda de lino, es respetuosa con el medio ambiente, convirtiéndola en una elección consciente. Añade estilo y frescura al guardarropa de tu hijo con esta encantadora camisa de lino.",
+        "price": 180000,
+        "image1": "/img/products/boys/boys8A.png",
+        "image2": "/img/products/boys/boys8B.png",
+        "image3": "/img/products/boys/boys8C.png",
+        "image4": "/img/products/boys/boys8D.png"
+      },
+      {
+        "id": 9,
+        "title": "Camisa de lino para niño",
+        "category": "Boys",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra camisa de niño de lino, una prenda cómoda y elegante para cualquier ocasión. Confeccionada en lino de alta calidad, esta camisa es fresca y transpirable, perfecta para mantener a tu hijo cómodo durante todo el día. Su diseño clásico con cuello de solapa y botones frontales le da un aspecto refinado, mientras que su ajuste ligeramente entallado realza su silueta sin limitar su movimiento. Disponible en varios colores y estampados, esta camisa se combina fácilmente con diferentes prendas y su durabilidad garantiza una apariencia impecable incluso después de múltiples lavados. Además, al ser una prenda de lino, es respetuosa con el medio ambiente, convirtiéndola en una elección consciente. Añade estilo y frescura al guardarropa de tu hijo con esta encantadora camisa de lino.",
+        "price": 180000,
+        "image1": "/img/products/boys/boys9A.png",
+        "image2": "/img/products/boys/boys9B.png",
+        "image3": "/img/products/boys/boys9C.png",
+        "image4": "/img/products/boys/boys9D.png"
+      },
+      {
+        "id": 10,
+        "title": "Camisa de lino para niño",
+        "category": "Boys",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra camisa de niño de lino, una prenda cómoda y elegante para cualquier ocasión. Confeccionada en lino de alta calidad, esta camisa es fresca y transpirable, perfecta para mantener a tu hijo cómodo durante todo el día. Su diseño clásico con cuello de solapa y botones frontales le da un aspecto refinado, mientras que su ajuste ligeramente entallado realza su silueta sin limitar su movimiento. Disponible en varios colores y estampados, esta camisa se combina fácilmente con diferentes prendas y su durabilidad garantiza una apariencia impecable incluso después de múltiples lavados. Además, al ser una prenda de lino, es respetuosa con el medio ambiente, convirtiéndola en una elección consciente. Añade estilo y frescura al guardarropa de tu hijo con esta encantadora camisa de lino.",
+        "price": 180000,
+        "image1": "/img/products/boys/boys10A.png",
+        "image2": "/img/products/boys/boys10B.png",
+        "image3": "/img/products/boys/boys10C.png",
+        "image4": "/img/products/boys/boys10D.png"
+      },
+      {
+        "id": 11,
+        "title": "Camisa de lino para niño",
+        "category": "Boys",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra camisa de niño de lino, una prenda cómoda y elegante para cualquier ocasión. Confeccionada en lino de alta calidad, esta camisa es fresca y transpirable, perfecta para mantener a tu hijo cómodo durante todo el día. Su diseño clásico con cuello de solapa y botones frontales le da un aspecto refinado, mientras que su ajuste ligeramente entallado realza su silueta sin limitar su movimiento. Disponible en varios colores y estampados, esta camisa se combina fácilmente con diferentes prendas y su durabilidad garantiza una apariencia impecable incluso después de múltiples lavados. Además, al ser una prenda de lino, es respetuosa con el medio ambiente, convirtiéndola en una elección consciente. Añade estilo y frescura al guardarropa de tu hijo con esta encantadora camisa de lino.",
+        "price": 180000,
+        "image1": "/img/products/boys/boys11A.png",
+        "image2": "/img/products/boys/boys11B.png",
+        "image3": "/img/products/boys/boys11C.png",
+        "image4": "/img/products/boys/boys11D.png"
+      },
+      {
+        "id": 12,
+        "title": "Camisa de lino para niño",
+        "category": "Boys",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra camisa de niño de lino, una prenda cómoda y elegante para cualquier ocasión. Confeccionada en lino de alta calidad, esta camisa es fresca y transpirable, perfecta para mantener a tu hijo cómodo durante todo el día. Su diseño clásico con cuello de solapa y botones frontales le da un aspecto refinado, mientras que su ajuste ligeramente entallado realza su silueta sin limitar su movimiento. Disponible en varios colores y estampados, esta camisa se combina fácilmente con diferentes prendas y su durabilidad garantiza una apariencia impecable incluso después de múltiples lavados. Además, al ser una prenda de lino, es respetuosa con el medio ambiente, convirtiéndola en una elección consciente. Añade estilo y frescura al guardarropa de tu hijo con esta encantadora camisa de lino.",
+        "price": 180000,
+        "image1": "/img/products/boys/boys12A.png",
+        "image2": "/img/products/boys/boys12B.png",
+        "image3": "/img/products/boys/boys12C.png",
+        "image4": "/img/products/boys/boys12D.png"
+      }
+    ],
+    "girls": [
+      {
+        "id": 13,
+        "title": "Camisa de lino para niña",
+        "category": "Girls",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra encantadora camisa de lino para niña, una prenda que combina comodidad y estilo en cada ocasión. Confeccionada con lino de alta calidad, esta camisa ofrece una sensación fresca y transpirable, perfecta para mantener a tu pequeña cómoda durante todo el día. Su diseño clásico presenta un cuello de solapa y botones frontales, brindando un aspecto refinado y elegante. El ajuste ligeramente entallado realza la silueta de tu niña sin restringir sus movimientos. Disponible en una variedad de colores y estampados encantadores, esta camisa se combina fácilmente con diferentes prendas, ya sean pantalones, faldas o shorts, para crear múltiples looks adorables. Además de su estilo impecable, esta camisa de lino también es una elección consciente, ya que el lino es un material sostenible y respetuoso con el medio ambiente. Añade un toque de frescura y sofisticación al guardarropa de tu hija con esta camisa de lino, que se mantiene duradera y con una apariencia impecable incluso después de múltiples lavados. ¡Haz que tu niña luzca radiante y a la moda con esta maravillosa camisa de lino para niña!",
+        "price": 180000,
+        "image1": "/img/products/girls/girls1A.png",
+        "image2": "/img/products/girls/girls1B.png",
+        "image3": "/img/products/girls/girls1C.png",
+        "image4": "/img/products/girls/girls1D.png"
+      },
+      {
+        "id": 14,
+        "title": "Camisa de lino para niña",
+        "category": "Girls",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra encantadora camisa de lino para niña, una prenda que combina comodidad y estilo en cada ocasión. Confeccionada con lino de alta calidad, esta camisa ofrece una sensación fresca y transpirable, perfecta para mantener a tu pequeña cómoda durante todo el día. Su diseño clásico presenta un cuello de solapa y botones frontales, brindando un aspecto refinado y elegante. El ajuste ligeramente entallado realza la silueta de tu niña sin restringir sus movimientos. Disponible en una variedad de colores y estampados encantadores, esta camisa se combina fácilmente con diferentes prendas, ya sean pantalones, faldas o shorts, para crear múltiples looks adorables. Además de su estilo impecable, esta camisa de lino también es una elección consciente, ya que el lino es un material sostenible y respetuoso con el medio ambiente. Añade un toque de frescura y sofisticación al guardarropa de tu hija con esta camisa de lino, que se mantiene duradera y con una apariencia impecable incluso después de múltiples lavados. ¡Haz que tu niña luzca radiante y a la moda con esta maravillosa camisa de lino para niña!",
+        "price": 180000,
+        "image1": "/img/products/girls/girls2A.png",
+        "image2": "/img/products/girls/girls2B.png",
+        "image3": "/img/products/girls/girls2C.png",
+        "image4": "/img/products/girls/girls2D.png"
+      },
+      {
+        "id": 15,
+        "title": "Camisa de lino para niña",
+        "category": "Girls",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra encantadora camisa de lino para niña, una prenda que combina comodidad y estilo en cada ocasión. Confeccionada con lino de alta calidad, esta camisa ofrece una sensación fresca y transpirable, perfecta para mantener a tu pequeña cómoda durante todo el día. Su diseño clásico presenta un cuello de solapa y botones frontales, brindando un aspecto refinado y elegante. El ajuste ligeramente entallado realza la silueta de tu niña sin restringir sus movimientos. Disponible en una variedad de colores y estampados encantadores, esta camisa se combina fácilmente con diferentes prendas, ya sean pantalones, faldas o shorts, para crear múltiples looks adorables. Además de su estilo impecable, esta camisa de lino también es una elección consciente, ya que el lino es un material sostenible y respetuoso con el medio ambiente. Añade un toque de frescura y sofisticación al guardarropa de tu hija con esta camisa de lino, que se mantiene duradera y con una apariencia impecable incluso después de múltiples lavados. ¡Haz que tu niña luzca radiante y a la moda con esta maravillosa camisa de lino para niña!",
+        "price": 180000,
+        "image1": "/img/products/girls/girls3A.png",
+        "image2": "/img/products/girls/girls3B.png",
+        "image3": "/img/products/girls/girls3C.png",
+        "image4": "/img/products/girls/girls3D.png"
+      },
+      {
+        "id": 16,
+        "title": "Camisa de lino para niña",
+        "category": "Girls",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra encantadora camisa de lino para niña, una prenda que combina comodidad y estilo en cada ocasión. Confeccionada con lino de alta calidad, esta camisa ofrece una sensación fresca y transpirable, perfecta para mantener a tu pequeña cómoda durante todo el día. Su diseño clásico presenta un cuello de solapa y botones frontales, brindando un aspecto refinado y elegante. El ajuste ligeramente entallado realza la silueta de tu niña sin restringir sus movimientos. Disponible en una variedad de colores y estampados encantadores, esta camisa se combina fácilmente con diferentes prendas, ya sean pantalones, faldas o shorts, para crear múltiples looks adorables. Además de su estilo impecable, esta camisa de lino también es una elección consciente, ya que el lino es un material sostenible y respetuoso con el medio ambiente. Añade un toque de frescura y sofisticación al guardarropa de tu hija con esta camisa de lino, que se mantiene duradera y con una apariencia impecable incluso después de múltiples lavados. ¡Haz que tu niña luzca radiante y a la moda con esta maravillosa camisa de lino para niña!",
+        "price": 180000,
+        "image1": "/img/products/girls/girls4A.png",
+        "image2": "/img/products/girls/girls4B.png",
+        "image3": "/img/products/girls/girls4C.png",
+        "image4": "/img/products/girls/girls4D.png"
+      },
+      {
+        "id": 17,
+        "title": "Camisa de lino para niña",
+        "category": "Girls",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra encantadora camisa de lino para niña, una prenda que combina comodidad y estilo en cada ocasión. Confeccionada con lino de alta calidad, esta camisa ofrece una sensación fresca y transpirable, perfecta para mantener a tu pequeña cómoda durante todo el día. Su diseño clásico presenta un cuello de solapa y botones frontales, brindando un aspecto refinado y elegante. El ajuste ligeramente entallado realza la silueta de tu niña sin restringir sus movimientos. Disponible en una variedad de colores y estampados encantadores, esta camisa se combina fácilmente con diferentes prendas, ya sean pantalones, faldas o shorts, para crear múltiples looks adorables. Además de su estilo impecable, esta camisa de lino también es una elección consciente, ya que el lino es un material sostenible y respetuoso con el medio ambiente. Añade un toque de frescura y sofisticación al guardarropa de tu hija con esta camisa de lino, que se mantiene duradera y con una apariencia impecable incluso después de múltiples lavados. ¡Haz que tu niña luzca radiante y a la moda con esta maravillosa camisa de lino para niña!",
+        "price": 180000,
+        "image1": "/img/products/girls/girls5A.png",
+        "image2": "/img/products/girls/girls5B.png",
+        "image3": "/img/products/girls/girls5C.png",
+        "image4": "/img/products/girls/girls5D.png"
+      },
+      {
+        "id": 18,
+        "title": "Camisa de lino para niña",
+        "category": "Girls",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra encantadora camisa de lino para niña, una prenda que combina comodidad y estilo en cada ocasión. Confeccionada con lino de alta calidad, esta camisa ofrece una sensación fresca y transpirable, perfecta para mantener a tu pequeña cómoda durante todo el día. Su diseño clásico presenta un cuello de solapa y botones frontales, brindando un aspecto refinado y elegante. El ajuste ligeramente entallado realza la silueta de tu niña sin restringir sus movimientos. Disponible en una variedad de colores y estampados encantadores, esta camisa se combina fácilmente con diferentes prendas, ya sean pantalones, faldas o shorts, para crear múltiples looks adorables. Además de su estilo impecable, esta camisa de lino también es una elección consciente, ya que el lino es un material sostenible y respetuoso con el medio ambiente. Añade un toque de frescura y sofisticación al guardarropa de tu hija con esta camisa de lino, que se mantiene duradera y con una apariencia impecable incluso después de múltiples lavados. ¡Haz que tu niña luzca radiante y a la moda con esta maravillosa camisa de lino para niña!",
+        "price": 180000,
+        "image1": "/img/products/girls/girls6A.png",
+        "image2": "/img/products/girls/girls6B.png",
+        "image3": "/img/products/girls/girls6C.png",
+        "image4": "/img/products/girls/girls6D.png"
+      },
+      {
+        "id": 19,
+        "title": "Camisa de lino para niña",
+        "category": "Girls",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra encantadora camisa de lino para niña, una prenda que combina comodidad y estilo en cada ocasión. Confeccionada con lino de alta calidad, esta camisa ofrece una sensación fresca y transpirable, perfecta para mantener a tu pequeña cómoda durante todo el día. Su diseño clásico presenta un cuello de solapa y botones frontales, brindando un aspecto refinado y elegante. El ajuste ligeramente entallado realza la silueta de tu niña sin restringir sus movimientos. Disponible en una variedad de colores y estampados encantadores, esta camisa se combina fácilmente con diferentes prendas, ya sean pantalones, faldas o shorts, para crear múltiples looks adorables. Además de su estilo impecable, esta camisa de lino también es una elección consciente, ya que el lino es un material sostenible y respetuoso con el medio ambiente. Añade un toque de frescura y sofisticación al guardarropa de tu hija con esta camisa de lino, que se mantiene duradera y con una apariencia impecable incluso después de múltiples lavados. ¡Haz que tu niña luzca radiante y a la moda con esta maravillosa camisa de lino para niña!",
+        "price": 180000,
+        "image1": "/img/products/girls/girls7A.png",
+        "image2": "/img/products/girls/girls7B.png",
+        "image3": "/img/products/girls/girls7C.png",
+        "image4": "/img/products/girls/girls7D.png"
+      },
+      {
+        "id": 20,
+        "title": "Camisa de lino para niña",
+        "category": "Girls",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra encantadora camisa de lino para niña, una prenda que combina comodidad y estilo en cada ocasión. Confeccionada con lino de alta calidad, esta camisa ofrece una sensación fresca y transpirable, perfecta para mantener a tu pequeña cómoda durante todo el día. Su diseño clásico presenta un cuello de solapa y botones frontales, brindando un aspecto refinado y elegante. El ajuste ligeramente entallado realza la silueta de tu niña sin restringir sus movimientos. Disponible en una variedad de colores y estampados encantadores, esta camisa se combina fácilmente con diferentes prendas, ya sean pantalones, faldas o shorts, para crear múltiples looks adorables. Además de su estilo impecable, esta camisa de lino también es una elección consciente, ya que el lino es un material sostenible y respetuoso con el medio ambiente. Añade un toque de frescura y sofisticación al guardarropa de tu hija con esta camisa de lino, que se mantiene duradera y con una apariencia impecable incluso después de múltiples lavados. ¡Haz que tu niña luzca radiante y a la moda con esta maravillosa camisa de lino para niña!",
+        "price": 180000,
+        "image1": "/img/products/girls/girls8A.png",
+        "image2": "/img/products/girls/girls8B.png",
+        "image3": "/img/products/girls/girls8C.png",
+        "image4": "/img/products/girls/girls8D.png"
+      },
+      {
+        "id": 21,
+        "title": "Camisa de lino para niña",
+        "category": "Girls",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra encantadora camisa de lino para niña, una prenda que combina comodidad y estilo en cada ocasión. Confeccionada con lino de alta calidad, esta camisa ofrece una sensación fresca y transpirable, perfecta para mantener a tu pequeña cómoda durante todo el día. Su diseño clásico presenta un cuello de solapa y botones frontales, brindando un aspecto refinado y elegante. El ajuste ligeramente entallado realza la silueta de tu niña sin restringir sus movimientos. Disponible en una variedad de colores y estampados encantadores, esta camisa se combina fácilmente con diferentes prendas, ya sean pantalones, faldas o shorts, para crear múltiples looks adorables. Además de su estilo impecable, esta camisa de lino también es una elección consciente, ya que el lino es un material sostenible y respetuoso con el medio ambiente. Añade un toque de frescura y sofisticación al guardarropa de tu hija con esta camisa de lino, que se mantiene duradera y con una apariencia impecable incluso después de múltiples lavados. ¡Haz que tu niña luzca radiante y a la moda con esta maravillosa camisa de lino para niña!",
+        "price": 180000,
+        "image1": "/img/products/girls/girls9A.png",
+        "image2": "/img/products/girls/girls9B.png",
+        "image3": "/img/products/girls/girls9C.png",
+        "image4": "/img/products/girls/girls9D.png"
+      },
+      {
+        "id": 22,
+        "title": "Camisa de lino para niña",
+        "category": "Girls",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra encantadora camisa de lino para niña, una prenda que combina comodidad y estilo en cada ocasión. Confeccionada con lino de alta calidad, esta camisa ofrece una sensación fresca y transpirable, perfecta para mantener a tu pequeña cómoda durante todo el día. Su diseño clásico presenta un cuello de solapa y botones frontales, brindando un aspecto refinado y elegante. El ajuste ligeramente entallado realza la silueta de tu niña sin restringir sus movimientos. Disponible en una variedad de colores y estampados encantadores, esta camisa se combina fácilmente con diferentes prendas, ya sean pantalones, faldas o shorts, para crear múltiples looks adorables. Además de su estilo impecable, esta camisa de lino también es una elección consciente, ya que el lino es un material sostenible y respetuoso con el medio ambiente. Añade un toque de frescura y sofisticación al guardarropa de tu hija con esta camisa de lino, que se mantiene duradera y con una apariencia impecable incluso después de múltiples lavados. ¡Haz que tu niña luzca radiante y a la moda con esta maravillosa camisa de lino para niña!",
+        "price": 180000,
+        "image1": "/img/products/girls/girls10A.png",
+        "image2": "/img/products/girls/girls10B.png",
+        "image3": "/img/products/girls/girls10C.png",
+        "image4": "/img/products/girls/girls10D.png"
       }
     ]
   }

@@ -1,7 +1,6 @@
 // Setting the server
 const express = require("express");
 const app = express();
-const ejs = require("ejs");
 const routes = require("../routes/index");
 const expressLayouts = require("express-ejs-layouts");
 const cors = require("cors");

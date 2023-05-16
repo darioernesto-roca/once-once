@@ -1,25 +1,25 @@
 <section class="prodetails section-p1">
     <div class="single-pro-image">
-        <img src="/img/products/<%= product.id %>.png" alt="Prueba single product" id="main-img" class="main-img">
+        <img src="<%= product.image1 %>" alt="<%= product.title %> 1" id="main-img" class="main-img">
         <div class="small-img-group">
             <div class="small-img-col">
-                <img src="/img/products/<%= product.id %>.png" alt="Prueba single product" class="small-img">
+                <img src="<%= product.image1 %>" alt="<%= product.title %> 1" class="small-img">
             </div>
             <div class="small-img-col">
-                <img src="/img/products/<%= product.id %>.png" alt="Prueba single product" class="small-img">
+                <img src="<%= product.image2 %>" alt="<%= product.title %> 2" class="small-img">
             </div>
             <div class="small-img-col">
-                <img src="/img/products/<%= product.id %>.png" alt="Prueba single product" class="small-img">
+                <img src="<%= product.image3 %>" alt="<%= product.title %> 3" class="small-img">
             </div>
             <div class="small-img-col">
-                <img src="/img/products/<%= product.id %>.png" alt="Prueba single product" class="small-img">
+                <img src="<%= product.image4 %>" alt="<%= product.title %> 4" class="small-img">
             </div>
         </div>
     </div>
     <div class="single-pro-details">
-        <h6>Once Once | Boys</h6>
-        <h4>Mameluco bebé</h4>
-        <h2><%= product.price %></h2>
+        <h6>Once Once | <%= product.category %></h6>
+        <h4><%= product.title %></h4>
+        <h2>COP $<%= product.price %></h2>
         <select>
             <option>Selecciona la talla</option>
             <option>XL</option>
@@ -30,7 +30,7 @@
         <input type="number" value="1">
         <button class="normal">Agregar Al Carrito</button>
         <h4>Detalles del Producto</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolor praesentium quasi fuga? Mollitia nostrum atque sequi. Enim nesciunt ut magnam, tempore placeat voluptate quam nam doloremque, inventore molestiae laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus facere itaque nisi sapiente nulla perferendis ut fuga error accusantium nihil laboriosam officiis minima architecto, esse aut amet consequatur. Impedit, quibusdam!</p>
+        <p><%= product.longdescription %></p>
     </div>
 </section>
 <section class="feature-products section-p1">
@@ -38,7 +38,7 @@
     <p>Colección Once Once - Valle Kids. Diseños modernos y exclusivos</p>
         <div class="product-container">
             <div class="product">
-                <img src="/img/products/9.png" alt="pro1">
+                <img src="/img/products/news-release/new1A.png" alt="pro1">
                 <div class="description">
                     <span>Once Once</span>
                     <h5>Traje para niña blanco</h5>
@@ -47,7 +47,7 @@
                 <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
             </div>
             <div class="product">
-                <img src="/img/products/10.png" alt="pro1">
+                <img src="/img/products/news-release/new2A.png" alt="pro1">
                 <div class="description">
                     <span>Once Once</span>
                     <h5>Traje para niña blanco</h5>
@@ -56,7 +56,7 @@
                 <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
             </div>
             <div class="product">
-                <img src="/img/products/11.png" alt="pro1">
+                <img src="/img/products/news-release/new3A.png" alt="pro1">
                 <div class="description">
                     <span>Once Once</span>
                     <h5>Traje para niña blanco</h5>
@@ -65,7 +65,7 @@
                 <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
             </div>
             <div class="product">
-                <img src="/img/products/12.png" alt="pro1">
+                <img src="/img/products/news-release/new4A.png" alt="pro1">
                 <div class="description">
                     <span>Once Once</span>
                     <h5>Traje para niña blanco</h5>

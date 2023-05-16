@@ -1,6 +1,6 @@
 .menu{
-    background-color: #d7d5c7;
-    color: #222;
+    background-color: #ea3f2d;
+    color: #d7d5c7;
     width: 100%;
     height: 88px;
     padding: 0 80px;
@@ -14,7 +14,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #d7d5c7;
+    background-color: #ea3f2d;
     transition: all 0.3s ease;
   }
   
@@ -44,7 +44,7 @@
   }
   
   .menu__link{
-    color: #222;
+    color: #d7d5c7;
     text-decoration: none;
     padding: 0 20px;
     display: flex;
@@ -76,7 +76,7 @@
     bottom: 0;
     width: max-content;
     transform: translateY(100%);
-    background-color: #d7d5c7;
+    background-color: #ea3f2d;
   }
   
   .menu__link--inside{

@@ -1,15 +1,7 @@
-// Controller for Girls
-
-const fs = require('fs');
+// girls.controller.js
+const { readProducts } = require('../helpers/read-products');
 
 exports.index = function(req, res) {
-
-  // Leer el archivo posts.json
-  const filePath = './public/products.json';
-  console.log('Reading file:', filePath);
-  const rawdata = fs.readFileSync(filePath, 'utf8');
-  const products = JSON.parse(rawdata).productsDB.products;
-
-  res.render('girls', { title: 'Girls', products: products, req });
+  const products = readProducts().girls;
+  res.render('girls', { title: 'Girls', products, req });
 };
-
