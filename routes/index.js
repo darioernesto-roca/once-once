@@ -13,7 +13,7 @@ router.use('/', homeRoutes);
 router.use('/inicio', homeRoutes);
 router.use('/boys', boysRoutes);
 router.use('/girls', girlsRoutes);
-router.use('/sproduct', sproductRoutes);
+router.use('/product', sproductRoutes);
 router.use('/blog', blogRoutes);
 
 

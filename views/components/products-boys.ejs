@@ -7,7 +7,7 @@
   <p>Colección Once Once - Sueños de Niñez. Para momentos memorables</p>
   <div class="product-container">
     <% products.forEach(product=> { %>
-    <div class="product" onclick="window.location.href='sproduct'">
+    <div class="product" onclick="window.location.href='/product/<%= product.id %>'">
       <img src="<%= product.image %>" alt="<%= product.title %>">
       <div class="description">
         <span>Once Once</span>
@@ -18,7 +18,7 @@
     </div>
     <% }) %>
     <% products.forEach(product=> { %>
-      <div class="product">
+      <div class="product" onclick="window.location.href='/product/<%= product.id %>'">
         <img src="<%= product.image %>" alt="<%= product.title %>">
         <div class="description">
           <span>Once Once</span>

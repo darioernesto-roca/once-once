@@ -1,25 +1,25 @@
 <section class="prodetails section-p1">
     <div class="single-pro-image">
-        <img src="/img/products/5.png" alt="Prueba single product" id="main-img" class="main-img">
+        <img src="/img/products/<%= product.id %>.png" alt="Prueba single product" id="main-img" class="main-img">
         <div class="small-img-group">
             <div class="small-img-col">
-                <img src="/img/products/5.png" alt="Prueba single product" class="small-img">
+                <img src="/img/products/<%= product.id %>.png" alt="Prueba single product" class="small-img">
             </div>
             <div class="small-img-col">
-                <img src="/img/products/6.png" alt="Prueba single product" class="small-img">
+                <img src="/img/products/<%= product.id %>.png" alt="Prueba single product" class="small-img">
             </div>
             <div class="small-img-col">
-                <img src="/img/products/7.png" alt="Prueba single product" class="small-img">
+                <img src="/img/products/<%= product.id %>.png" alt="Prueba single product" class="small-img">
             </div>
             <div class="small-img-col">
-                <img src="/img/products/8.png" alt="Prueba single product" class="small-img">
+                <img src="/img/products/<%= product.id %>.png" alt="Prueba single product" class="small-img">
             </div>
         </div>
     </div>
     <div class="single-pro-details">
         <h6>Once Once | Boys</h6>
         <h4>Mameluco bebé</h4>
-        <h2>$180.000</h2>
+        <h2><%= product.price %></h2>
         <select>
             <option>Selecciona la talla</option>
             <option>XL</option>
