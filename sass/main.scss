@@ -11,12 +11,13 @@
 @use 'components/sm-banner';
 @use 'components/top-header';
 @use 'components/pagination';
-@use 'components/sproduct';
 @use 'components/whatsapp-icon';
 
 @use 'layout/header';
 @use 'layout/footer';
 
 @use 'pages/blog';
+@use 'pages/cart';
+@use 'pages/sproduct';
 
 @use 'utilities/responsive';

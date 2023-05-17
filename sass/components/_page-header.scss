@@ -8,6 +8,12 @@
     flex-direction: column;
 }
 
+.page-header h2 {
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    font-size: 100px;
+}
+
 .boys-header {
     background-image: url(/img/assets/page-header-boys.png);
     background-size: contain;
@@ -31,8 +37,6 @@
 
 .blog-header h2 {
     font-family: 'Allison', cursive;
-    font-size: 100px;
-    color: #fff;
 }
 
 @media (max-width: 600px) {

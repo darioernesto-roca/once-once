@@ -47,10 +47,12 @@
 
 .blog .blog-details a:hover {
     color: #ea3f2d;
+    cursor: pointer;
 }
 
 .blog .blog-details a:hover::after {
     background-color: #ea3f2d;
+    cursor: pointer;
 }
 
 .blog .blog-box h1 {
