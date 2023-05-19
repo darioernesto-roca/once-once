@@ -9,8 +9,11 @@
 
 /*
 
-Color logo: #ea3f2d strong orange Cinnabar
+Color logo: #ea3f2d hsl(6, 82%, 55%) strong orange Cinnabar
+Color orange: #ea542e hsl(12, 82%, 55%);
 Color icons: #a03037 red Stiletto
+
+
 */
 
 * {
@@ -19,6 +22,7 @@ Color icons: #a03037 red Stiletto
   box-sizing: border-box;
   font-family: 'FreightDis Pro', sans-serif;
   letter-spacing: 1.5px;
+
 }
 
 body {
@@ -69,18 +73,18 @@ button.normal {
   font-weight: 600;
   padding: 15px 30px;
   color: #fff;
-  background-color: #ea3f2d;
+  background-color: #ea542e;
   border-radius: 4px;
   cursor: pointer;
-  border: solid 2px #ea3f2d;
+  border: solid 2px #ea542e;
   outline: none;
   transition: 0.3s;
 }
 
 button.normal:hover {
   background-color: #fff;
-  color: #ea3f2d;
-  border: solid 2px #ea3f2d;
+  color: hsl(12, 82%, 60%);
+  border: solid 2px #ea542e;
 }
 
 button.black {

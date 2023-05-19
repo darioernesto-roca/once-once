@@ -35,7 +35,7 @@
     
       .menu__item--active{
           --transform: rotate(0);
-          --background: hsl(53, 17%, 87%);
+          --background: hsl(12, 82%, 55%);
       }
     
       .menu__item--show{
@@ -51,7 +51,7 @@
           bottom: 0;
           right: 400px;
           justify-content: stretch;
-          background-color: #d7d5c7;
+          background-color: hsl(12, 82%, 55%);
           overflow-y: auto;
           display: grid;
           grid-auto-rows: max-content;

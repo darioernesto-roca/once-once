@@ -64,7 +64,7 @@
 
 
 .cart-remove button {
-    background-color: #ff5a5a;
+    background-color: hsl(12, 82%, 65%);
     color: #fff;
     border: solid 1px #fff;
     padding: 5px 10px;
@@ -113,8 +113,8 @@
 
 .cart-remove button:hover {
     background-color: #ffffff;
-    border: solid 1px #ff5a5a;
-    color: #ff5a5a;
+    border: solid 1px hsl(12, 82%, 60%);
+    color: hsl(12, 82%, 60%);
 }
 
 .cart-summary span {

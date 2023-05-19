@@ -28,11 +28,14 @@
             <option>S</option>
         </select>
         <input type="number" value="1">
-        <button class="normal">Agregar Al Carrito</button>
+        <button class="normal" id="addToCartBtn" data-title="<%= product.title %>" data-price="<%= product.price %>" data-image="<%= product.image1 %>">Agregar Al Carrito</button>
         <h4>Detalles del Producto</h4>
         <p><%= product.shortdescription %></p>
         <p><%= product.longdescription %></p>
-        <a class="return" onclick="window.location.href= document.referrer">Seguir comprando</a>
+        <div class="single-pro-links">
+            <a onclick="window.location.href= document.referrer">Seguir Comprando</a>
+            <a href="/carrito-de-compras">Ir al Carrito</a>
+        </div>
     </div>
 </section>
 <section class="feature-products section-p1">
@@ -78,4 +81,4 @@
         </div>
 </section>
 
-<script async defer type="module" src="/sproduct.js"></script>
+<script type="module" src="/sproduct.js"></script>

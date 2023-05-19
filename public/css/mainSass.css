@@ -7,8 +7,11 @@
 }
 /*
 
-Color logo: #ea3f2d strong orange Cinnabar
+Color logo: #ea3f2d hsl(6, 82%, 55%) strong orange Cinnabar
+Color orange: #ea542e hsl(12, 82%, 55%);
 Color icons: #a03037 red Stiletto
+
+
 */
 * {
   margin: 0;
@@ -66,18 +69,18 @@ button.normal {
   font-weight: 600;
   padding: 15px 30px;
   color: #fff;
-  background-color: #ea3f2d;
+  background-color: #ea542e;
   border-radius: 4px;
   cursor: pointer;
-  border: solid 2px #ea3f2d;
+  border: solid 2px #ea542e;
   outline: none;
   transition: 0.3s;
 }
 
 button.normal:hover {
   background-color: #fff;
-  color: #ea3f2d;
-  border: solid 2px #ea3f2d;
+  color: hsl(12deg, 82%, 60%);
+  border: solid 2px #ea542e;
 }
 
 button.black {
@@ -228,7 +231,7 @@ button.black {
 }
 
 .menu {
-  background-color: #ea3f2d;
+  background-color: hsl(12deg, 82%, 55%);
   color: #d7d5c7;
   width: 100%;
   height: 88px;
@@ -243,7 +246,7 @@ button.black {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #ea3f2d;
+  background-color: hsl(12deg, 82%, 55%);
   transition: all 0.3s ease;
 }
 
@@ -272,7 +275,7 @@ button.black {
 }
 
 .menu__link {
-  color: #d7d5c7;
+  color: #fff;
   text-decoration: none;
   padding: 0 20px;
   display: flex;
@@ -283,8 +286,8 @@ button.black {
 
 .menu__link:hover,
 .menu__link--inside:hover {
-  background-color: hsl(53deg, 17%, 87%);
-  color: #ea3f2d;
+  background-color: hsl(12deg, 82%, 60%);
+  color: rgb(255, 255, 255);
 }
 
 .menu__arrow {
@@ -303,7 +306,7 @@ button.black {
   bottom: 0;
   width: max-content;
   transform: translateY(100%);
-  background-color: #ea3f2d;
+  background-color: hsl(12deg, 82%, 55%);
 }
 
 .menu__link--inside {
@@ -790,7 +793,7 @@ footer .copyright {
 }
 
 .cart-remove button {
-  background-color: #ff5a5a;
+  background-color: hsl(12deg, 82%, 65%);
   color: #fff;
   border: solid 1px #fff;
   padding: 5px 10px;
@@ -838,8 +841,8 @@ footer .copyright {
 /* Estilos adicionales */
 .cart-remove button:hover {
   background-color: #ffffff;
-  border: solid 1px #ff5a5a;
-  color: #ff5a5a;
+  border: solid 1px hsl(12deg, 82%, 60%);
+  color: hsl(12deg, 82%, 60%);
 }
 
 .cart-summary span {
@@ -920,7 +923,15 @@ footer .copyright {
   line-height: 25px;
 }
 
-.single-pro-details .return {
+.single-pro-links {
+  display: flex;
+  justify-content: flex-start;
+  align-content: baseline;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+.single-pro-details a {
   text-decoration: none;
   font-size: 11px;
   color: #222;
@@ -930,7 +941,7 @@ footer .copyright {
   transition: 0.3s ease;
 }
 
-.single-pro-details .return::after {
+.single-pro-details a::after {
   content: "";
   width: 50px;
   height: 1px;
@@ -940,12 +951,12 @@ footer .copyright {
   right: -60px;
 }
 
-.single-pro-details .return:hover {
+.single-pro-details a:hover {
   color: #ea3f2d;
   cursor: pointer;
 }
 
-.single-pro-details .return:hover::after {
+.single-pro-details a:hover::after {
   background-color: #ea3f2d;
   cursor: pointer;
 }
@@ -979,7 +990,7 @@ footer .copyright {
   }
   .menu__item--active {
     --transform: rotate(0);
-    --background: hsl(53, 17%, 87%);
+    --background: hsl(12, 82%, 55%);
   }
   .menu__item--show {
     background-color: var(--background);
@@ -992,7 +1003,7 @@ footer .copyright {
     bottom: 0;
     right: 400px;
     justify-content: stretch;
-    background-color: #d7d5c7;
+    background-color: hsl(12deg, 82%, 55%);
     overflow-y: auto;
     display: grid;
     grid-auto-rows: max-content;
