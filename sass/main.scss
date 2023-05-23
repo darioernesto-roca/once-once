@@ -4,8 +4,10 @@
 @use 'components/banner';
 @use 'components/feature';
 @use 'components/hero';
+@use 'components/cover-us';
 @use 'components/logo';
 @use 'components/menu';
+@use 'components/newsletter';
 @use 'components/page-header';
 @use 'components/products';
 @use 'components/sm-banner';
@@ -19,5 +21,6 @@
 @use 'pages/blog';
 @use 'pages/cart';
 @use 'pages/sproduct';
+@use 'pages/us';
 
 @use 'utilities/responsive';

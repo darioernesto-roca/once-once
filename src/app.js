@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, "../public")));
 
 // Set the PORT
 app.listen(PORT, () =>
-  console.log(`Server listening in port: localhost:${PORT}`)
+  console.log(`Server listening in port: http://localhost:${PORT}`)
 );
 
 // Set Template Engine

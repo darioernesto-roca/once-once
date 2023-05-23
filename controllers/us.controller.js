@@ -2,6 +2,6 @@
 
 exports.index = function (req, res) {
     res.render("us", {
-        title: "Sobre mí",
+        title: "Nosotros",
     })
 }

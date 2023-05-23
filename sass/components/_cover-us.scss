@@ -1,0 +1,33 @@
+.us-cover {
+    background-image: url(/img/assets/cover-us.jpg);
+    height: 90vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 15% right 25%;
+    background-color: #d7d5c7;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    /* min-width: 768px; */
+  }
+  
+  .us-cover__text {
+    padding: 0 80px;
+  }
+ 
+  .us-cover__text h1 {
+    color: #ea542e;
+    font-size: 60px;
+  }
+
+  .us-cover__text h3 {
+    font-size: 30px;
+  }
+
+  .us-cover__text p {
+    font-size: 20px;
+    color: #000;
+  }
