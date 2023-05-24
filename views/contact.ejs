@@ -3,18 +3,35 @@
   
 </section>
 
-<section class="page__container">
-<% if (typeof success_msg !== 'undefined' && success_msg) { %>
-  <div >
-    <p class="success-msg"><%= success_msg %></p>
-    <p class="success-link"><a class="normal" href="/inicio">Regresar a Inicio</a></p>
+<div id="success-modal" class="modal">
+  <div class="modal-content">
+    <p class="success-msg"><span id="success-message"></span></p>
+    <div class="modal-buttons">
+      <p class="success-link"><a class="normal modal-link" href="/inicio">Regresar a Inicio</a></p>
+      <p class="success-link"><a class="normal modal-link" href="/Contacto">Regresar a Contacto</a></p>
+    </div>
   </div>
+</div>
+
+<section class="page__container">
+  <% if (typeof success_msg !== 'undefined' && success_msg) { %>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('success-modal');
+        const successMessage = document.getElementById('success-message');
+  
+        successMessage.textContent = '<%= success_msg %>';
+        modal.classList.add('show');
+  
+
+      });
+    </script>
   <% } %>
+  
       <div class="form-container">
       <h2 class="form-title">Contáctanos</h2>
-      <p class="header-paragraph">Agenda una cita para visitarnos en nuestro almacén, en la Calle 11 # 8 - 47, Novalito (Dentro de Bella Boda)</p>
-      <p class="header-paragraph">También nos puedes contactar en <a href="https://api.whatsapp.com/send?phone=573234273817&amp;text=Hola, estuve visitando su sitio Web y quisiera obtener más información sobre Once Once, sus productos y servicios."
-        target="_blank"><strong>Teléfono: </strong>605 304 3761576</a></p>
+      <p class="header-paragraph">Agenda una cita para visitarnos en nuestro almacén, en la Calle 11 # 8 - 47, Novalito (Dentro de Bella Boda). También nos puedes contactar en el <a href="https://api.whatsapp.com/send?phone=573234273817&amp;text=Hola, estuve visitando su sitio Web y quisiera obtener más información sobre Once Once, sus productos y servicios."
+        target="_blank"><strong>teléfono: </strong>605 304 3761576</a></p>
         <form class="contact-form" action="/contacto" method="POST">
             <div class="form-group">
                 <label class="form-label" for="name">Nombre</label>
@@ -45,7 +62,7 @@
                 <% } %>
             </div>
             <div class="form-group">
-              <div class="help">Por favor selecciona el tipo de servicio en el que te encuentras interesado.</div>
+              <div class="help">Por favor selecciona el tipo de servicio.</div>
                 <label for="service">Servicios</label>
                 <select id="service" name="service" required>
                     <option value="" disabled selected>Selecciona uno</option>
@@ -59,7 +76,7 @@
             </div>
             <div class="form-group">
                 <label for="message">Mensaje</label>
-                <textarea class="form-textarea" name="message" id="message" cols="40" rows="10" placeholder="Háblame sobre ti y describe brevemente el tema del cuál quieres hablar"></textarea>
+                <textarea class="form-textarea" name="message" id="message" cols="40" rows="10" placeholder="Escribe aquí tu mensaje..."></textarea>
                 <div class="help">El mensaje no puede tener más de 500 palabras.</div>
             </div>
             <div class="form-group">
