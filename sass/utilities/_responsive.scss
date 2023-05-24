@@ -14,15 +14,16 @@
 
   .us-text__container {
     flex-direction: column-reverse;
+    gap: 0;
   }
 
   .us-video {
     margin-top: 30px;
-    margin-bottom: 20px;
 }
 
   .us-block {
     width: 100%;
+    margin-top: 20px;
   }
 
   }
