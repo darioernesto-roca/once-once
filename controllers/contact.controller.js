@@ -44,9 +44,9 @@ exports.sendEmail = async (req, res) => {
 
     // Sets data for emails
     const mailOptions = {
-      from: "ivopabon2@hotmail.com",
-      to: "ivopabon0@gmail.com",
-      subject: "Mensaje de Consultorio Web Ivo Pabón | Psicoterapia",
+      from: "test@gmail.com",
+      to: "darioernesto.roca@gmail.com",
+      subject: "Mensaje de Tienda Virtual | Once Once",
       html: `
           <p>Nombre: ${name}</p>
           <p>Teléfono: ${phone}</p>
@@ -60,14 +60,14 @@ exports.sendEmail = async (req, res) => {
     // Sends the email
     const info = await transporter.sendMail(mailOptions);
 
-    console.log("Mensaje enviado: %s", info.messageId);
+    console.log("Mensaje enviado: ", info.messageId);
     res.render("contact", {
       title: "Contacto",
-      errors: errors,
-      success_msg: "*Su mensaje ha sido enviado, nos pondremos en contacto con usted para confirmar su cita",
+      errors: errors.mapped(),
+      success_msg: "*Su mensaje ha sido enviado",
     });
   } catch (error) {
     console.log(error);
-    res.render("contact", { error_msg: "Error al enviar el mensaje", title: "Contacto"});
+    res.render("contact", { errors: error, title: "Contacto"});
   }
 };

@@ -98,3 +98,65 @@ button.black {
   outline: none;
   transition: 0.3s;
 }
+
+a.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #ea542e;
+  border-radius: 4px;
+  cursor: pointer;
+  border: solid 2px #ea542e;
+  outline: none;
+  transition: 0.3s;
+}
+
+a.normal:hover {
+  background-color: #fff;
+  color: hsl(12, 82%, 60%);
+  border: solid 2px #ea542e;
+}
+
+a.black {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #000;
+  background-color: transparent;
+  cursor: pointer;
+  border: solid 1px #000;
+  outline: none;
+  transition: 0.3s;
+}
+
+input.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #ea542e;
+  border-radius: 4px;
+  cursor: pointer;
+  border: solid 2px #ea542e;
+  outline: none;
+  transition: 0.3s;
+}
+
+input.normal:hover {
+  background-color: #fff;
+  color: hsl(12, 82%, 60%);
+  border: solid 2px #ea542e;
+}
+
+input.black {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #000;
+  background-color: transparent;
+  cursor: pointer;
+  border: solid 1px #000;
+  outline: none;
+  transition: 0.3s;
+}

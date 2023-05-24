@@ -1,14 +1,20 @@
-<section class="page__container"></section>
-<h1 class="page-title"><%- title %></h1>
+<section class="page-header boys-header">
+  <h2>Contacto</h2>
+  
+</section>
+
+<section class="page__container">
 <% if (typeof success_msg !== 'undefined' && success_msg) { %>
   <div >
     <p class="success-msg"><%= success_msg %></p>
-    <p class="success-link"><a href="/inicio">Regresar a Inicio</a></p>
+    <p class="success-link"><a class="normal" href="/inicio">Regresar a Inicio</a></p>
   </div>
   <% } %>
       <div class="form-container">
-      <h2 class="form-title">Agenda tu cita aquí 📩</h2>
-      <p class="header-paragraph">👋, si te interesa conversar, aquí estaré, deja tus datos en el siguiente formulario y te escribiré de vuelta.</p>
+      <h2 class="form-title">Contáctanos</h2>
+      <p class="header-paragraph">Agenda una cita para visitarnos en nuestro almacén, en la Calle 11 # 8 - 47, Novalito (Dentro de Bella Boda)</p>
+      <p class="header-paragraph">También nos puedes contactar en <a href="https://api.whatsapp.com/send?phone=573234273817&amp;text=Hola, estuve visitando su sitio Web y quisiera obtener más información sobre Once Once, sus productos y servicios."
+        target="_blank"><strong>Teléfono: </strong>605 304 3761576</a></p>
         <form class="contact-form" action="/contacto" method="POST">
             <div class="form-group">
                 <label class="form-label" for="name">Nombre</label>
@@ -43,12 +49,12 @@
                 <label for="service">Servicios</label>
                 <select id="service" name="service" required>
                     <option value="" disabled selected>Selecciona uno</option>
-                    <option value="Terapia individual">Terapia individual</option>
-                    <option value="Terapia de pareja">Terapia de pareja</option>
-                    <option value="Terapia familiar">Terapia familiar</option>
-                    <option value="Terapia de grupo">Terapia de grupo</option>
-                    <option value="Terapia institucional">Terapia institucional</option>
-                    <option value="Clase magistral o conferencia">Clase magistral o conferencia</option>
+                    <option value="Cotizar o comprar una prenda">Cotizar o comprar una prenda</option>
+                    <option value="Agendar una cita">Agendar una cita</option>
+                    <option value="Conocer más sobre nuestros productos">Conocer más sobre nuestros productos</option>
+                    <option value="Promociones">Promociones</option>
+                    <option value="Hecho a la medida">Hecho a la medida</option>
+                    <option value="Asesorías de estilo">Asesorías de estilo</option>
                 </select>
             </div>
             <div class="form-group">
@@ -63,7 +69,7 @@
                 </label>
             </div>
             <div class="button-container">
-                <input type="submit" value="Enviar" class="send-button">
+                <input type="submit" value="Enviar" class="normal">
             </div>
         </form>
 

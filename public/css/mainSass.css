@@ -95,6 +95,68 @@ button.black {
   transition: 0.3s;
 }
 
+a.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #ea542e;
+  border-radius: 4px;
+  cursor: pointer;
+  border: solid 2px #ea542e;
+  outline: none;
+  transition: 0.3s;
+}
+
+a.normal:hover {
+  background-color: #fff;
+  color: hsl(12deg, 82%, 60%);
+  border: solid 2px #ea542e;
+}
+
+a.black {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #000;
+  background-color: transparent;
+  cursor: pointer;
+  border: solid 1px #000;
+  outline: none;
+  transition: 0.3s;
+}
+
+input.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #ea542e;
+  border-radius: 4px;
+  cursor: pointer;
+  border: solid 2px #ea542e;
+  outline: none;
+  transition: 0.3s;
+}
+
+input.normal:hover {
+  background-color: #fff;
+  color: hsl(12deg, 82%, 60%);
+  border: solid 2px #ea542e;
+}
+
+input.black {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #000;
+  background-color: transparent;
+  cursor: pointer;
+  border: solid 1px #000;
+  outline: none;
+  transition: 0.3s;
+}
+
 .bag-icon {
   max-width: 20px;
   width: 20px;
@@ -396,6 +458,7 @@ button.black {
 .newsletter .form {
   display: flex;
   width: 40%;
+  min-width: 340px;
 }
 
 .newsletter input {
@@ -653,7 +716,7 @@ button.black {
 
 .pagination a {
   text-decoration: none;
-  background-color: #a03037;
+  background-color: hsl(12deg, 82%, 40%);
   padding: 15px 20px;
   border-radius: 4px;
   color: #fff;
@@ -942,6 +1005,142 @@ footer .copyright {
   margin-bottom: 0;
 }
 
+.page-container {
+  width: 100%;
+}
+
+.form-container {
+  background-color: hsl(0deg, 0%, 98%);
+  font-family: "Roboto", sans-serif;
+  line-height: 2em;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 1px 40px;
+  box-shadow: 1px 1px 10px 1px hsla(0deg, 0%, 0%, 0.2);
+}
+
+.form-title,
+.header-paragraph,
+.form-container {
+  color: #333;
+}
+
+.form-title {
+  padding-top: 1em;
+}
+
+.header-paragraph {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.form-group {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.form-label,
+.form-input,
+.form-textarea {
+  width: 94%;
+  display: block;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.form-label,
+.form-legend {
+  font-weight: 700;
+  font-size: 14px;
+  color: #444;
+}
+
+.form-input[type=text],
+.form-input[type=email],
+.form-input[type=phone],
+.form-textarea {
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+  max-width: 400px;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: hsl(0deg, 0%, 65%);
+}
+
+.help {
+  font-size: 12px;
+  margin-top: 10px;
+  color: gray;
+}
+
+.send-button {
+  font-size: 1em;
+  font-weight: 700;
+  border: #f0f0f0 solid 2px;
+  border-radius: 60px;
+  color: #f0f0f0;
+  text-shadow: -1px -1px rgba(51, 51, 51, 0.431372549);
+  padding: 10px 40px;
+  background-color: hsl(194deg, 52%, 46%);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5490196078);
+}
+
+.send-button:hover,
+.main__btn-container__btn-reserve:hover {
+  background-color: #f23465;
+  border-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.send-button:active,
+.main__btn-container__btn-reserve:active {
+  background-color: hsla(194deg, 52%, 76%, 0.5);
+  border-color: hsla(194deg, 52%, 76%, 0.5);
+  color: rgba(139, 139, 139, 0.8352941176);
+}
+
+.button-container {
+  margin: 50px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-form {
+  accent-color: hsl(5deg, 70%, 90%);
+}
+
+.form-input:focus-visible,
+.form-textarea:focus-visible {
+  outline: 2px solid #40a1be;
+}
+
+.main__btn-container__btn-reserve {
+  text-align: center;
+  background-color: #3997b4;
+  width: 180px;
+  height: 1.5em;
+  padding: 10px;
+  border: #f0f0f0 solid 2px;
+  border-radius: 25px;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5490196078);
+}
+
+.main__btn-container {
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+}
+
 .prodetails {
   display: flex;
   margin-top: 20px;
@@ -1190,7 +1389,11 @@ footer .copyright {
   .hero {
     padding: 40px 0;
   }
-  /* Blog page */
+  /* Us Page*/
+  .us-text {
+    padding: 80px 40px 0 40px;
+  }
+  /* Blog Page */
   .blog {
     padding: 100px 20px 0 20px;
   }
@@ -1211,6 +1414,10 @@ footer .copyright {
 @media (max-width: 560px) {
   .hero {
     padding: 50px 0;
+  }
+  /* Us Page*/
+  .us-text {
+    padding: 40px 40px 0 40px;
   }
   .us-cover {
     padding: 50px 0;
