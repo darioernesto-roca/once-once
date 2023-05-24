@@ -11,13 +11,20 @@
   }
 
   /* Us page */
-  .us-text__block {
+
+  .us-text__container {
+    flex-direction: column-reverse;
+  }
+
+  .us-video {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+  .us-block {
     width: 100%;
   }
 
-  .us-text__container .feature-section {
-    display: none;
-  }
   }
 
 @media (max-width:800px){

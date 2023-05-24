@@ -1314,8 +1314,16 @@ footer .copyright {
   gap: 20px;
 }
 
-.us-text__block {
+.us-block {
   width: 50%;
+  margin-top: 30px;
+}
+
+.us-video {
+  border-radius: 25px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
 }
 
 @media (max-width: 1020px) {
@@ -1328,11 +1336,15 @@ footer .copyright {
     padding: 0 10px;
   }
   /* Us page */
-  .us-text__block {
-    width: 100%;
+  .us-text__container {
+    flex-direction: column-reverse;
   }
-  .us-text__container .feature-section {
-    display: none;
+  .us-video {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .us-block {
+    width: 100%;
   }
 }
 @media (max-width: 800px) {
