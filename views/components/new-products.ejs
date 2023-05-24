@@ -2,78 +2,17 @@
 <section class="feature-products section-p1">
     <h2>Nuevos diseños</h2>
     <p>Colección Once Once - Valle Kids. Diseños modernos y exclusivos</p>
-        <div class="product-container">
-            <div class="product">
-                <img src="img/products/girls/girls5A.png" alt="pro1">
-                <div class="description">
-                    <span>Once Once</span>
-                    <h5>Traje para niña blanco</h5>
-                    <h4>COP $180,000</h4>
-                </div>
-                <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
-            </div>
-            <div class="product">
-                <img src="img/products/girls/girls6A.png" alt="pro1">
-                <div class="description">
-                    <span>Once Once</span>
-                    <h5>Traje para niña blanco</h5>
-                    <h4>COP $180,000</h4>
-                </div>
-                <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
-            </div>
-            <div class="product">
-                <img src="img/products/girls/girls7A.png" alt="pro1">
-                <div class="description">
-                    <span>Once Once</span>
-                    <h5>Traje para niña blanco</h5>
-                    <h4>COP $180,000</h4>
-                </div>
-                <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
-            </div>
-            <div class="product">
-                <img src="img/products/boys/boys5A.png" alt="pro1">
-                <div class="description">
-                    <span>Once Once</span>
-                    <h5>Traje para niña blanco</h5>
-                    <h4>COP $180,000</h4>
-                </div>
-                <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
-            </div>
-            <div class="product">
-                <img src="img/products/boys/boys6A.png" alt="pro1">
-                <div class="description">
-                    <span>Once Once</span>
-                    <h5>Traje para niña blanco</h5>
-                    <h4>COP $180,000</h4>
-                </div>
-                <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
-            </div>
-            <div class="product">
-                <img src="img/products/boys/boys7A.png" alt="pro1">
-                <div class="description">
-                    <span>Once Once</span>
-                    <h5>Traje para niña blanco</h5>
-                    <h4>COP $180,000</h4>
-                </div>
-                <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
-            </div>
-            <div class="product">
-                <img src="img/products/boys/boys8A.png" alt="pro1">
-                <div class="description">
-                    <span>Once Once</span>
-                    <h5>Traje para niña blanco</h5>
-                    <h4>COP $180,000</h4>
-                </div>
-                <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
-            </div>
-            <div class="product">
-                <img src="img/products/girls/girls8A.png" alt="pro1">
-                <div class="description">
-                    <span>Once Once</span>
-                    <h5>Traje para niña blanco</h5>
-                    <h4>COP $180,000</h4>
-                </div>
-                <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
-            </div>
+    <div class="product-container">
+      <% news.forEach(product=> { %>
+      <div class="product" onclick="window.location.href='/product/<%= product.id %>'">
+        <img src="<%= product.image1 %>" alt="<%= product.title %>">
+        <div class="description">
+          <span>Once Once</span>
+          <h5><%= product.title %></h5>
+          <h4><%= product.price %></h4>
         </div>
+        <a href="/product/<%= product.id %>"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
+      </div>
+      <% }) %>
+  </div>
 </section>

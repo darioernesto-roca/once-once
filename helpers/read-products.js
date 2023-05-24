@@ -9,3 +9,22 @@ exports.readProducts = function() {
   
   return productsDB;
 };
+
+exports.readFeatures = function() {
+  const filePath = './public/features.json';
+  console.log('Reading file:', filePath);
+  const rawdata = fs.readFileSync(filePath, 'utf8');
+  const featuresDB = JSON.parse(rawdata).featuresDB;
+  
+  return featuresDB;
+};
+
+exports.readNews = function() {
+  const filePath = './public/news.json';
+  console.log('Reading file:', filePath);
+  const rawdata = fs.readFileSync(filePath, 'utf8');
+  const newsDB = JSON.parse(rawdata).newsDB;
+  
+  return newsDB;
+};
+

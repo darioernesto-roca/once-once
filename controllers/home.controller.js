@@ -1,75 +1,19 @@
 // home.controller.js
+const { readFeatures, readNews } = require('../helpers/read-products');
 
-// require('dotenv').config();
-// const nodemailer = require("nodemailer");
-// const mg = require("nodemailer-mailgun-transport");
-// const { validationResult } = require("express-validator");
+// exports.index = (req, res) => {
+//   const errors = req.query.errors;
+//   res.render("home", {
+//     title: "Once Once",
+//     errors,
+//     success_msg: req.query.success,
+//   });
+// };
 
-
-exports.index = (req, res) => {
-  const errors = req.query.errors;
-  res.render("home", {
-    title: "Once Once",
-    errors,
-    success_msg: req.query.success,
-  });
+exports.index = function(req, res) {
+  console.log('entró al controlador de home');
+  const features = readFeatures();
+  const news = readNews();
+  res.render('home', { title: 'Once Once', features, news, req });
 };
 
-// Sets Nodemailer transporter with Mailgun credentials
-
-/*
-
-const auth = {
-  auth: {
-    api_key: process.env.MAILGUN_API_KEY,
-    domain: process.env.MAILGUN_DOMAIN,
-  },
-};
-
-const transporter = nodemailer.createTransport(mg(auth));
-
-exports.sendEmail = async (req, res) => {
-  try {
-    // Get validation errors
-    const errors = validationResult(req);
-
-    // Verify if there are errors in validation
-    if (!errors.isEmpty()) {
-      return res.render("home", {
-        title: "Ivo Pabón | Psicoterapia",
-        errors: errors.mapped(),
-      })
-    }
-
-    // If there's no errors continue with the process
-    const { name, phone, email, message } = req.body;
-
-    // Sets data for emails
-    const mailOptions = {
-      from: "Nombre <informacion@labanalisis.com>",
-      to: "darioernesto.roca@gmail.com",
-      subject: "Mensaje de Consultorio psicológico",
-      html: `
-          <p>Nombre: ${name}</p>
-          <p>Teléfono: ${phone}</p>
-          <p>Correo electrónico: ${email}</p>
-          <p>Mensaje: ${message}</p>
-        `,
-    };
-
-    // Sends the email
-    const info = await transporter.sendMail(mailOptions);
-    console.log("Mensaje enviado: %s", info.messageId);
-
-    res.render("home", {
-      title: "Ivo Pabón | Psicoterapia",
-      errors: errors,
-      success_msg: "*Su mensaje ha sido enviado, nos pondremos en contacto con usted para confirmar su cita",
-    });
-  } catch (error) {
-    console.log(error);
-    res.render("home", { error_msg: "Error al enviar el mensaje" });
-  }
-};
-
-*/
