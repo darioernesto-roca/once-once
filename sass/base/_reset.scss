@@ -160,3 +160,33 @@ input.black {
   outline: none;
   transition: 0.3s;
 }
+
+.link-pages {
+  text-decoration: none;
+  font-size: 11px;
+  color: #222;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.link-pages::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+
+.link-pages:hover {
+  color: #ea3f2d;
+  cursor: pointer;
+}
+
+.link-pages:hover::after {
+  background-color: #ea3f2d;
+  cursor: pointer;
+}

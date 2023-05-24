@@ -1,0 +1,19 @@
+ 
+  <section class="feature-products section-p1">
+    <p>Productos de <%- title %> para niñas</p>
+    <div class="product-container">
+      <% products.forEach(product => { %>
+      <div class="product" onclick="window.location.href='/product/<%= product.id %>'">
+        <img src="<%= product.image1 %>" alt="<%= product.title %>">
+        <div class="description">
+          <span>Once Once</span>
+          <h5><%= product.title %></h5>
+          <h4><%= product.price %></h4>
+        </div>
+        <a href="/product/<%= product.id %>"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
+      </div>
+      <% }) %>
+    </div>
+  </section>
+
+  

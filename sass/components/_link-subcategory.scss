@@ -1,0 +1,25 @@
+
+.container__link-subcategory {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.link-subcategory {
+    text-decoration: none;
+    font-size: 11px;
+    color: #222;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+  }
+  
+  
+  .link-subcategory:hover {
+    color: #ea3f2d;
+    cursor: pointer;
+  }
+  

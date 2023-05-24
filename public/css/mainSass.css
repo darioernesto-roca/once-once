@@ -157,6 +157,36 @@ input.black {
   transition: 0.3s;
 }
 
+.link-pages {
+  text-decoration: none;
+  font-size: 11px;
+  color: #222;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.link-pages::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+
+.link-pages:hover {
+  color: #ea3f2d;
+  cursor: pointer;
+}
+
+.link-pages:hover::after {
+  background-color: #ea3f2d;
+  cursor: pointer;
+}
+
 .bag-icon {
   max-width: 20px;
   width: 20px;
@@ -286,6 +316,29 @@ input.black {
 .hero button:hover {
   color: #fff;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container__link-subcategory {
+  display: flex;
+  width: 600px;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.link-subcategory {
+  text-decoration: none;
+  font-size: 11px;
+  color: #222;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.link-subcategory:hover {
+  color: #ea3f2d;
+  cursor: pointer;
 }
 
 .us-cover {
