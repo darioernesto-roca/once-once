@@ -22,7 +22,7 @@
     color: #c99e35;
   }
   
-  .hero button {
+  .hero .cover-button {
     background-image: url(/img/assets/hero-button.png);
     background-color: transparent;
     background-size: contain;
@@ -38,7 +38,11 @@
     transition: 0.3s ease;
   }
   
-  .hero button:hover {
+  .hero .cover-button:hover {
     color: #fff;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .hero a {
+    text-decoration: none;
   }

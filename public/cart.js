@@ -2,22 +2,93 @@
 const cartContainer = document.getElementById('cartContainer');
 
 // Obtener los productos del localStorage
-const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-// Variable para almacenar la suma de las cantidades
-let totalQuantity = 0;
+// Función para eliminar un producto del carrito
+function removeProduct(index) {
+  // Eliminar el producto del array cartItems
+  cartItems.splice(index, 1);
 
-// Variable para almacenar la suma total de precios
-let totalPrice = 0;
+  // Actualizar el localStorage con el nuevo array de productos
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
-// Generar el HTML para cada producto y agregarlo al contenedor del car
-cartItems.forEach(product => {
-  const { title, price, image } = product;
+  // Vaciar el contenido del contenedor del carrito
+  cartContainer.innerHTML = '';
 
-    // Convierte el precio a un número de punto flotante
+  // Volver a generar el HTML para cada producto
+  cartItems.forEach((product, index) => {
+    const { title, price, image, quantity } = product;
+
+    const productHTML = `
+      <div class="cart-product">
+        <img src="${image}" alt="${title}">
+        <div class="cart-description">
+          <h5>${title}</h5>
+          <h4>COP $${price}</h4>
+        </div>
+        <div class="cart-quantity">
+          <input type="number" value="${quantity}">
+          <button class="normal update-btn">Actualizar</button>
+        </div>
+        <div class="cart-remove">
+          <button class="normal btn-remove">Eliminar</button>
+        </div>
+      </div>
+    `;
+
+    cartContainer.insertAdjacentHTML('beforeend', productHTML);
+
+    const updateBtn = cartContainer.querySelector(`.cart-product:nth-child(${index + 1}) .update-btn`);
+
+    updateBtn.addEventListener('click', () => {
+      const quantityInput = updateBtn.previousElementSibling;
+      const quantity = parseInt(quantityInput.value);
+      updateQuantity(index, quantity);
+    });
+
+    const removeBtn = cartContainer.querySelector(`.cart-product:nth-child(${index + 1}) .btn-remove`);
+
+    removeBtn.addEventListener('click', () => {
+      removeProduct(index);
+    });
+  });
+
+  updateTotals();
+}
+
+// Función para actualizar la cantidad
+function updateQuantity(index, quantity) {
+  // Actualizar la cantidad del producto en el array cartItems
+  cartItems[index].quantity = quantity;
+
+  // Actualizar el localStorage con el nuevo array de productos
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  updateTotals();
+}
+
+// Función para actualizar las cantidades y los totales
+function updateTotals() {
+  let totalQuantity = 0;
+  let totalPrice = 0;
+
+  cartItems.forEach((product) => {
+    const { price, quantity } = product;
     const productPrice = parseInt(price);
+    totalQuantity += quantity;
+    totalPrice += productPrice * quantity;
+  });
 
-  // Generar el HTML para un producto
+  const totalProductsElement = document.getElementById('totalProducts');
+  totalProductsElement.innerText = totalQuantity.toString();
+
+  const totalAmountElement = document.getElementById('totalAmount');
+  totalAmountElement.innerText = `COP $${totalPrice}`;
+}
+
+// Generar el HTML para cada producto y agregarlo al contenedor del carrito
+cartItems.forEach((product, index) => {
+  const { title, price, image, quantity } = product;
+
   const productHTML = `
     <div class="cart-product">
       <img src="${image}" alt="${title}">
@@ -26,46 +97,30 @@ cartItems.forEach(product => {
         <h4>COP $${price}</h4>
       </div>
       <div class="cart-quantity">
-        <input type="number" value="1">
+        <input type="number" value="${quantity}">
         <button class="normal update-btn">Actualizar</button>
       </div>
       <div class="cart-remove">
-        <button class="normal">Eliminar</button>
+        <button class="normal btn-remove">Eliminar</button>
       </div>
     </div>
   `;
 
-  // Agregar el producto al contenedor del carrito
   cartContainer.insertAdjacentHTML('beforeend', productHTML);
 
-  // Obtener la referencia al botón "Actualizar" del producto recién agregado
-  const updateBtn = cartContainer.querySelector('.update-btn');
+  const updateBtn = cartContainer.querySelector(`.cart-product:nth-child(${index + 1}) .update-btn`);
 
-  // Agregar el evento click al botón "Actualizar"
   updateBtn.addEventListener('click', () => {
-    // Obtener el valor del input de cantidad correspondiente
     const quantityInput = updateBtn.previousElementSibling;
     const quantity = parseInt(quantityInput.value);
-
-    // Llamar a la función updateQuantity con el valor de cantidad
-    updateQuantity(quantity);
+    updateQuantity(index, quantity);
   });
 
-  // Actualizar las cantidades y precios totales
-  totalQuantity += 1;
-  totalPrice += productPrice;
+  const removeBtn = cartContainer.querySelector(`.cart-product:nth-child(${index + 1}) .btn-remove`);
+
+  removeBtn.addEventListener('click', () => {
+    removeProduct(index);
+  });
 });
 
-  // Función para actualizar la cantidad
-  function updateQuantity(quantity) {
-  // Actualizar la variable totalQuantity
-  totalQuantity = parseInt(quantity);
-
-  // Actualizar la vista del total de productos
-  const totalProductsElement = document.getElementById('totalProducts');
-  totalProductsElement.innerText = totalQuantity.toString();
-
-  // Actualizar el total a pagar
-  const totalAmountElement = document.getElementById('totalAmount');
-  totalAmountElement.innerText = `COP $${totalPrice * totalQuantity}`;
-  }
+updateTotals();

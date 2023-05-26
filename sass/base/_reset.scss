@@ -27,6 +27,11 @@ Color icons: #a03037 red Stiletto
 
 body {
     background-color: whitesmoke;
+    background-image: url(/img/assets/background-body.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100vw;
     min-width: 400px;
     margin: 0 auto;
@@ -71,7 +76,7 @@ p {
 button.normal {
   font-size: 14px;
   font-weight: 600;
-  padding: 15px 30px;
+  padding: 13px 30px;
   color: #fff;
   background-color: #ea542e;
   border-radius: 4px;
