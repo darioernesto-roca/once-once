@@ -4,14 +4,12 @@
       padding-right: 40px;
     }
 
-    .hero {
-      background-size: 70%;
-    }
   }
 
 @media (max-width: 964px) {
   .hero {
-    background-position: top 0% right 25%;
+    height: 100vh;
+    background-position: top 0 right -20%;
   }
 }
 
@@ -138,12 +136,18 @@
       }
   
      .hero {
-      height: 80vh;
+      height: 100vh;
       padding: 0 80px;
       background-position: top 0 right -75%;
       background-size: 80%;
       justify-content: flex-end;
      }
+
+     .hero .hero-text-background {
+      padding: 10px;
+      background-color: #ffffff9f;
+      border-radius: 7px;
+    }
 
      .us-cover {
       height: 80vh;
@@ -151,6 +155,7 @@
      }
   
      .feature {
+      display: none;
       justify-content: center;
       gap: 10px;
      }
@@ -178,8 +183,6 @@
 @media (max-width:680px) {
     .hero {
       padding: 40px 0;
-      background-size: cover;
-      background-position: top 0 right;
     }
 
     /* Us Page*/
@@ -241,14 +244,21 @@
     }
   
   }
+
+  @media (max-width:530px) {
+  
+    .hero {
+      background-position: bottom -0 right -130%;
+    }
+  }
   
 @media (max-width:477px) {
   
     .hero {
     width: 100%;
     padding: 50px 20px;
-    background-size: cover;
-    background-position: center;
+    background-size: 150vh;
+    background-position: top -112px right 129%;
     }
    
     

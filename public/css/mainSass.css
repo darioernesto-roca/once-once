@@ -284,7 +284,7 @@ input.black {
   width: 100vw;
   background-size: 55%;
   background-repeat: no-repeat;
-  background-position: bottom 110% right 25%;
+  background-position: top 60px right -15%;
   background-color: #d7d5c7;
   padding: 0 80px;
   display: flex;
@@ -325,12 +325,6 @@ input.black {
 
 .hero a {
   text-decoration: none;
-}
-
-.hero .hero-text-background {
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.6235294118);
-  border-radius: 7px;
 }
 
 .container__link-subcategory {
@@ -1405,13 +1399,11 @@ footer .copyright {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .hero {
-    background-size: 70%;
-  }
 }
 @media (max-width: 964px) {
   .hero {
-    background-position: top 0% right 25%;
+    height: 100vh;
+    background-position: top 0 right -20%;
   }
 }
 @media (max-width: 924px) {
@@ -1511,17 +1503,23 @@ footer .copyright {
     cursor: pointer;
   }
   .hero {
-    height: 80vh;
+    height: 100vh;
     padding: 0 80px;
     background-position: top 0 right -75%;
     background-size: 80%;
     justify-content: flex-end;
+  }
+  .hero .hero-text-background {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.6235294118);
+    border-radius: 7px;
   }
   .us-cover {
     height: 80vh;
     background-position: center;
   }
   .feature {
+    display: none;
     justify-content: center;
     gap: 10px;
   }
@@ -1543,8 +1541,6 @@ footer .copyright {
 @media (max-width: 680px) {
   .hero {
     padding: 40px 0;
-    background-size: cover;
-    background-position: top 0 right;
   }
   /* Us Page*/
   .us-text {
@@ -1590,12 +1586,17 @@ footer .copyright {
     padding: 30px 0;
   }
 }
+@media (max-width: 530px) {
+  .hero {
+    background-position: bottom 0 right -130%;
+  }
+}
 @media (max-width: 477px) {
   .hero {
     width: 100%;
     padding: 50px 20px;
-    background-size: cover;
-    background-position: center;
+    background-size: 150vh;
+    background-position: top -112px right 129%;
   }
   .us-cover {
     width: 100%;
