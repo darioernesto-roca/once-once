@@ -332,6 +332,21 @@
         "image2": "/img/products/girls/girls10B.png",
         "image3": "/img/products/girls/girls10C.png",
         "image4": "/img/products/girls/girls10D.png"
+      },
+      {
+        "id": 13,
+        "title": "Camisa de lino para niña",
+        "category": "Girls",
+        "subcategory": "Bebés",
+        "shortdescription": "Cómoda, fresca y elegante para cualquier ocasión",
+        "longdescription": "Descubre nuestra encantadora camisa de lino para niña, una prenda que combina comodidad y estilo en cada ocasión. Confeccionada con lino de alta calidad, esta camisa ofrece una sensación fresca y transpirable, perfecta para mantener a tu pequeña cómoda durante todo el día. Su diseño clásico presenta un cuello de solapa y botones frontales, brindando un aspecto refinado y elegante. El ajuste ligeramente entallado realza la silueta de tu niña sin restringir sus movimientos. Disponible en una variedad de colores y estampados encantadores, esta camisa se combina fácilmente con diferentes prendas, ya sean pantalones, faldas o shorts, para crear múltiples looks adorables. Además de su estilo impecable, esta camisa de lino también es una elección consciente, ya que el lino es un material sostenible y respetuoso con el medio ambiente. Añade un toque de frescura y sofisticación al guardarropa de tu hija con esta camisa de lino, que se mantiene duradera y con una apariencia impecable incluso después de múltiples lavados. ¡Haz que tu niña luzca radiante y a la moda con esta maravillosa camisa de lino para niña!",
+        "price": 180000,
+        "feature": false,
+        "new": true,
+        "image1": "/img/products/girls/girls5A.png",
+        "image2": "/img/products/girls/girls5B.png",
+        "image3": "/img/products/girls/girls5C.png",
+        "image4": "/img/products/girls/girls5D.png"
       }
     ]
   }
