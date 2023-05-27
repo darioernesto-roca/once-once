@@ -56,7 +56,7 @@ h6 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   color: #465b52;
   margin: 15px 0 20px 0;
 }
@@ -325,6 +325,12 @@ input.black {
 
 .hero a {
   text-decoration: none;
+}
+
+.hero .hero-text-background {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6235294118);
+  border-radius: 7px;
 }
 
 .container__link-subcategory {
@@ -1395,11 +1401,24 @@ footer .copyright {
 }
 
 @media (max-width: 1020px) {
-  /* .header {
-    padding: 20px 10px;
-  } */
+  .menu {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .hero {
+    background-size: 70%;
+  }
+}
+@media (max-width: 964px) {
+  .hero {
+    background-position: top 0% right 25%;
+  }
 }
 @media (max-width: 924px) {
+  .menu {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .menu__link {
     padding: 0 10px;
   }
@@ -1445,19 +1464,17 @@ footer .copyright {
     max-width: 400px;
     width: 100%;
     top: 85px;
-    bottom: 0;
-    right: 400px;
+    left: 100%;
     justify-content: stretch;
     background-color: hsl(12deg, 82%, 55%);
     overflow-y: auto;
     display: grid;
     grid-auto-rows: max-content;
-    transform: translateX(200%);
     padding-top: 60px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.137);
   }
   .menu__links--show {
-    transform: translateX(100%);
+    transform: translateX(-100%);
     width: 100%;
   }
   .menu__link {
@@ -1498,6 +1515,7 @@ footer .copyright {
     padding: 0 80px;
     background-position: top 0 right -75%;
     background-size: 80%;
+    justify-content: flex-end;
   }
   .us-cover {
     height: 80vh;
@@ -1525,6 +1543,8 @@ footer .copyright {
 @media (max-width: 680px) {
   .hero {
     padding: 40px 0;
+    background-size: cover;
+    background-position: top 0 right;
   }
   /* Us Page*/
   .us-text {
@@ -1571,14 +1591,11 @@ footer .copyright {
   }
 }
 @media (max-width: 477px) {
-  /* .header {
-    padding: 10px;
-  } */
   .hero {
     width: 100%;
     padding: 50px 20px;
-    background-position: 100% 100%;
-    background-size: 70%;
+    background-size: cover;
+    background-position: center;
   }
   .us-cover {
     width: 100%;
