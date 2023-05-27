@@ -329,7 +329,6 @@ input.black {
 
 .container__link-subcategory {
   display: flex;
-  width: 600px;
   justify-content: center;
   margin: 0 auto;
   gap: 20px;
