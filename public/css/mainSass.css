@@ -28,8 +28,8 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 100vw;
-  min-width: 400px;
+  width: 100%;
+  min-width: 375px;
   margin: 0 auto;
 }
 
@@ -507,7 +507,7 @@ input.black {
   border: 1px solid #888;
   width: 80%;
   text-align: center;
-  min-width: 400px;
+  min-width: 375px;
   max-width: 600px;
 }
 
@@ -1128,7 +1128,7 @@ footer .copyright {
   font-family: "Roboto", sans-serif;
   line-height: 2em;
   max-width: 500px;
-  min-width: 400px;
+  min-width: 375px;
   margin: 50px auto;
   padding: 1px 40px;
   box-shadow: 1px 1px 10px 1px hsla(0deg, 0%, 0%, 0.2);
@@ -1596,7 +1596,7 @@ footer .copyright {
     width: 100%;
     padding: 50px 20px;
     background-size: 150vh;
-    background-position: top -112px right 129%;
+    background-position: top -115px right 105%;
   }
   .us-cover {
     width: 100%;
