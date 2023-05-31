@@ -588,8 +588,8 @@ input.black {
 }
 
 .page-header h2 {
-  color: white;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   font-size: 100px;
 }
 
