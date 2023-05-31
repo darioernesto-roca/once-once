@@ -279,43 +279,23 @@ input.black {
 }
 
 .hero {
-  background-image: url(/img/assets/hero2.png);
-  height: 90vh;
+  background-image: url(/img/assets/hero.jpg);
   width: 100vw;
-  background-size: 55%;
+  height: 80vh;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: top 60px right -15%;
   background-color: #d7d5c7;
+  background-position: center;
   padding: 0 80px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* min-width: 768px; */
-}
-
-.hero h4 {
-  padding-bottom: 15px;
 }
 
 .hero h1 {
-  color: #c99e35;
-}
-
-.hero .cover-button {
-  background-image: url(/img/assets/hero-button.png);
-  background-color: transparent;
-  background-size: contain;
-  background-position: center;
-  color: #ea3f2d;
-  border: 0;
-  padding: 60px 80px 60px 80px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 15px;
-  text-align: center;
-  transition: 0.3s ease;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .hero .cover-button:hover {
@@ -1420,8 +1400,7 @@ footer .copyright {
 }
 @media (max-width: 964px) {
   .hero {
-    height: 100vh;
-    background-position: top 0 right -20%;
+    height: 50vh;
   }
   .single-pro-links {
     flex-direction: column;
@@ -1525,15 +1504,12 @@ footer .copyright {
     cursor: pointer;
   }
   .hero {
-    height: 100vh;
     padding: 0 80px;
-    background-position: top 0 right -75%;
-    background-size: 80%;
-    justify-content: flex-end;
+    height: 80vh;
   }
-  .hero .hero-text-background {
+  .hero .hero-text-container {
+    text-align: center;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.6235294118);
     border-radius: 7px;
   }
   .us-cover {
@@ -1608,17 +1584,11 @@ footer .copyright {
     padding: 30px 0;
   }
 }
-@media (max-width: 530px) {
-  .hero {
-    background-position: bottom 0 right -130%;
-  }
-}
 @media (max-width: 477px) {
   .hero {
     width: 100%;
     padding: 50px 20px;
-    background-size: 150vh;
-    background-position: top -115px right 105%;
+    background-size: cover;
   }
   .us-cover {
     width: 100%;

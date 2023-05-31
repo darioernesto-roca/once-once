@@ -11,10 +11,16 @@
 
 }
 
+
 @media (max-width:1300px) {
   .us-cover__text {
     padding: 0 20px;
   }
+
+}
+
+@media (max-width:1200px) {
+
 }
 
 @media (max-width:1020px) {
@@ -31,8 +37,7 @@
 
 @media (max-width: 964px) {
   .hero {
-    height: 100vh;
-    background-position: top 0 right -20%;
+    height: 50vh;
   }
 
   .single-pro-links {
@@ -164,16 +169,13 @@
       }
   
      .hero {
-      height: 100vh;
       padding: 0 80px;
-      background-position: top 0 right -75%;
-      background-size: 80%;
-      justify-content: flex-end;
+      height: 80vh;
      }
 
-     .hero .hero-text-background {
+     .hero .hero-text-container {
+      text-align: center;
       padding: 10px;
-      background-color: #ffffff9f;
       border-radius: 7px;
     }
 
@@ -273,20 +275,20 @@
   
   }
 
-  @media (max-width:530px) {
+  // @media (max-width:530px) {
   
-    .hero {
-      background-position: bottom -0 right -130%;
-    }
-  }
+  //   .hero {
+  //     background-position: bottom -0 right -130%;
+  //   }
+  // }
   
 @media (max-width:477px) {
   
     .hero {
     width: 100%;
     padding: 50px 20px;
-    background-size: 150vh;
-    background-position: top -115px right 105%;
+    background-size: cover;
+
     }
    
     
