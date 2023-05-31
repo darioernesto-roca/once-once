@@ -7,17 +7,16 @@
   justify-content: space-between;
   padding-top: 20px;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .feature-products .product {
   width: 23%;
-  min-width: 250px;
+  min-width: 175px;
   padding: 10px 12px;
-  border: 1px solid #cce7d0;
-  border-radius: 25px;
+  border: 1px solid #dcdddd;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-  margin: 15px 0;
   transition: 0.2s ease;
   position: relative;
 }

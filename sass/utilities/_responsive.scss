@@ -197,10 +197,7 @@
     .feature-products .product-container {
       justify-content: center;
     }
-  
-    .feature-products .product {
-      margin: 15px;
-    }
+
   
     .banner {
       height: 70vh;
@@ -266,7 +263,7 @@
     }
   
     .section-p1 {
-      padding: 40px 10px;
+      padding: 40px 0px;
     }
   
     .banner h2 {
@@ -289,6 +286,10 @@
     padding: 50px 20px;
     background-size: cover;
 
+    }
+
+    .feature-products .product-container {
+      gap: 0px;
     }
    
     
