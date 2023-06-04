@@ -17,13 +17,14 @@ function removeProduct(index) {
 
   // Volver a generar el HTML para cada producto
   cartItems.forEach((product, index) => {
-    const { title, price, image, quantity } = product;
+    const { title, price, image, quantity, size } = product;
 
     const productHTML = `
       <div class="cart-product">
         <img src="${image}" alt="${title}">
         <div class="cart-description">
           <h5>${title}</h5>
+          <h5>Talla: ${size}</h5>
           <h4>COP $${price}</h4>
         </div>
         <div class="cart-quantity">
@@ -74,8 +75,9 @@ function updateTotals() {
   cartItems.forEach((product) => {
     const { price, quantity } = product;
     const productPrice = parseInt(price);
-    totalQuantity += quantity;
-    totalPrice += productPrice * quantity;
+    const productQuantity = parseInt(quantity);
+    totalQuantity += productQuantity;
+    totalPrice += productPrice * productQuantity;
   });
 
   const totalProductsElement = document.getElementById('totalProducts');
@@ -87,13 +89,14 @@ function updateTotals() {
 
 // Generar el HTML para cada producto y agregarlo al contenedor del carrito
 cartItems.forEach((product, index) => {
-  const { title, price, image, quantity } = product;
+  const { title, price, image, quantity, size } = product;
 
   const productHTML = `
     <div class="cart-product">
       <img src="${image}" alt="${title}">
       <div class="cart-description">
         <h5>${title}</h5>
+        <h5>Talla: ${size}</h5>
         <h4>COP $${price}</h4>
       </div>
       <div class="cart-quantity">

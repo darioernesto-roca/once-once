@@ -1,3 +1,5 @@
+//File sproduct.js
+
 // Gets the element img with the class main-img
 const $mainImg = document.getElementById("main-img");
 // TGets an HTML Collection of elements with the class small-img
@@ -27,7 +29,6 @@ for (let i = 0; i < $smallImg.length; i++) {
   };
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
     // Gets the element button with the id addToCartBtn
     const addToCartBtn = document.getElementById('addToCartBtn');
@@ -36,14 +37,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
   });
   
-
   
   function addToCart(event) {
+
+    // Get the quantity chose by user in input quantity
+    const quantity = document.getElementById('quantity').value;
+
     // Get the product details from the clicked button's data attributes
     const title = event.target.dataset.title;
     const price = event.target.dataset.price;
     const image = event.target.dataset.image;
-  
+    
+    // Get selected size of the product
+    const sizeSelect = document.getElementById('sizeSelect');
+    const selectedSize = sizeSelect.value;
+
+    // Check if a size has been selected
+    if (selectedSize === 'Selecciona la talla') {
+      const sizeError = document.getElementById('sizeError');
+      sizeError.style.display = 'block'; // Show the error message
+      return; // Don't proceed with adding the product to the cart
+    }
+
+   
     // Logic to add the product to the cart
     // Here I can use my own implementation or send a request to the server
   
@@ -51,7 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const product = {
       title: title,
       price: price,
-      image: image
+      image: image,
+      size: selectedSize,
+      quantity: quantity
     };
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     cartItems.push(product);

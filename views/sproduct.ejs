@@ -20,14 +20,15 @@
         <h6>Once Once | <%= product.category %></h6>
         <h4><%= product.title %></h4>
         <h2>COP $<%= product.price %></h2>
-        <select>
+        <select id="sizeSelect">
             <option>Selecciona la talla</option>
             <option>XL</option>
             <option>L</option>
             <option>M</option>
             <option>S</option>
         </select>
-        <input type="number" value="1">
+        <span id="sizeError" style="color: rgb(117, 0, 0); display: none;">*Selecciona una talla</span>
+        <input id="quantity" type="number" value="1" min="1" max="5">
         <button class="normal" id="addToCartBtn" data-title="<%= product.title %>" data-price="<%= product.price %>" data-image="<%= product.image1 %>">Agregar Al Carrito</button>
         <h4>Detalles del Producto</h4>
         <p><%= product.shortdescription %></p>
