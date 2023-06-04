@@ -1,41 +1,53 @@
+// Gets the element img with the class main-img
 const $mainImg = document.getElementById("main-img");
+// TGets an HTML Collection of elements with the class small-img
 const $smallImg = document.getElementsByClassName("small-img");
 
-$smallImg[0].onclick = function() {
-    $mainImg.src = $smallImg[0].src;
-}
-$smallImg[1].onclick = function() {
-    $mainImg.src = $smallImg[1].src;
-}
-$smallImg[2].onclick = function() {
-    $mainImg.src = $smallImg[2].src;
-}
-$smallImg[3].onclick = function() {
-    $mainImg.src = $smallImg[3].src;
+// Sets the onclick event handler for the small images
+// That means when clicking an small-image change the source for main-img
+// $smallImg[0].onclick = function() {
+//     $mainImg.src = $smallImg[0].src;
+// }
+// $smallImg[1].onclick = function() {
+//     $mainImg.src = $smallImg[1].src;
+// }
+// $smallImg[2].onclick = function() {
+//     $mainImg.src = $smallImg[2].src;
+// }
+// $smallImg[3].onclick = function() {
+//     $mainImg.src = $smallImg[3].src;
+// }
+
+// Sets the onclick event handler for the small images
+// The same as above but with a for loop
+
+for (let i = 0; i < $smallImg.length; i++) {
+  $smallImg[i].onclick = function() {
+    $mainImg.src = $smallImg[i].src;
+  };
 }
 
-console.log('Vengo de sproduct.js');
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Vengo del addEvent Listener de sproduct.js');
+    // Gets the element button with the id addToCartBtn
     const addToCartBtn = document.getElementById('addToCartBtn');
+    // When click in addToCartBtn executes the function addToCart
     addToCartBtn.addEventListener('click', addToCart);
-    console.log('Vengo de sproduct.js dentro del DOMContentLoaded');
+
   });
   
 
   
   function addToCart(event) {
-    console.log('Hiciste click en el botón agregar al carrito')
-    // Obtener los detalles del producto
+    // Get the product details from the clicked button's data attributes
     const title = event.target.dataset.title;
     const price = event.target.dataset.price;
     const image = event.target.dataset.image;
   
-    // Lógica para agregar el producto al carrito
-    // Aquí puedes usar tu propia implementación o enviar una solicitud al servidor
+    // Logic to add the product to the cart
+    // Here I can use my own implementation or send a request to the server
   
-    // Ejemplo: almacenar el producto en el almacenamiento local (localStorage)
+    // Example: store the product in local storage
     const product = {
       title: title,
       price: price,
@@ -45,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cartItems.push(product);
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   
-    // Mostrar un mensaje de éxito o redirigir a la página del carrito
+    // Show a success message or redirect to the cart page
     alert('El producto se ha agregado al carrito');
   }
 

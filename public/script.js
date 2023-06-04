@@ -1,3 +1,5 @@
+//Menu interactivity
+
 (function(){
     const listElements = document.querySelectorAll('.menu__item--show');
     const list = document.querySelector('.menu__links');
