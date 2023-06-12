@@ -1,6 +1,6 @@
 .newsletter {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
     background-image: url('/img/assets/newsletter-cover.png');
@@ -8,6 +8,10 @@
     background-position: center;
     background-size: cover;
     background-color: #aa4435;
+}
+
+.newstext {
+    padding: 20px;
 }
 
 .newstext h4 {

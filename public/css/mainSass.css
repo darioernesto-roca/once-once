@@ -284,6 +284,7 @@ input.black {
   font-weight: 400;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   text-align: center;
+  font-size: 25px;
 }
 
 .hero .cover-button:hover {
@@ -504,7 +505,7 @@ input.black {
 
 .newsletter {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
   background-image: url("/img/assets/newsletter-cover.png");
@@ -512,6 +513,10 @@ input.black {
   background-position: center;
   background-size: cover;
   background-color: #aa4435;
+}
+
+.newstext {
+  padding: 20px;
 }
 
 .newstext h4 {
@@ -724,18 +729,19 @@ input.black {
 }
 
 .sm-banner .banner-box h2 {
+  color: #222;
   font-size: 28px;
   font-weight: 800;
 }
 
 .sm-banner .banner-box h4 {
-  color: #555;
+  color: #222;
   font-size: 20px;
   font-weight: 300;
 }
 
 .sm-banner .banner-box span {
-  color: #555;
+  color: #222;
   font-size: 14px;
   font-weight: 500;
   padding-bottom: 15px;
@@ -1574,7 +1580,6 @@ footer .copyright {
   }
   .hero {
     padding: 0 80px;
-    height: 80vh;
   }
   .hero .hero-text-container {
     text-align: center;
