@@ -1491,6 +1491,12 @@ footer .copyright {
     margin-top: 20px;
   }
 }
+@media (max-width: 900px) {
+  .sm-banner .banner-box {
+    width: 100%;
+    margin: 10px;
+  }
+}
 @media (max-width: 800px) {
   .top__header {
     display: none;
