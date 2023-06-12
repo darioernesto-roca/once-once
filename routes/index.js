@@ -19,6 +19,7 @@ const contactRoutes = require('./contact.routes');
 const legalTermsRoutes = require('./legal.terms.routes');
 const privacyPolicyRoutes = require('./privacy.policy.routes');
 const paymentRoutes = require('./payment.routes');
+const storeRoutes = require('./store.routes');
 
 
 router.use('/', homeRoutes);
@@ -39,6 +40,7 @@ router.use('/contacto', contactRoutes);
 router.use('/terminos-y-condiciones', legalTermsRoutes);
 router.use('/politica-de-privacidad', privacyPolicyRoutes);
 router.use('/payment', paymentRoutes);
+router.use('/tienda', storeRoutes);
 
 
 module.exports = router;
