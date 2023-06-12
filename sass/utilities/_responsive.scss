@@ -209,6 +209,11 @@
       width: auto;
       padding: 30px 100px;
     }
+
+    .store-modal {
+      top: 86px;
+
+    }
   }
   
 @media (max-width:680px) {
@@ -252,6 +257,10 @@
   }
   
 @media (max-width:560px) {
+
+  .mosaic-container {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
   
     .hero {
       padding: 50px 0;

@@ -1,3 +1,4 @@
+
 <section class="section-m1">
 <div class="mosaic-container">
     <img class="store-image horizontal" src="/img/assets/store/store1.jpg" alt="Tienda imagen 1">
@@ -22,4 +23,69 @@
     <img class="store-image horizontal" src="/img/assets/store/store19.jpg" alt="Tienda imagen 19">
     <img class="store-image vertical" src="/img/assets/store/store21.jpg" alt="Tienda imagen 21">
 </div>
+<div id="store-modal" class="store-modal">
+  <span class="store-modal-close">&times;</span>
+  <img id="store-modal-image" class="store-modal-image" src="" alt="Store Image">
+  <a class="store-modal-control store-prev">&lt;</a>
+  <a class="store-modal-control store-next">&gt;</a>
+</div>
 </section>
+
+<script>
+    // Obtener los elementos necesarios
+const images = document.querySelectorAll('.store-image');
+console.log(images);
+const modal = document.getElementById('store-modal');
+const modalImage = document.getElementById('store-modal-image');
+const modalClose = document.querySelector('.store-modal-close');
+const modalPrev = document.querySelector('.store-prev');
+const modalNext = document.querySelector('.store-next');
+
+let currentIndex = 0;
+
+// Función para abrir el modal y mostrar la imagen seleccionada
+function openModal(index) {
+  currentIndex = index;
+  const imageSrc = images[index].src;
+  modalImage.src = imageSrc;
+  modal.style.display = 'flex';
+}
+
+// Función para cerrar el modal
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+// Función para mostrar la imagen anterior
+function showPrevImage() {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = images.length - 1;
+  }
+  modalImage.src = images[currentIndex].src;
+}
+
+// Función para mostrar la siguiente imagen
+function showNextImage() {
+  currentIndex++;
+  if (currentIndex >= images.length) {
+    currentIndex = 0;
+  }
+  modalImage.src = images[currentIndex].src;
+}
+
+// Agregar eventos de clic a las imágenes
+images.forEach((image, index) => {
+  image.addEventListener('click', (e) => {
+    openModal(index);
+    console.log('Hiciste click en la imagen ' + e.target);
+  });
+});
+
+// Agregar eventos de clic al botón de cierre y controles de siguiente y anterior
+modalClose.addEventListener('click', closeModal);
+modalPrev.addEventListener('click', showPrevImage);
+modalNext.addEventListener('click', showNextImage);
+
+
+</script>

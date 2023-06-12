@@ -40,7 +40,7 @@ router.use('/contacto', contactRoutes);
 router.use('/terminos-y-condiciones', legalTermsRoutes);
 router.use('/politica-de-privacidad', privacyPolicyRoutes);
 router.use('/payment', paymentRoutes);
-router.use('/tienda', storeRoutes);
+router.use('/nuestra-tienda', storeRoutes);
 
 
 module.exports = router;
