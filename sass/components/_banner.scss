@@ -1,27 +1,28 @@
 .banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-image: url(/img/assets/banner.jpg);
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // text-align: center;
+  background-image: url(/img/assets/store/store5A.jpg);
   background-size: cover;
+  background-position: center;
   height: 400px;
 
 }
 
-.banner h2 {
-  font-size: 25px;
-  width: 50%;
-  padding: 30px 20px;
-  color: #fff;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.589);
-}
+// .banner h2 {
+//   font-size: 25px;
+//   width: 50%;
+//   padding: 30px 20px;
+//   color: #fff;
+//   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.589);
+// }
 
 
-.banner h2 span {
-  color: #ea3f2d;
-}
+// .banner h2 span {
+//   color: #fff;
+// }
 
 // .banner h4 {
 //   color: #fff;
