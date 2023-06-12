@@ -178,7 +178,7 @@ input.black {
   height: 1px;
   background-color: #000;
   position: absolute;
-  top: 4px;
+  top: 7px;
   right: -60px;
 }
 
@@ -211,24 +211,18 @@ input.black {
   background-image: url(/img/assets/banner.jpg);
   background-size: cover;
   height: 400px;
-  font-size: 16px;
 }
 
 .banner h2 {
+  font-size: 25px;
   width: 50%;
-  font-style: 30px;
   padding: 30px 20px;
   color: #fff;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.589);
 }
 
 .banner h2 span {
   color: #ea3f2d;
-}
-
-.banner h4 {
-  color: #fff;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .feature {
@@ -300,8 +294,10 @@ input.black {
   flex-direction: column;
 }
 
-.hero h1 {
-  color: #fff;
+.hero-title {
+  margin: 40px;
+  color: #222;
+  font-weight: 400;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
@@ -588,10 +584,11 @@ input.black {
   flex-direction: column;
 }
 
-.page-header h2 {
-  color: #fff;
+.page-header-title {
+  color: #222;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   font-size: 35px;
+  text-align: center;
 }
 
 .boys-header {
