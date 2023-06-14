@@ -2,7 +2,7 @@
   <div class="product-container">
     <% products.forEach(product=> { %>
     <div class="product" onclick="window.location.href='/product/<%= product.id %>'">
-      <img src="<%= product.image1 %>" alt="<%= product.title %>">
+      <img src="<%= product.smImage %>" alt="<%= product.title %>">
       <div class="description">
         <h5><%= product.title %></h5>
         <h4><%= product.formattedPrice %></h4>
@@ -12,7 +12,7 @@
     <% }) %>
     <% products.forEach(product=> { %>
       <div class="product">
-        <img src="<%= product.image1 %>" alt="<%= product.title %>">
+        <img src="<%= product.smImage %>" alt="<%= product.title %>">
         <div class="description">
 
           <h5><%= product.title %></h5>

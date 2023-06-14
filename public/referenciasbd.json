@@ -1,0 +1,556 @@
+[
+    {
+      "Boys": [
+        {
+          "subcategory": "Bautizo",
+          "reference": "Emiliano",
+          "color": {
+            "arena": "#fecdd3",
+            "azul": "#1d4ed8",
+            "blanco": "#f8fafc",
+            "amarillo": "#eab308",
+            "rojo": "#dc2626"
+          },
+          "colorsArray": ["#fecdd3", "#1d4ed8", "#f8fafc", "#eab308", "#dc2626"],
+          "size": "desde 3-6 meses hasta 2 años",
+          "hasAccessories": true,
+          "priceWithoutAccessories": 220000,
+          "priceWithAccessories": 240000,
+          "accessories": "Con elástico en pierna, incluye coratín y tirantes"
+        },
+        {
+          "subcategory": "Bautizo",
+          "reference": "Maximiliano",
+          "color": {
+            "arena": "#fecdd3",
+            "azul": "#1d4ed8",
+            "blanco": "#f8fafc",
+            "amarillo": "#eab308",
+            "rojo": "#dc2626"
+          },
+          "colorsArray": ["#fecdd3", "#1d4ed8", "#f8fafc", "#eab308", "#dc2626"],
+          "size": "desde 3-6 meses hasta 2 años",
+          "hasAccessories": true,
+          "priceWithoutAccessories": 250000,
+          "priceWithAccessories": 270000,
+          "accessories": "Con elástico en pierna manga corta o larga"
+        },
+        {
+          "subcategory": "Toda ocasión",
+          "reference": "Gabriel",
+          "color": {
+            "arena": "#fecdd3",
+            "azul": "#1d4ed8",
+            "blanco": "#f8fafc",
+            "amarillo": "#eab308",
+            "rojo": "#dc2626",
+            "crudo": "#fef3c7"
+          },
+          "colorsArray": ["#fecdd3", "#1d4ed8", "#f8fafc", "#eab308", "#dc2626", "#fef3c7"],
+          "size": "desde 3-6 meses hasta 18-24 meses",
+          "hasAccessories": true,
+          "priceWithoutAccessories": 130000,
+          "priceWithAccessories": 150000,
+          "accessories": "Pelele toda ocasión"
+        },
+        {
+          "subcategory": "Toda ocasión",
+          "reference": "Samuel",
+          "color": {
+            "arena": "#fecdd3",
+            "azul": "#1d4ed8",
+            "blanco": "#f8fafc",
+            "amarillo": "#eab308",
+            "rojo": "#dc2626",
+            "crudo": "#fef3c7"
+          },
+          "colorsArray": ["#fecdd3", "#1d4ed8", "#f8fafc", "#eab308", "#dc2626", "#fef3c7"],
+          "size": "desde 3-6 meses hasta 18-24 meses",
+          "hasAccessories": true,
+          "priceWithoutAccessories": 120000,
+          "priceWithAccessories": 140000,
+          "accessories": "Pelele sin mangas, toda ocasión"
+        },
+        {
+          "subcategory": "Toda ocasión",
+          "reference": "Gael",
+          "color": {
+            "azul": "#1d4ed8",
+            "blanco": "#f8fafc",
+            "amarillo": "#eab308",
+            "rojo": "#dc2626"
+          },
+          "colorsArray": ["#1d4ed8", "#f8fafc", "#eab308", "#dc2626"],
+          "size": "desde 3-6 meses hasta 18-24 meses",
+          "hasAccessories": false,
+          "priceWithoutAccessories": 135000,
+          "priceWithAccessories": 155000,
+          "accessories": ""
+        },
+        {
+          "subcategory": "Toda ocasión",
+          "reference": "Noah",
+          "color": "Según disponibilidad del textil",
+          "colorsArray": false,
+          "size": "desde 3-6 meses hasta 18-24 meses",
+          "hasAccessories": false,
+          "priceWithoutAccessories": 130000,
+          "priceWithAccessories": 150000,
+          "accessories": ""
+        },
+        {
+          "subcategory": "Toda ocasión",
+          "reference": "Bermuda en lino",
+          "color": {
+            "arena": "#fecdd3",
+            "azul": "#1d4ed8",
+            "blanco": "#f8fafc",
+            "amarillo": "#eab308",
+            "rojo": "#dc2626",
+            "rosado": "#ec4899",
+            "verde": "#064e3b",
+            "crudo": "#fef3c7"
+          },
+          "colorsArray": ["#fecdd3", "#1d4ed8", "#f8fafc", "#eab308", "#dc2626", "#ec4899", "#064e3b", "#fef3c7"],
+          "size": "desde 6-12 meses hasta la 6 años",
+          "hasAccessories": true,
+          "priceWithoutAccessories": 120000,
+          "priceWithAccessories": 140000,
+          "accessories": "Con ajustables internos"
+        },
+        {
+          "subcategory": "Toda ocasión",
+          "reference": "Bermuda en lino",
+          "color": {
+            "arena": "#fecdd3",
+            "azul": "#1d4ed8",
+            "blanco": "#f8fafc",
+            "amarillo": "#eab308",
+            "rojo": "#dc2626",
+            "rosado": "#ec4899",
+            "verde": "#064e3b",
+            "crudo": "#fef3c7"
+          },
+          "colorsArray": ["fecdd3", "#1d4ed8", "#f8fafc", "#eab308", "#dc2626", "#ec4899", "#064e3b", "#fef3c7"],
+          "size": "8 años, 10 años, 12 años",
+          "hasAccessories": false,
+          "priceWithoutAccessories": 140000,
+          "priceWithAccessories": 160000,
+          "accessories": ""
+        },
+        {
+          "subcategory": "Toda ocasión",
+          "reference": "Camisa manga corta",
+          "color": {
+            "arena": "#fecdd3",
+            "azul": "#1d4ed8",
+            "blanco": "#f8fafc",
+            "amarillo": "#eab308",
+            "rojo": "#dc2626",
+            "rosado": "#ec4899",
+            "verde": "#064e3b",
+            "crudo": "#fef3c7"
+          },
+          "colorsArray": ["#fecdd3", "#1d4ed8", "#f8fafc", "#eab308", "#dc2626", "#ec4899", "#064e3b", "#fef3c7"],
+          "size": "desde 6-12 meses hasta 4 años",
+          "hasAccessories": false,
+          "priceWithoutAccessories": 105000,
+          "priceWithAccessories": 125000,
+          "accessories": ""
+        },
+        {
+          "subcategory": "Toda ocasión",
+          "reference": "Camisa manga corta",
+          "color": {
+            "arena": "#fecdd3",
+            "azul": "#1d4ed8",
+            "blanco": "#f8fafc",
+            "amarillo": "#eab308",
+            "rojo": "#dc2626",
+            "rosado": "#ec4899",
+            "verde": "#064e3b",
+            "crudo": "#fef3c7"
+          },
+          "colorsArray": ["#fecdd3", "#1d4ed8", "#f8fafc", "#eab308", "#dc2626", "#ec4899", "#064e3b", "#fef3c7"],
+          "size": "6 años, 8 años, 10 años, 12 años",
+          "hasAccessories": false,
+          "priceWithoutAccessories": 120000,
+          "priceWithAccessories": 140000,
+          "accessories": ""
+        },
+        {
+          "subcategory": "Toda ocasión",
+          "reference": "Camisa manga larga",
+          "color": {
+            "arena": "#fecdd3",
+            "azul": "#1d4ed8",
+            "blanco": "#f8fafc",
+            "amarillo": "#eab308",
+            "rojo": "#dc2626",
+            "rosado": "#ec4899",
+            "verde": "#064e3b",
+            "crudo": "#fef3c7"
+          },
+          "colorsArray": ["#fecdd3", "#1d4ed8", "#f8fafc", "#eab308", "#dc2626", "#ec4899", "#064e3b", "#fef3c7"],
+          "size": "desde 12-18 meses hasta 4 años",
+          "hasAccessories": false,
+          "priceWithoutAccessories": 120000,
+          "priceWithAccessories": 140000,
+          "accessories": ""
+        },
+        {
+          "subcategory": "Toda ocasión",
+          "reference": "Camisa manga larga",
+          "color": {
+            "arena": "#fecdd3",
+            "azul": "#1d4ed8",
+            "blanco": "#f8fafc",
+            "amarillo": "#eab308",
+            "rojo": "#dc2626",
+            "rosado": "#ec4899",
+            "verde": "#064e3b",
+            "crudo": "#fef3c7"
+          },
+          "colorsArray": ["#fecdd3", "#1d4ed8", "#f8fafc", "#eab308", "#dc2626", "#ec4899", "#064e3b", "#fef3c7"],
+          "size": "6 años, 8 años, 10 años, 12 años",
+          "hasAccessories": false,
+          "priceWithoutAccessories": 130000,
+          "priceWithAccessories": 150000,
+          "accessories": ""
+        },
+        {
+          "subcategory": "Toda ocasión",
+          "reference": "Set playero en lino",
+          "color": "Según disponibilidad del textil",
+          "colorsArray": false,
+          "size": "desde 6-12 meses hasta 4 años",
+          "hasAccessories": false,
+          "priceWithoutAccessories": 195000,
+          "priceWithAccessories": 215000,
+          "accessories": ""
+        },
+        {
+          "subcategory": "Toda ocasión",
+          "reference": "Set playero en lino",
+          "color": "Según disponibilidad del textil",
+          "colorsArray": false,
+          "size": "6 años, 8 años, 10 años",
+          "hasAccessories": false,
+          "priceWithoutAccessories": 240000,
+          "priceWithAccessories": 260000,
+          "accessories": ""
+        },
+        {
+          "subcategory": "Bautizo",
+          "reference": "Bautizo con cruz bordada",
+          "color": {
+            "blanco": "#f8fafc",
+            "crudo": "#fef3c7"
+          },
+          "colorsArray": ["#f8fafc", "#fef3c7"],
+          "size": "desde 3-6 meses hasta la 18-24",
+          "hasAccessories": false,
+          "priceWithoutAccessories": 230000,
+          "priceWithAccessories": 250000,
+          "accessories": ""
+        },
+        {
+          "subcategory": "Bautizo",
+          "reference": "Bautizo con alforzas delanteras",
+          "color": {
+            "blanco": "#f8fafc",
+            "crudo": "#fef3c7"
+          },
+          "colorsArray": ["#f8fafc", "#fef3c7"],
+          "size": "desde 3-6 meses hasta 18-24 meses",
+          "hasAccessories": false,
+          "priceWithoutAccessories": 220000,
+          "priceWithAccessories": 240000,
+          "accessories": ""
+        },
+        {
+          "subcategory": "Pajecitos",
+          "reference": "Fede",
+          "color": "Según disponibilidad del textil",
+          "colorsArray": false,
+          "size": "desde 3-6 meses hasta 18-24 meses",
+          "hasAccessories": true,
+          "priceWithoutAccessories": 130000,
+          "priceWithAccessories": 150000,
+          "accessories": "Pelele con botones forrados"
+        },
+        {
+          "subcategory": "Toda ocasión",
+          "reference": "Rompers en algodón",
+          "color": "Según disponibilidad del textil",
+          "colorsArray": false,
+          "size": "desde 3-6 meses hasta 18-24 meses",
+          "hasAccessories": false,
+          "priceWithoutAccessories": 90000,
+          "priceWithAccessories": 110000,
+          "accessories": ""
+        },
+        {
+          "subcategory": "Pajecitos",
+          "reference": "Rompers en lino",
+          "color": "Según disponibilidad del textil",
+          "colorsArray": false,
+          "size": "desde 3-6 meses hasta 18-24 meses",
+          "hasAccessories": false,
+          "priceWithoutAccessories": 105000,
+          "priceWithAccessories": 125000,
+          "accessories": ""
+        },
+        {
+          "subcategory": "Pajecitos",
+          "reference": "Luca",
+          "color": "Según disponibilidad del textil",
+          "colorsArray": false,
+          "size": "desde 6-12 meses hasta 18-24 meses",
+          "hasAccessories": true,
+          "priceWithoutAccessories": 135000,
+          "priceWithAccessories": 155000,
+          "accessories": "Braga forrada en algodón"
+        },
+        {
+          "subcategory": "Pajecitos",
+          "reference": "Tiago",
+          "color": {
+            "arena": "#fecdd3",
+            "azulCielo": "#7dd3fc",
+            "blanco": "#f8fafc",
+            "rojo": "#dc2626",
+            "turqui": "#172554"
+          },
+          "colorsArray": ["#fecdd3", "#7dd3fc", "#f8fafc", "#dc2626", "#172554"],
+          "size": "desde 12-18 meses hasta 4 años",
+          "hasAccessories": true,
+          "priceWithoutAccessories": 150000,
+          "priceWithAccessories": 170000,
+          "accessories": "Braga a la rodilla tipo bombacho en lino"
+        },
+        {
+            "subcategory": "Toda ocasión",
+            "reference": "Dani",
+            "color": "Rayas azules con cuello blanco",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 105000,
+            "priceWithAccessories": 125000,
+            "accessories": "Enterizo en algodón para toda ocasión UNISEX"
+            },
+          {
+            "subcategory": "Pajecitos",
+            "reference": "Camisa Angel",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Pajecitos",
+            "reference": "Luciano",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 6-12 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 210000,
+            "priceWithAccessories": 230000,
+            "accessories": "Set de camisa mas bombacho en lino"
+          }
+        ]
+    },
+    {
+      "Girls": [
+          {
+            "subcategory": "Vestido",
+            "reference": "Sara",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Toda ocasión",
+            "reference": "Lulú",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Set",
+            "reference": "Carlota",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Set",
+            "reference": "Fátima",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Vestido",
+            "reference": "Vestido con lazo y encajes",
+            "color": {
+                "blanco": "#f8fafc",
+                "crudo": "#fef3c7"
+              },
+              "colorsArray": ["#f8fafc", "#fef3c7"],
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Toda ocasión",
+            "reference": "Rompers con bolero",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Vestido",
+            "reference": "Celeste a partir de 6 meses",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Vestido",
+            "reference": "Celeste 2 a 6 meses",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Vestido",
+            "reference": "Vestido con lazos en hombro",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Vestido",
+            "reference": "Vestido tres colores",
+            "color": {
+                "amarillo": "#eab308",
+                "azulCielo": "#7dd3fc",
+                "rosado": "#ec4899"
+              },
+            "colorsArray": ["#eab308", "#7dd3fc", "#ec4899"],
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Toda ocasión",
+            "reference": "Rompers con hiladilla",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Set",
+            "reference": "Renata",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Set",
+            "reference": "Thali",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Vestido",
+            "reference": "Vestido cuello bebé",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Vestido",
+            "reference": "Tuti",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          },
+          {
+            "subcategory": "Vestido",
+            "reference": "Lala",
+            "color": "Según disponibilidad del textil",
+            "colorsArray": false,
+            "size": "desde 12-18 meses hasta 4 años",
+            "hasAccessories": true,
+            "priceWithoutAccessories": 95000,
+            "priceWithAccessories": 115000,
+            "accessories": "Camisa en lino o algodón sin cuello"
+          }
+        ]
+    }
+
+]
+  
