@@ -4,6 +4,7 @@
 @font-face {
   font-family: "FreightDis Pro";
   src: url("/font/freightdispro-regular.ttf");
+  font-display: swap;
 }
 /*
 
