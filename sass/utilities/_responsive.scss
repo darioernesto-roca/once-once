@@ -19,10 +19,6 @@
 
 }
 
-@media (max-width:1200px) {
-
-}
-
 @media (max-width:1020px) {
     .menu {
       padding-left: 40px;
@@ -84,16 +80,34 @@
 }
 
 @media (max-width:800px){
+
+    .header {
+      width: 100%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.137);
+      z-index: 99999;
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
   
     .top__header {
       display: none;
+    }
+
+    .logo {
+      width: 170px;
     }
   
      .bag-li {
       display: none;
      }
 
+     .menu__container {
+      background-color: hsl(12, 82%, 55%);
+     }
+
      .menu {
+        background-color: hsl(12, 82%, 55%);
         padding: 0 10px;
       }
     

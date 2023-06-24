@@ -59,7 +59,28 @@
 
     menu.addEventListener('click', ()=> list.classList.toggle('menu__links--show'));
     close.addEventListener('click', ()=> list.classList.toggle('menu__links--show'));
-
-
-
 })();
+
+const BREAK_POINT_TABLET_IN_PX = 800;
+const homePatterns = /^\/$|^\/inicio$|^\/#$/;
+
+if (window.innerWidth >= BREAK_POINT_TABLET_IN_PX) {
+  const header = document.querySelector('.header');
+
+  if (homePatterns.test(window.location.pathname)) {
+    // Apply class for the homepage
+    header.classList.add('header');
+  } else {
+    // Apply class for other pages
+    header.classList.add('header-not-home');
+  }
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 0 && homePatterns.test(window.location.pathname)) {
+      header.classList.add('header-scroll');
+    } else if (window.scrollY <= 0 && homePatterns.test(window.location.pathname)) {
+      header.classList.remove('header-scroll');
+    }
+  });
+}
+
