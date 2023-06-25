@@ -1,19 +1,24 @@
 // home.controller.js
 const { readFeatures, readNews } = require('../helpers/readProducts');
 const formatPrice = require('../helpers/formatPrice');
+const { Product } = require('../models/product');
 
-exports.index = function(req, res) {
-  console.log('entró al controlador de home');
-  const features = readFeatures();
-  // Formatea los precios utilizando accounting
-  features.forEach(product => {
-    product.formattedPrice = formatPrice(product.price);
-  });
+exports.index = async function (req, res) {
+  try {
+    const products = await Product.find().populate('category parentCategory');
+    const news = readNews();
+    news.forEach(product => {
+      product.formattedPrice = formatPrice(product.price);
+    });
 
-  const news = readNews();
-  news.forEach(product => {
-    product.formattedPrice = formatPrice(product.price);
-  });
-  res.render('home', { title: 'Once Once', features, news, req });
+    res.render('home', {
+      title: 'Once Once',
+      products,
+      news,
+      req,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error al obtener los productos');
+  }
 };
-

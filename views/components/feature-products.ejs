@@ -3,15 +3,15 @@
   <h2>Calidad y amor en cada una de nuestras referencias</h2>
     <p>Prendas hechas a mano para momentos memorables</p>
     <div class="product-container">
-        <% features.forEach(product=> { %>
+        <% products.forEach(product=> { %>
         <div class="product" onclick="window.location.href='/product/<%= product.id %>'">
-          <img src="<%= product.smImage %>" alt="<%= product.title %>">
+          <img src="<%= product.image %>" alt="<%= product.name %>">
           <div class="description">
-            <h5><%= product.title %></h5>
-            <h4><%= product.formattedPrice %></h4>
+            <h5><%= product.name %></h5>
+            <h4><%= product.price %></h4>
           </div>
           <a href="/product/<%= product.id %>"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
         </div>
         <% }) %>
-    </div>
+    </div>    
 </section>

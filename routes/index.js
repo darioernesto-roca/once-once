@@ -20,6 +20,8 @@ const legalTermsRoutes = require('./legal.terms.routes');
 const privacyPolicyRoutes = require('./privacy.policy.routes');
 const paymentRoutes = require('./payment.routes');
 const storeRoutes = require('./store.routes');
+const categoriesRoutes = require('./categories.routes');
+
 
 
 router.use('/', homeRoutes);
@@ -41,6 +43,7 @@ router.use('/terminos-y-condiciones', legalTermsRoutes);
 router.use('/politica-de-privacidad', privacyPolicyRoutes);
 router.use('/payment', paymentRoutes);
 router.use('/nuestra-tienda', storeRoutes);
+router.use('/create-categories', categoriesRoutes);
 
 
 module.exports = router;
