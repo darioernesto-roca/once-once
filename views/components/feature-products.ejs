@@ -7,7 +7,8 @@
         <div class="product" onclick="window.location.href='/product/<%= product.id %>'">
           <img src="<%= product.image %>" alt="<%= product.name %>">
           <div class="description">
-            <h5><%= product.name %></h5>
+            <h4><%= product.name %></h4>
+            <h5><span><%= product.parentCategory.name %></span>/<span><%= product.category.name %></span></h5>
             <h4><%= product.price %></h4>
           </div>
           <a href="/product/<%= product.id %>"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
