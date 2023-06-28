@@ -1,18 +1,18 @@
 <section id="feature-products" class="feature-products section-p1">
   <h1 class="hero-title">ONCE ONCE</h1>
   <h2>Calidad y amor en cada una de nuestras referencias</h2>
-    <p>Prendas hechas a mano para momentos memorables</p>
-    <div class="product-container">
-        <% products.forEach(product=> { %>
-        <div class="product" onclick="window.location.href='/product/<%= product.id %>'">
-          <img src="<%= product.image %>" alt="<%= product.name %>">
-          <div class="description">
-            <h4><%= product.name %></h4>
-            <h5><span><%= product.parentCategory.name %></span>/<span><%= product.category.name %></span></h5>
-            <h4><%= product.price %></h4>
-          </div>
-          <a href="/product/<%= product.id %>"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
+  <p>Prendas hechas a mano para momentos memorables</p>
+  <div class="product-container">
+    <% formattedProducts.forEach(product => { %>
+      <div class="product" onclick="window.location.href='<%= urlFor(`/product/${product.id}`) %>'">
+        <img src="<%= product.image %>" alt="<%= product.name %>">
+        <div class="description">
+          <h4><%= product.name %></h4>
+          <h5><span><%= product.parentCategory.name %></span>/<span><%= product.category.name %></span></h5>
+          <h4><%= product.price %></h4>
         </div>
-        <% }) %>
-    </div>    
+        <a href="/product/<%= product.id %>"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
+      </div>
+    <% }) %>
+  </div>
 </section>

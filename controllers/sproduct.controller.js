@@ -1,24 +1,21 @@
 // Controller for sproduct
+const { Types } = require('mongoose');
+const { Product } = require('../models/product');
 
-const fs = require('fs');
-
-exports.showProduct = (req, res) => {
+exports.showProduct = async (req, res) => {
   console.log('Ingresó a showProduct');
   const productId = req.params['id'];
-  const filePath = './public/products.json';
 
-  const rawdata = fs.readFileSync(filePath, 'utf8');
-  const productsDB = JSON.parse(rawdata).productsDB;
-  const boysProducts = productsDB.boys;
-  const girlsProducts = productsDB.girls;
+  try {
+    const product = await Product.findById(new Types.ObjectId(productId));
 
-  // Buscar el producto en ambas categorías
-  const product = boysProducts.find((product) => product.id === parseInt(productId)) ||
-    girlsProducts.find((product) => product.id === parseInt(productId));
+    if (!product) {
+      return res.status(404).send('Product not found');
+    }
 
-  if (!product) {
-    return res.status(404).send('Product not found');
+    res.render('sproduct', { title: product.title, product: product });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error al obtener el producto');
   }
-
-  res.render('sproduct', { title: product.title, product: product });
 };

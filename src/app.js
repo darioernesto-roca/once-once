@@ -31,6 +31,14 @@ app.listen(PORT, () =>
   console.log(`🌎 Server listening in port: http://localhost:${PORT}`)
 );
 
+// Helper to create relative URLs
+app.use((req, res, next) => {
+  res.locals.urlFor = (path) => {
+    return `${req.baseUrl}${path}`;
+  };
+  next();
+});
+
 // Set Template Engine
 app.use(expressLayouts);
 app.set("view engine", "ejs");
