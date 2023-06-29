@@ -4,7 +4,7 @@
   <p>Prendas hechas a mano para momentos memorables</p>
   <div class="product-container">
     <% formattedProducts.forEach(product => { %>
-      <div class="product" onclick="window.location.href='<%= urlFor(`/product/${product.id}`) %>'">
+      <div class="product" onclick="window.location.href='<%= urlFor(`/product/${product._id}`) %>'">
         <img src="<%= product.image %>" alt="<%= product.name %>">
         <div class="description">
           <h4><%= product.name %></h4>

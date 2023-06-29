@@ -7,6 +7,7 @@ exports.index = async function (req, res) {
   try {
     const products = await Product.find().populate('category parentCategory');
     const formattedProducts = products.map(product => {
+      console.log(product._id);
       const formattedPrice = formatPrice(product.price);
       return { ...product.toObject(), price: formattedPrice };
     });

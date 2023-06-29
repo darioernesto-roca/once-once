@@ -1,25 +1,25 @@
 <section class="prodetails section-p1">
     <div class="single-pro-image">
-        <img src="<%= product.image1 %>" alt="<%= product.title %> 1" id="main-img" class="main-img">
+        <img src="<%= product.images[0] %>" alt="<%= product.name %> 1" id="main-img" class="main-img">
         <div class="small-img-group">
             <div class="small-img-col">
-                <img src="<%= product.image1 %>" alt="<%= product.title %> 1" class="small-img">
+                <img src="<%= product.images[0] %>" alt="<%= product.title %> 1" class="small-img">
             </div>
             <div class="small-img-col">
-                <img src="<%= product.image2 %>" alt="<%= product.title %> 2" class="small-img">
+                <img src="<%= product.images[1] %>" alt="<%= product.title %> 2" class="small-img">
             </div>
             <div class="small-img-col">
-                <img src="<%= product.image3 %>" alt="<%= product.title %> 3" class="small-img">
+                <img src="<%= product.images[2] %>" alt="<%= product.title %> 3" class="small-img">
             </div>
             <div class="small-img-col">
-                <img src="<%= product.image4 %>" alt="<%= product.title %> 4" class="small-img">
+                <img src="<%= product.images[3] %>" alt="<%= product.name %> 4" class="small-img">
             </div>
         </div>
     </div>
     <div class="single-pro-details">
-        <h6>Once Once | <%= product.category %></h6>
-        <h4><%= product.title %></h4>
-        <h2>COP $<%= product.price %></h2>
+        <h6>Once Once | <%= product.category.name %></h6>
+        <h4><%= product.name %></h4>
+        <h2><%= product.price %></h2>
         <select id="sizeSelect">
             <option>Selecciona la talla</option>
             <option>3-6 meses</option>
@@ -29,10 +29,9 @@
         </select>
         <span id="sizeError" style="color: rgb(117, 0, 0); display: none;">*Selecciona una talla</span>
         <input id="quantity" type="number" value="1" min="1" max="5">
-        <button class="normal" id="addToCartBtn" data-title="<%= product.title %>" data-price="<%= product.price %>" data-image="<%= product.image1 %>">Agregar Al Carrito</button>
+        <button class="normal" id="addToCartBtn" data-title="<%= product.name %>" data-price="<%= product.price %>" data-image="<%= product.images[0] %>">Agregar Al Carrito</button>
         <h4>Detalles del Producto</h4>
-        <p><%= product.shortdescription %></p>
-        <p><%= product.longdescription %></p>
+        <p><%= product.description %></p>
         <div class="single-pro-links">
             <a onclick="window.location.href= document.referrer">Seguir Comprando</a>
             <a href="/inicio">Ir al Carrito</a>

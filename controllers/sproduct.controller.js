@@ -1,19 +1,26 @@
 // Controller for sproduct
-const { Types } = require('mongoose');
 const { Product } = require('../models/product');
+const formatPrice = require('../helpers/formatPrice');
 
-exports.showProduct = async (req, res) => {
-  console.log('Ingresó a showProduct');
-  const productId = req.params['id'];
-
+exports.showProduct = async function (req, res) {
   try {
-    const product = await Product.findById(new Types.ObjectId(productId));
+    const productId = req.params.id;
+    console.log(req.params.id);
+    const product = await Product.findById(productId).populate('category parentCategory');
+    console.log(product);
 
     if (!product) {
-      return res.status(404).send('Product not found');
+      return res.status(404).send('Producto no encontrado');
     }
 
-    res.render('sproduct', { title: product.title, product: product });
+    const formattedPrice = formatPrice(product.price);
+    const formattedProduct = { ...product.toObject(), price: formattedPrice };
+
+    res.render('sproduct', {
+      title: product.name,
+      product: formattedProduct,
+      req,
+    });
   } catch (error) {
     console.error(error);
     res.status(500).send('Error al obtener el producto');
