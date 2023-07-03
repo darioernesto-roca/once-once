@@ -80,4 +80,26 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
+// Customize WhatsApp Message
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Obtener el elemento "Compra directa"
+  const compraDirectaLink = document.getElementById('whatsapp-message');
+  console.log(compraDirectaLink);
+  // Obtener el nombre del producto desde el servidor (asumiendo que se pasa como variable)
+  const productName = document.getElementById('product-name').innerHTML;
+  console.log(productName);
+
+  // Agregar el evento click al enlace "Compra directa"
+  compraDirectaLink.addEventListener('click', (event) => {
+    // Actualizar el mensaje de WhatsApp con el nombre del producto
+    const message = `Hola, quisiera preguntar por el producto ${productName}`;
+    const encodedMessage = encodeURIComponent(message);
+    console.log(encodedMessage);
+    const whatsappLink = "https://api.whatsapp.com/send?phone=573043761576&amp;text=" + message;
+    console.log(whatsappLink);
+    compraDirectaLink.href = whatsappLink;
+    console.log(compraDirectaLink.href);
+  });
+});
   

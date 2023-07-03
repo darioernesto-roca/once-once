@@ -10,6 +10,7 @@
     margin-right: 50px;
 }
 
+
 .small-img-group {
     display: flex;
     justify-content: space-between;
@@ -72,9 +73,10 @@
 
 .single-pro-links {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-content: baseline;
-    gap: 150px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -106,4 +108,8 @@
 .single-pro-details a:hover::after {
     background-color: #ea3f2d;
     cursor: pointer;
+}
+
+.prodetails .single-pro-details ul.color-list {
+    list-style: none;
 }

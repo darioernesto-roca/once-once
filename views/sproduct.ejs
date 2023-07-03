@@ -1,6 +1,6 @@
 <section class="prodetails section-p1">
     <div class="single-pro-image">
-        <img src="<%= product.images[0] %>" alt="<%= product.name %> 1" id="main-img" class="main-img">
+        <img src="<%= product.images[0]%>" alt="<%= product.name %> 1" id="main-img" class="main-img">
         <div class="small-img-group">
             <div class="small-img-col">
                 <img src="<%= product.images[0] %>" alt="<%= product.title %> 1" class="small-img">
@@ -18,23 +18,35 @@
     </div>
     <div class="single-pro-details">
         <h6>Once Once | <%= product.category.name %></h6>
-        <h4><%= product.name %></h4>
+        <h4 id="product-name"><%= product.name %></h4>
         <h2><%= product.price %></h2>
         <select id="sizeSelect">
             <option>Selecciona la talla</option>
-            <option>3-6 meses</option>
-            <option>6-12 meses</option>
-            <option>12-18 meses</option>
-            <option>18-24 meses</option>
+            <% product.size.forEach(function(size) { %>
+                <option><%= size %></option>
+            <% }) %>
         </select>
         <span id="sizeError" style="color: rgb(117, 0, 0); display: none;">*Selecciona una talla</span>
+
         <input id="quantity" type="number" value="1" min="1" max="5">
         <button class="normal" id="addToCartBtn" data-title="<%= product.name %>" data-price="<%= product.price %>" data-image="<%= product.images[0] %>">Agregar Al Carrito</button>
         <h4>Detalles del Producto</h4>
         <p><%= product.description %></p>
-        <div class="single-pro-links">
+        <h5>Colores disponibles bajo pedido</h5>
+        <ul>
+            <% product.colors.forEach(function(color) { %>
+                <li class="color-list"><%= color %></li>
+            <% }) %>
+        </ul>
+
+        <h5>*Para productos bajo pedido el tiempo de entrega es de aproximadamente 6 días hábiles luego de hacerse efectivo el pago. <span> </span></h5>
+        
+
+        <div class="single-pro-links section-m1">
             <a onclick="window.location.href= document.referrer">Seguir Comprando</a>
             <a href="/inicio">Ir al Carrito</a>
+            <a id="whatsapp-message" href="https://api.whatsapp.com/send?phone=573043761576&amp;text=Hola, quisiera averiguar por los productos de Once Once"
+            target="_blank">Compra directa: 304 3761576</a>
         </div>
     </div>
 </section>

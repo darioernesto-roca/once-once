@@ -1310,6 +1310,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  background-color: tomato;
 }
 
 .prodetails .single-pro-image {
@@ -1379,9 +1380,10 @@ footer .copyright {
 
 .single-pro-links {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-content: baseline;
-  gap: 150px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -1413,6 +1415,10 @@ footer .copyright {
 .single-pro-details a:hover::after {
   background-color: #ea3f2d;
   cursor: pointer;
+}
+
+.prodetails .single-pro-details ul.color-list {
+  list-style: none;
 }
 
 .mosaic-container {
@@ -1489,10 +1495,6 @@ footer .copyright {
 @media (max-width: 964px) {
   .hero {
     height: 50vh;
-  }
-  .single-pro-links {
-    flex-direction: column;
-    gap: 20px;
   }
 }
 @media (max-width: 924px) {

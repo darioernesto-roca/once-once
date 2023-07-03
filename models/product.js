@@ -9,24 +9,34 @@ const productSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    size: {
+    size: [{
         type: String,
-        default: ''
-    },
+        default: '',
+        required: true,
+    }],
     image: {
         type: String,
-        default: ''
+        default: '',
+        required: true,
     },
     images: [{
-        type: String
-    }],
-    color: {
         type: String,
-        default: ''
-    },
+        required: true,
+    }],
+    colors: [{
+        type: String,
+        default: '',
+        required: true,
+    }],
+    availableColors: [{
+        type: String,
+        default: '',
+        required: true,
+    }],
     price : {
         type: Number,
-        default:0
+        default:0,
+        required: true,
     },
     category: {
         type: mongoose.Schema.Types.ObjectId,
