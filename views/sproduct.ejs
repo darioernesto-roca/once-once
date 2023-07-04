@@ -32,14 +32,13 @@
         <button class="normal" id="addToCartBtn" data-title="<%= product.name %>" data-price="<%= product.price %>" data-image="<%= product.images[0] %>">Agregar Al Carrito</button>
         <h4>Detalles del Producto</h4>
         <p><%= product.description %></p>
-        <h5>Colores disponibles bajo pedido</h5>
-        <ul>
+        <p>Colores disponibles:</p>
+        <div class="colors-container">
             <% product.colors.forEach(function(color) { %>
-                <li class="color-list"><%= color %></li>
-            <% }) %>
-        </ul>
-
-        <h5>*Para productos bajo pedido el tiempo de entrega es de aproximadamente 6 días hábiles luego de hacerse efectivo el pago. <span> </span></h5>
+                <span class="color-list" style="background-color:<%= color %>;"></span>
+              <% }) %>
+        </div>
+        <p>*Para productos bajo pedido el tiempo de entrega es de aproximadamente 6 días hábiles luego de hacerse efectivo el pago.</p>
         
 
         <div class="single-pro-links section-m1">

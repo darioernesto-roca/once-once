@@ -1416,8 +1416,18 @@ footer .copyright {
   cursor: pointer;
 }
 
-.prodetails .single-pro-details ul.color-list {
+.single-pro-details .colors-container {
+  display: flex;
+}
+
+.single-pro-details .color-list {
   list-style: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 20%;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .mosaic-container {

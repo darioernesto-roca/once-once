@@ -39,14 +39,15 @@ document.addEventListener('DOMContentLoaded', () => {
   
   
   function addToCart(event) {
-
     // Get the quantity chose by user in input quantity
     const quantity = document.getElementById('quantity').value;
 
     // Get the product details from the clicked button's data attributes
     const title = event.target.dataset.title;
+    console.log(title);
     const price = event.target.dataset.price;
     const image = event.target.dataset.image;
+
     
     // Get selected size of the product
     const sizeSelect = document.getElementById('sizeSelect');

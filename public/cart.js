@@ -25,7 +25,7 @@ function removeProduct(index) {
         <div class="cart-description">
           <h5>${title}</h5>
           <h5>Talla: ${size}</h5>
-          <h4>COP $${price}</h4>
+          <h5>${price}</h5>
         </div>
         <div class="cart-quantity">
           <input type="number" value="${quantity}">
