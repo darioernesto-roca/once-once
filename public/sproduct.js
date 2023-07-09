@@ -76,8 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
     cartItems.push(product);
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   
-    // Show a success message or redirect to the cart page
-    alert('El producto se ha agregado al carrito');
+    // Show the success modal instead of the alert
+    const successModal = document.getElementById('success-modal');
+    const successMessage = document.getElementById('success-message');
+    successMessage.textContent = 'El producto se ha agregado al carrito'; // Update the success message if needed
+    successModal.style.display = 'block';
   }
 
 

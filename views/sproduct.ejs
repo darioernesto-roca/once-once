@@ -1,3 +1,17 @@
+
+
+<div id="success-modal" class="modal">
+    <div class="modal-content">
+      <p class="success-msg"><span id="success-message"></span></p>
+      <div class="modal-buttons">
+        <p class="success-link"><a class="normal modal-link" href="/inicio">Seguir comprando</a></p>
+        <p class="success-link"><a class="normal modal-link" href="/carrito-de-compras">Ir al carrito</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
 <section class="prodetails section-p1">
     <div class="single-pro-image">
         <img src="<%= product.images[0]%>" alt="<%= product.name %> 1" id="main-img" class="main-img">
@@ -28,7 +42,7 @@
         </select>
         <span id="sizeError" style="color: rgb(117, 0, 0); display: none;">*Selecciona una talla</span>
 
-        <input id="quantity" type="number" value="1" min="1" max="5">
+        <input id="quantity" type="number" value="1" min="1" max="<%= product.countInStock %>">
         <button class="normal" id="addToCartBtn" data-title="<%= product.name %>" data-price="<%= product.price %>" data-image="<%= product.images[0] %>">Agregar Al Carrito</button>
         <h4>Detalles del Producto</h4>
         <p><%= product.description %></p>
