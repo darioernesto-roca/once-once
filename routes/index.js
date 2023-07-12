@@ -21,6 +21,7 @@ const privacyPolicyRoutes = require('./privacy.policy.routes');
 const paymentRoutes = require('./payment.routes');
 const storeRoutes = require('./store.routes');
 const categoriesRoutes = require('./categories.routes');
+const orderRoutes = require('./order.routes');
 
 
 
@@ -44,6 +45,8 @@ router.use('/politica-de-privacidad', privacyPolicyRoutes);
 router.use('/payment', paymentRoutes);
 router.use('/nuestra-tienda', storeRoutes);
 router.use('/create-categories', categoriesRoutes);
+router.use('/order', orderRoutes);
+router.use('/create-order', cartRoutes);
 
 
 module.exports = router;

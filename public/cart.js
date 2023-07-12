@@ -126,4 +126,40 @@ cartItems.forEach((product, index) => {
   });
 });
 
+// Obtener el botón de pago
+const checkoutBtn = document.querySelector('.checkout-btn');
+
+
+// Function to create the order and navigate to the order view
+function createOrder() {
+  const order = {
+    products: cartItems,
+    totalQuantity: parseInt(totalProductsElement.innerText),
+    totalPrice: parseFloat(totalAmountElement.innerText)
+  };
+
+  fetch('/order', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(order)
+  })
+    .then(response => response.json())
+    .then(data => {
+      // Aquí se puede manejar la respuesta del servidor si es necesario
+      console.log('Orden creada:', data);
+      // Redirigir al usuario a la página de pago
+      window.location.href = `/order/get?orderId=${data.orderId}`; // Update this line
+    })
+    .catch(error => {
+      // Manejo de errores
+      console.error('Error al crear la orden:', error);
+    });
+}
+
+// Agregar evento de clic al botón de pago
+checkoutBtn.addEventListener('click', createOrder);
+
 updateTotals();
+

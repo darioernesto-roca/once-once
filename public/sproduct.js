@@ -1,28 +1,10 @@
-//File sproduct.js
-
 // Gets the element img with the class main-img
 const $mainImg = document.getElementById("main-img");
-// TGets an HTML Collection of elements with the class small-img
+// Gets an HTML Collection of elements with the class small-img
 const $smallImg = document.getElementsByClassName("small-img");
 
 // Sets the onclick event handler for the small images
-// That means when clicking an small-image change the source for main-img
-// $smallImg[0].onclick = function() {
-//     $mainImg.src = $smallImg[0].src;
-// }
-// $smallImg[1].onclick = function() {
-//     $mainImg.src = $smallImg[1].src;
-// }
-// $smallImg[2].onclick = function() {
-//     $mainImg.src = $smallImg[2].src;
-// }
-// $smallImg[3].onclick = function() {
-//     $mainImg.src = $smallImg[3].src;
-// }
-
-// Sets the onclick event handler for the small images
-// The same as above but with a for loop
-
+// That means when clicking a small-image, change the source for main-img
 for (let i = 0; i < $smallImg.length; i++) {
   $smallImg[i].onclick = function() {
     $mainImg.src = $smallImg[i].src;
@@ -30,59 +12,54 @@ for (let i = 0; i < $smallImg.length; i++) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Gets the element button with the id addToCartBtn
-    const addToCartBtn = document.getElementById('addToCartBtn');
-    // When click in addToCartBtn executes the function addToCart
-    addToCartBtn.addEventListener('click', addToCart);
+  // Gets the element button with the id addToCartBtn
+  const addToCartBtn = document.getElementById('addToCartBtn');
+  // When clicked on addToCartBtn, execute the function addToCart
+  addToCartBtn.addEventListener('click', addToCart);
+});
 
-  });
-  
-  
-  function addToCart(event) {
-    // Get the quantity chose by user in input quantity
-    const quantity = document.getElementById('quantity').value;
+function addToCart(event) {
+  // Get the quantity chosen by the user in the input quantity
+  const quantity = document.getElementById('quantity').value;
 
-    // Get the product details from the clicked button's data attributes
-    const title = event.target.dataset.title;
-    console.log(title);
-    const price = event.target.dataset.price;
-    const image = event.target.dataset.image;
+  // Get the product details from the clicked button's data attributes
+  const title = event.target.dataset.title;
+  console.log(title);
+  const price = event.target.dataset.price;
+  const image = event.target.dataset.image;
 
-    
-    // Get selected size of the product
-    const sizeSelect = document.getElementById('sizeSelect');
-    const selectedSize = sizeSelect.value;
+  // Get the selected size of the product
+  const sizeSelect = document.getElementById('sizeSelect');
+  const selectedSize = sizeSelect.value;
 
-    // Check if a size has been selected
-    if (selectedSize === 'Selecciona la talla') {
-      const sizeError = document.getElementById('sizeError');
-      sizeError.style.display = 'block'; // Show the error message
-      return; // Don't proceed with adding the product to the cart
-    }
-
-   
-    // Logic to add the product to the cart
-    // Here I can use my own implementation or send a request to the server
-  
-    // Example: store the product in local storage
-    const product = {
-      title: title,
-      price: price,
-      image: image,
-      size: selectedSize,
-      quantity: quantity
-    };
-    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-    cartItems.push(product);
-    localStorage.setItem('cartItems', JSON.stringify(cartItems));
-  
-    // Show the success modal instead of the alert
-    const successModal = document.getElementById('success-modal');
-    const successMessage = document.getElementById('success-message');
-    successMessage.textContent = 'El producto se ha agregado al carrito'; // Update the success message if needed
-    successModal.style.display = 'block';
+  // Check if a size has been selected
+  if (selectedSize === 'Selecciona la talla') {
+    const sizeError = document.getElementById('sizeError');
+    sizeError.style.display = 'block'; // Show the error message
+    return; // Don't proceed with adding the product to the cart
   }
 
+  // Logic to add the product to the cart
+  // Here you can use your own implementation or send a request to the server
+
+  // Example: store the product in local storage
+  const product = {
+    title: title,
+    price: price,
+    image: image,
+    size: selectedSize,
+    quantity: quantity
+  };
+  const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  cartItems.push(product);
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+  // Show the success modal instead of the alert
+  const successModal = document.getElementById('success-modal');
+  const successMessage = document.getElementById('success-message');
+  successMessage.textContent = 'El producto se ha agregado al carrito'; // Update the success message if needed
+  successModal.style.display = 'block';
+}
 
 // Customize WhatsApp Message
 
@@ -106,4 +83,3 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(compraDirectaLink.href);
   });
 });
-  
