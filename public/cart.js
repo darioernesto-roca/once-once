@@ -4,6 +4,9 @@ const cartContainer = document.getElementById('cartContainer');
 // Obtener los productos del localStorage
 let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
+let totalProductsElement;
+let totalAmountElement;
+
 // Función para eliminar un producto del carrito
 function removeProduct(index) {
   // Eliminar el producto del array cartItems
@@ -80,10 +83,10 @@ function updateTotals() {
     totalPrice += productPrice * productQuantity;
   });
 
-  const totalProductsElement = document.getElementById('totalProducts');
+  totalProductsElement = document.getElementById('totalProducts'); // Assign the value here
   totalProductsElement.innerText = totalQuantity.toString();
 
-  const totalAmountElement = document.getElementById('totalAmount');
+  totalAmountElement = document.getElementById('totalAmount');
   totalAmountElement.innerText = `${totalPrice}`;
 }
 
@@ -129,16 +132,19 @@ cartItems.forEach((product, index) => {
 // Obtener el botón de pago
 const checkoutBtn = document.querySelector('.checkout-btn');
 
-
 // Function to create the order and navigate to the order view
-function createOrder() {
+async function createOrder() {
+  const totalProductsElement = document.getElementById('totalProducts'); // Add this line here
+
   const order = {
     products: cartItems,
     totalQuantity: parseInt(totalProductsElement.innerText),
     totalPrice: parseFloat(totalAmountElement.innerText)
   };
 
-  fetch('/order', {
+  console.log("order:", JSON.stringify(order));
+
+  await fetch('/order', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -150,7 +156,7 @@ function createOrder() {
       // Aquí se puede manejar la respuesta del servidor si es necesario
       console.log('Orden creada:', data);
       // Redirigir al usuario a la página de pago
-      window.location.href = `/order/get?orderId=${data.orderId}`; // Update this line
+      window.location.href = "/order";
     })
     .catch(error => {
       // Manejo de errores
@@ -162,4 +168,3 @@ function createOrder() {
 checkoutBtn.addEventListener('click', createOrder);
 
 updateTotals();
-

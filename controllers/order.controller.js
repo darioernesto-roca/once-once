@@ -1,24 +1,23 @@
-// order.controller.js
-
 const { Order } = require('../models/order');
 
 exports.get = function (req, res) {
-    const orderId = req.body.orderId;
-    console.log(orderId);
-  
-    // Render the order view with the orderId
-    res.render("order", {
-      title: "Crear orden",
-      orderId: orderId
-    });
-  };
+  // Retrieve the cart items from the session or any other relevant data source
+  const cartItems = req.localStorage || [];
+  console.dir(req);
+
+  // Render the order view with the cart items
+  res.render("order", {
+    title: "Crear orden",
+    cartItems: cartItems
+  });
+};
 
 exports.post = async function (req, res) {
   const orderData = req.body;
-  const cartItems = req.body.cartItems || [];
+  const cartItems = orderData.products || []; // Use orderData.products instead of req.body.cartItems
 
-  // Remove the 'cartItems' field from the order data so it won't be saved in the database
-  delete orderData.cartItems;
+  // Remove the 'products' field from the order data so it won't be saved in the database
+  delete orderData.products;
 
   // Assign the cartItems to the 'orderItems' property of the order
   orderData.orderItems = cartItems.map((item) => {
@@ -34,3 +33,4 @@ exports.post = async function (req, res) {
       res.status(500).json({ error: 'Error al guardar la orden' });
     });
 };
+

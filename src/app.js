@@ -23,6 +23,10 @@ app.use(cors());
 // It configures the body-parser middleware to handle URL-encoded form data. It parses the request body and makes it accessible via req.body in subsequent middleware or route handlers. The { extended: true } option allows for complex objects to be encoded in the URL.
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Parse JSON bodies
+app.use(express.json());
+
+
 // Static folder
 app.use(express.static(path.join(__dirname, "../public")));
 
