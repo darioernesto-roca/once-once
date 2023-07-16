@@ -1,18 +1,14 @@
 const { Order } = require('../models/order');
 
 exports.get = function (req, res) {
-  // Retrieve the cart items from the session or any other relevant data source
-  const cartItems = req.localStorage || [];
-  console.dir(req);
-
-  // Render the order view with the cart items
+  console.log("Entró al controlador de order");
   res.render("order", {
     title: "Crear orden",
-    cartItems: cartItems
   });
 };
 
 exports.post = async function (req, res) {
+
   const orderData = req.body;
   const cartItems = orderData.products || []; // Use orderData.products instead of req.body.cartItems
 

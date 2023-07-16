@@ -7,10 +7,11 @@ exports.index = function (req, res) {
     });
   };
 
-  exports.createOrder = function (req, res) {
-    const orderData = req.body;
-    // Process the orderData and save it to the database
-    // ...
-    // Send a response indicating the order was created successfully
-    res.json({ message: "Order created successfully" });
-  };
+  // exports.createOrder = function (req, res) {
+  //   const orderData = req.body;
+  //   console.log("Vengo de cart,js createOrder")
+  //   // Process the orderData and save it to the database
+  //   // ...
+  //   // Send a response indicating the order was created successfully
+  //   res.json({ message: "Order created successfully" });
+  // };

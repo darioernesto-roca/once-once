@@ -1,68 +1,71 @@
-<div class="form-container">
-    <h2 class="form-title">Agrega tus datos</h2>
+<section class="order-section section-m1">
+  <div class="order-col">
+    <h2 class="form-title">Datos de envío</h2>
     <form class="contact-form" action="/crear-orden" method="POST">
+  
         <div class="form-group">
-            <label class="form-label" for="orderItems">Productos</label>
-            <select class="form-input" name="orderItems" required>
-              <option value="" disabled selected>Seleccione los productos</option>
-            </select>
-          </div>
-          
+            <label class="form-label" for="shippingAddress1">Dirección de envío:</label>
+            <input class="form-input" type="text" name="shippingAddress1" required placeholder="Ejemplo: Calle Principal 123 # 01-02">
+        </div>
   
-      <div class="form-group">
-        <label class="form-label" for="shippingAddress1">Dirección de envío 1:</label>
-        <input class="form-input" type="text" name="shippingAddress1" required placeholder="Ejemplo: Calle Principal 123 # 01-02">
-      </div>
+        <div class="form-group">
+          <label class="form-label" for="shippingAddress2">Información adicional:</label>
+          <input class="form-input" type="text" name="shippingAddress2" placeholder="Ejemplo: Apartamento 456, Barrio o Sector...">
+        </div>
   
-      <div class="form-group">
-        <label class="form-label" for="shippingAddress2">Información adicional:</label>
-        <input class="form-input" type="text" name="shippingAddress2" placeholder="Ejemplo: Apartamento 456, Barrio o Sector...">
-      </div>
+        <div class="form-group">
+          <label class="form-label" for="city">Ciudad:</label>
+          <input class="form-input" type="text" name="city" required placeholder="Ejemplo: Bogotá">
+        </div>
   
-      <div class="form-group">
-        <label class="form-label" for="city">Ciudad:</label>
-        <input class="form-input" type="text" name="city" required placeholder="Ejemplo: Bogotá">
-      </div>
+        <div class="form-group">
+          <label class="form-label" for="zip">Código Postal:</label>
+          <input class="form-input" type="text" name="zip" required placeholder="Ejemplo: 00000">
+        </div>
   
-      <div class="form-group">
-        <label class="form-label" for="zip">Código Postal:</label>
-        <input class="form-input" type="text" name="zip" required placeholder="Ejemplo: 00000">
-      </div>
+        <div class="form-group">
+          <label class="form-label" for="country">País:</label>
+          <input class="form-input" type="text" name="country" required placeholder="Ejemplo: Colombia">
+        </div>
   
-      <div class="form-group">
-        <label class="form-label" for="country">País:</label>
-        <input class="form-input" type="text" name="country" required placeholder="Ejemplo: Colombia">
-      </div>
+        <div class="form-group">
+          <label class="form-label" for="phone">Teléfono:</label>
+          <input class="form-input" type="text" name="phone" required placeholder="Ejemplo: +420702241333">
+        </div>
   
-      <div class="form-group">
-        <label class="form-label" for="phone">Teléfono:</label>
-        <input class="form-input" type="text" name="phone" required placeholder="Ejemplo: +420702241333">
-      </div>
+        <div class="form-group">
+          <label class="form-label" for="user">Nombre Completo:</label>
+          <input class="form-input" type="text" name="user" placeholder="Agrega aquí tu nombre completo">
+        </div>
   
-      <div class="form-group">
-        <label class="form-label" for="user">Nombre Completo:</label>
-        <input class="form-input" type="text" name="user" placeholder="Agrega aquí tu nombre completo">
-      </div>
+        <div class="form-group">
+          <label class="form-label" for="id">Identificación:</label>
+          <select class="form-input" name="id">
+            <option value="" disabled selected>Seleccione el tipo de documento</option>
+            <option value="cedula">Cédula de Ciudadanía</option>
+            <option value="pasaporte">Pasaporte</option>
+            <option value="otro">Otro documento</option>
+          </select>
+        </div>
   
-      <div class="form-group">
-        <label class="form-label" for="id">Identificación:</label>
-        <select class="form-input" name="id">
-          <option value="" disabled selected>Seleccione el tipo de documento</option>
-          <option value="cedula">Cédula de Ciudadanía</option>
-          <option value="pasaporte">Pasaporte</option>
-          <option value="otro">Otro documento</option>
-        </select>
-      </div>
+        <div class="form-group">
+          <label class="form-label" for="documentNumber">Número de Documento:</label>
+          <input class="form-input" type="text" name="documentNumber" placeholder="Ejemplo: 123456789">
+        </div>
   
-      <div class="form-group">
-        <label class="form-label" for="documentNumber">Número de Documento:</label>
-        <input class="form-input" type="text" name="documentNumber" placeholder="Ejemplo: 123456789">
-      </div>
+        <div class="button-container">
+          <button class="send-button" type="submit">Crear Orden</button>
+        </div>
   
-      <div class="button-container">
-        <button class="send-button" type="submit">Crear Orden</button>
-      </div>
+      </form>
+    </div>
+  
+    <div class="product-in-cart order-col">
+      <h2 class="form-title">Productos en el carrito</h2>
+      <div class="products"></div>
+  
+  
+    </div>
+</section>
 
-    </form>
-  </div>
-  
+  <script async defer type="module" src="/order.js"></script>
