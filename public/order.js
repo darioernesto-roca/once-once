@@ -14,7 +14,7 @@
     let productListHTML = "";
     products.forEach((product) => {
       productListHTML += `<div class="product-list"><div class="product-image"><img class="image-order" src="${product.image}" alt="${product.title}"></div> <div class="product-text">
-        <h5>Producto: ${product.title}</h5> <h5>Talla: ${product.size}</h5> <h5>Cantidad: ${product.quantity}</h5> <h5>Precio${product.price}</div></h4>
+        <h5>Producto: ${product.title}</h5> <h5>Talla: ${product.size}</h5> <h5>Cantidad: ${product.quantity}</h5> <h5>Precio: ${product.price}</div></h4>
       </div>`;
     });
   
