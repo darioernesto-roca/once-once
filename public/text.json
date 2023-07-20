@@ -22,7 +22,7 @@
     },
     {
         "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
-        "name": "Braga Luca",
+        "name": "Braga luca",
         "description": "Lino y algodón con bordado delantero",
         "size": ["12 a 18 meses"],
         "countInStock": { "$numberInt": "1" },
@@ -379,7 +379,7 @@
     },
     {
         "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
-        "name": "Lulú",
+        "name": "Lulú amarillo",
         "description": "Hay uno de cada color",
         "size": ["3 a 6 meses"],
         "countInStock": { "$numberInt": "1" },
@@ -393,8 +393,29 @@
             "/img/productsdb/gael-standard3.png",
             "/img/productsdb/gael-standard4.png"
         ],
-        "availableColors": ["Amarillo y blanco"],
+        "availableColors": ["Amarillo"],
         "colors": ["#fcf96f"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Lulú blanco",
+        "description": "Hay uno de cada color",
+        "size": ["3 a 6 meses"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "110000" },
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Girls"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Blanco"],
+        "colors": ["#fff"],
         "feature": false,
         "new": false
     },
@@ -689,6 +710,195 @@
         ],
         "availableColors": ["Verde y arboles turquí"],
         "colors": ["#45672e"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Marinero niño",
+        "description": "Lino/algodón",
+        "size": ["18 a 24 meses"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "130000" },
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Azul"],
+        "colors": ["#45672e"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Vestido pajecita",
+        "description": "Textil algodón con fajón en lino arena ",
+        "size": ["2 años"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "150000" },
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Pajecita"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Crudo con arena"],
+        "colors": ["#f5f5f5"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Set braga más camisa",
+        "description": "Braga en lino con camisa en lino algodón de bolas",
+        "size": ["18 a 24 meses"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "145000" },
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Aguamarina con camisa cruda"],
+        "colors": ["#f5f5f5"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Set luciano",
+        "description": "Lino",
+        "size": ["12 a 18 meses"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "185000" },
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Amarillo con azul"],
+        "colors": ["#fcf96f"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Camisa cuello nerú manga corta",
+        "description": "Lino",
+        "size": ["2 años"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "95000" },
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Rosado"],
+        "colors": ["#fcf96f"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Camisa cuello nerú manga corta",
+        "description": "Lino",
+        "size": ["2 años"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "95000" },
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Amarillo"],
+        "colors": ["#fcf96f"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Camisa ref santiago manga corta",
+        "description": "Botones en nácar",
+        "size": ["4 años"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "105000" },
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Rosado"],
+        "colors": ["#ff8585"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Camisa cuello nerú manga corta",
+        "description": "Lino",
+        "size": ["4 años"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "105000" },
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Rosado"],
+        "colors": ["#ff8585"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Camisa en rayas azules con cuello blanco",
+        "description": "Lino/algodón",
+        "size": ["4 años", "6 años"],
+        "countInStock": { "$numberInt": "2" },
+        "price": { "$numberInt": "95000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Rayas azules "],
+        "colors": ["#ff8585"],
         "feature": false,
         "new": false
     }
