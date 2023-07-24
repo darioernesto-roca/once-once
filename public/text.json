@@ -897,11 +897,454 @@
             "/img/productsdb/gael-standard3.png",
             "/img/productsdb/gael-standard4.png"
         ],
-        "availableColors": ["Rayas azules "],
+        "availableColors": ["Rayas azules"],
         "colors": ["#ff8585"],
         "feature": false,
         "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Camisa estampada en hojas rosadas",
+        "description": "Lino",
+        "size": ["6 años"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "85000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Base cruda"],
+        "colors": ["#f5f5f5"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Pantalón clásico",
+        "description": "Lino",
+        "size": ["1 años"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "98000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión", "Pajecitos"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Crudo"],
+        "colors": ["#f5f5f5"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Set hindú niño",
+        "description": "Camisa manga larga sin cuello. Textil hindú",
+        "size": ["4 años"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": ""},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Amarillo"],
+        "colors": ["#f5f5f5"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Vestido con aberturas al costado",
+        "description": "Vestido en algodón",
+        "size": ["2 años", "4 años"],
+        "countInStock": { "$numberInt": "2" },
+        "price": { "$numberInt": "95000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Girls"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Naranja"],
+        "colors": ["#EA542E"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Vestido espalda afuera",
+        "description": "Vestido en lino",
+        "size": ["2 años"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "170000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Girls"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Fucsia con rosado"],
+        "colors": ["#ca3fcf"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Thali",
+        "description": "Set en lino",
+        "size": ["2 años"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "195000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Girls"],
+        "subcategories": ["Set"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Mostaza"],
+        "colors": ["#F8CC19"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Fátima",
+        "description": "Set en lino",
+        "size": ["2 años"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "220000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Girls"],
+        "subcategories": ["Set"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Amarillo con rosado"],
+        "colors": ["#fcf96f"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Carlota",
+        "description": "Set en lino con bolero en cubrepañal",
+        "size": ["6 a 12 meses"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "130000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Girls"],
+        "subcategories": ["Set"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Rosado"],
+        "colors": ["#ff8585"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Sara",
+        "description": "Lino",
+        "size": ["12 a 18 meses", "6 años"],
+        "countInStock": { "$numberInt": "0" },
+        "price": { "$numberInt": "205000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Girls"],
+        "subcategories": ["Vestido"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Rosado", "blanco", "rojo", "amarillo", "azul cielo", "lila"],
+        "colors": ["#ff8585"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Pelele de bolero en manga",
+        "description": "Algodón",
+        "size": ["6 a 12 meses "],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": ""},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Girls"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Cuadros lila"],
+        "colors": ["#C29DC2"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Samuel",
+        "description": "Lino",
+        "size": ["3 a 6 meses"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "115000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Crudo"],
+        "colors": ["#f5f5f5"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Rompers bolero",
+        "description": "Algodón",
+        "size": ["6 a 12 meses"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": ""},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Girls"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Cuadros turquís", "Cuadros rojos", "Cuadros blancos"],
+        "colors": [""],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Pelele nuevo en cuadros",
+        "description": "Algodón",
+        "size": ["12 a 18 meses"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "110000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Cuadros blancos con azul rey"],
+        "colors": ["#0001F4"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Camiseta",
+        "description": "Algodón",
+        "size": ["8 años"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "40000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Turquí"],
+        "colors": ["#11245F"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Bermuda clásica turquí 6 años",
+        "description": "Lino",
+        "size": ["6 años"],
+        "countInStock": { "$numberInt": "2" },
+        "price": { "$numberInt": "115000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Turquí"],
+        "colors": ["#11245F"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Bermuda clásica amarilla 2 años",
+        "description": "Lino",
+        "size": ["2 años"],
+        "countInStock": { "$numberInt": "2" },
+        "price": { "$numberInt": "95000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Amarilla"],
+        "colors": ["#fcf96f"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Bermuda clásica rosada 2 años",
+        "description": "Lino",
+        "size": ["2 años"],
+        "countInStock": { "$numberInt": "0" },
+        "price": { "$numberInt": "95000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Rosado"],
+        "colors": ["#fcf96f"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Bermuda clásica azul cielo 12-18 meses",
+        "description": "Lino",
+        "size": ["12 a 18 meses"],
+        "countInStock": { "$numberInt": "2" },
+        "price": { "$numberInt": "95000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Azul cielo"],
+        "colors": ["#a2d8e6"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Bermuda clásica azul cielo 2 años",
+        "description": "Lino",
+        "size": ["2 años"],
+        "countInStock": { "$numberInt": "2" },
+        "price": { "$numberInt": "95000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Azul cielo"],
+        "colors": ["#a2d8e6"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Bermuda clásica blanca 4 años",
+        "description": "Lino",
+        "size": ["4 años"],
+        "countInStock": { "$numberInt": "1" },
+        "price": { "$numberInt": "115000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Blanco"],
+        "colors": ["#fff"],
+        "feature": false,
+        "new": false
+    },
+    {
+        "_id": { "$oid": "64b4771ec4c75592974d1eb7" },
+        "name": "Emiliano",
+        "description": "Lino y algodón",
+        "size": ["3 a 6 meses"],
+        "countInStock": { "$numberInt": "2" },
+        "price": { "$numberInt": "195000"},
+        "image": "/img/productsdb/gael-standard.jpg",
+        "categories": ["Boys"],
+        "subcategories": ["Toda Ocasión"],
+        "images": [
+            "/img/productsdb/gael-standard1.png",
+            "/img/productsdb/gael-standard2.png",
+            "/img/productsdb/gael-standard3.png",
+            "/img/productsdb/gael-standard4.png"
+        ],
+        "availableColors": ["Azul cielo con blanco"],
+        "colors": ["#a2d8e6"],
+        "feature": false,
+        "new": false
     }
+    
+
 
 
 
