@@ -14,6 +14,7 @@ const productSchema = new mongoose.Schema({
     colors: [String],
     feature: { type: Boolean, default: false },
     new: { type: Boolean, default: false },
+    show: { type: Boolean, default: true },
   });
 
 productSchema.virtual('id').get(function () {
