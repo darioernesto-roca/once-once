@@ -39,7 +39,7 @@ exports.index = async function (req, res) {
   try {
     const products = await Product.find();
     const formattedProducts = products.map(product => {
-      const formattedPrice = formatPrice(product.price);
+    const formattedPrice = formatPrice(product.price);
       return { ...product.toObject(), price: formattedPrice };
     });
 
@@ -49,13 +49,13 @@ exports.index = async function (req, res) {
     });
 
     res.render('home', {
-      title: 'Once Once',
-      formattedProducts,
-      news,
-      req,
-    });
-  } catch (error) {
-    console.error(error);
-    res.status(500).send('Error al obtener los productos');
-  }
+        title: 'Once Once',
+        formattedProducts,
+        news,
+        req,
+      });
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Error al obtener los productos');
+    }
 };
