@@ -84,3 +84,28 @@ if (window.innerWidth >= BREAK_POINT_TABLET_IN_PX) {
   });
 }
 
+//Changing cart color when mouse over
+
+const productContainers = document.querySelectorAll('.feature-products .product');
+
+// Función para cambiar el color del ícono al pasar el mouse sobre el contenedor
+function changeColorOnHover(event) {
+  const target = event.currentTarget.querySelector('.cart-icon path');
+  target.setAttribute('fill', '#fff');
+}
+
+// Función para restaurar el color original del ícono al quitar el mouse del contenedor
+function restoreColorOnLeave(event) {
+  const target = event.currentTarget.querySelector('.cart-icon path');
+  target.setAttribute('fill', '#a03037'); // Restaurar el color original (el color actual puede variar según el código SVG)
+}
+
+// Agregar eventos a cada contenedor
+productContainers.forEach(container => {
+  container.addEventListener('mouseenter', changeColorOnHover);
+  container.addEventListener('mouseleave', restoreColorOnLeave);
+});
+
+
+
+

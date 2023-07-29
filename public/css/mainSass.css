@@ -638,8 +638,8 @@ input.black {
   border: 1px solid #dcdddd;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-  transition: 0.2s ease;
   position: relative;
+  transition: all 1s ease;
 }
 
 .feature-products .product:hover {
@@ -684,10 +684,17 @@ input.black {
   position: absolute;
   bottom: 10px;
   right: 10px;
+  transition: all 0.5s ease;
 }
 
 .feature-products .product:hover .cart-icon {
-  border: 1px solid #ea3f2d;
+  border: 1px solid #a03037;
+  background-color: #a03037;
+  transition: all 0.5s ease;
+}
+
+.feature-products .product .cart-icon path {
+  transition: all 0.5s ease;
 }
 
 .sm-banner {
