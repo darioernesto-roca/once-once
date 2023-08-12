@@ -97,7 +97,7 @@ function changeColorOnHover(event) {
 // Función para restaurar el color original del ícono al quitar el mouse del contenedor
 function restoreColorOnLeave(event) {
   const target = event.currentTarget.querySelector('.cart-icon path');
-  target.setAttribute('fill', '#a03037'); // Restaurar el color original (el color actual puede variar según el código SVG)
+  target.setAttribute('fill', '#ea542e'); // Restaurar el color original (el color actual puede variar según el código SVG)
 }
 
 // Agregar eventos a cada contenedor
