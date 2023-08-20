@@ -684,13 +684,12 @@ input.black {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 
 .feature-products .product:hover .cart-icon {
   border: 1px solid #ea542e;
   background-color: #ea542e;
-  transition: all 0.5s ease;
 }
 
 .feature-products .product .cart-icon path {
@@ -892,7 +891,7 @@ input.black {
 
 .header-scroll {
   width: 100%;
-  background-color: hsl(12, 82%, 55%);
+  background-color: #ea542e;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.137);
   z-index: 99999;
   position: sticky;

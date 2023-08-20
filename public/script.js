@@ -105,7 +105,3 @@ productContainers.forEach(container => {
   container.addEventListener('mouseenter', changeColorOnHover);
   container.addEventListener('mouseleave', restoreColorOnLeave);
 });
-
-
-
-
