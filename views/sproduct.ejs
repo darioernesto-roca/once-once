@@ -1,37 +1,28 @@
-
-
 <div id="success-modal" class="modal">
     <div class="modal-content">
-      <p class="success-msg"><span id="success-message"></span></p>
-      <div class="modal-buttons">
-        <p class="success-link"><a class="normal modal-link" href="/inicio">Seguir comprando</a></p>
-        <p class="success-link"><a class="normal modal-link" href="/carrito-de-compras">Ir al carrito</a></p>
-      </div>
+        <img src="/img/assets/xmark-black.svg" alt="Close" class="close-icon" id="close-icon">
+        <p class="success-msg"><span id="success-message"></span></p>
+        <div class="modal-buttons">
+            <p class="success-link"><a class="normal modal-link" href="/inicio">Seguir comprando</a></p>
+            <p class="success-link"><a class="normal modal-link" href="/carrito-de-compras">Ir al carrito</a></p>
+        </div>
     </div>
-  </div>
-
+</div>
 
 
 <section class="prodetails section-p1">
     <div class="single-pro-image">
-        <img src="<%= product.images[0]%>" alt="<%= product.name %> 1" id="main-img" class="main-img">
+        <img src="<%= product.images[0] %>" alt="<%= product.name %> 1" id="main-img" class="main-img">
         <div class="small-img-group">
-            <div class="small-img-col">
-                <img src="<%= product.images[0] %>" alt="<%= product.title %> 1" class="small-img">
-            </div>
-            <div class="small-img-col">
-                <img src="<%= product.images[1] %>" alt="<%= product.title %> 2" class="small-img">
-            </div>
-            <div class="small-img-col">
-                <img src="<%= product.images[2] %>" alt="<%= product.title %> 3" class="small-img">
-            </div>
-            <div class="small-img-col">
-                <img src="<%= product.images[0] %>" alt="<%= product.name %> 1" class="small-img">
-            </div>
+            <% product.images.forEach(function (image, index) { %>
+                <div class="small-img-col">
+                    <img src="<%= image %>" alt="<%= product.name %> <%= index + 1 %>" class="small-img">
+                </div>
+            <% }) %>
         </div>
     </div>
     <div class="single-pro-details">
-        <h6>Once Once | <%= product.category.name %></h6>
+        <h6>Once Once | <%= product.categories.join(', ') %></h6>
         <h4 id="product-name"><%= product.name %></h4>
         <h2><%= product.price %></h2>
         <select id="sizeSelect">
@@ -50,60 +41,37 @@
         <div class="colors-container">
             <% product.colors.forEach(function(color) { %>
                 <span class="color-list" style="background-color:<%= color %>;"></span>
-              <% }) %>
+            <% }) %>
         </div>
         <p>*Para productos bajo pedido el tiempo de entrega es de aproximadamente 6 días hábiles luego de hacerse efectivo el pago.</p>
-        
 
         <div class="single-pro-links section-m1">
             <a onclick="window.location.href= document.referrer">Seguir Comprando</a>
             <a href="/inicio">Ir al Carrito</a>
             <a id="whatsapp-message" href="https://api.whatsapp.com/send?phone=573043761576&amp;text=Hola, quisiera averiguar por los productos de Once Once"
-            target="_blank">Compra directa: 304 3761576</a>
+                target="_blank">Compra directa: 304 3761576</a>
         </div>
     </div>
 </section>
+
 <section class="feature-products section-p1">
     <h2>Productos destacados</h2>
     <p>Colección Once Once - Valle Kids. Diseños modernos y exclusivos</p>
-        <div class="product-container">
-            <div class="product">
-                <img src="/img/products/news-release/new1A.png" alt="pro1">
-                <div class="description">
-                    <span>Once Once</span>
-                    <h5>Traje para niña blanco</h5>
-                    <h4>COP $180,000</h4>
+    <div class="product-container">
+        <% for (let i = 0; i < 4; i++) { %>
+            <% if (i < product.images.length) { %>
+                <div class="product">
+                    <img src="<%= product.images[i] %>" alt="pro<%= i + 1 %>">
+                    <div class="description">
+                        <span>Once Once</span>
+                        <h5><%= product.name %> <%= i + 1 %></h5>
+                        <h4>COP $<%= product.price %></h4>
+                    </div>
+                    <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
                 </div>
-                <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
-            </div>
-            <div class="product">
-                <img src="/img/products/news-release/new2A.png" alt="pro1">
-                <div class="description">
-                    <span>Once Once</span>
-                    <h5>Traje para niña blanco</h5>
-                    <h4>COP $180,000</h4>
-                </div>
-                <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
-            </div>
-            <div class="product">
-                <img src="/img/products/news-release/new3A.png" alt="pro1">
-                <div class="description">
-                    <span>Once Once</span>
-                    <h5>Traje para niña blanco</h5>
-                    <h4>COP $180,000</h4>
-                </div>
-                <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
-            </div>
-            <div class="product">
-                <img src="/img/products/news-release/new4A.png" alt="pro1">
-                <div class="description">
-                    <span>Once Once</span>
-                    <h5>Traje para niña blanco</h5>
-                    <h4>COP $180,000</h4>
-                </div>
-                <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
-            </div>
-        </div>
+            <% } %>
+        <% } %>
+    </div>
 </section>
 
 <script type="module" src="/sproduct.js"></script>

@@ -6,7 +6,7 @@ exports.showProduct = async function (req, res) {
   try {
     const productId = req.params.id;
     console.log(req.params.id);
-    const product = await Product.findById(productId).populate('category parentCategory');
+    const product = await Product.findById(productId).populate('categories');
     console.log(product);
 
     if (!product) {

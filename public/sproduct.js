@@ -83,3 +83,21 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(compraDirectaLink.href);
   });
 });
+
+// Closing modal
+document.addEventListener('DOMContentLoaded', () => {
+  const successModal = document.getElementById('success-modal');
+  const closeIcon = document.getElementById('close-icon');
+  
+  // Close the modal when clicking on the close icon
+  closeIcon.addEventListener('click', () => {
+    successModal.style.display = 'none';
+  });
+  
+  // Close the modal when clicking outside of it
+  window.addEventListener('click', (event) => {
+    if (event.target === successModal) {
+      successModal.style.display = 'none';
+    }
+  });
+});
