@@ -21,4 +21,4 @@
     // Mostrar los productos en el elemento ul
     productsList.innerHTML = productListHTML;
 
-  console.log('Entró a order.js') 
+  console.log('Entró a order.js');
