@@ -1,6 +1,7 @@
 // Setting the server
 const express = require("express");
 const app = express();
+require('dotenv').config();
 const routes = require("../routes/index");
 const expressLayouts = require("express-ejs-layouts");
 // const morgan = require("morgan");
@@ -49,5 +50,3 @@ app.set("view engine", "ejs");
 
 // Set routes
 app.use(routes);
-
-
