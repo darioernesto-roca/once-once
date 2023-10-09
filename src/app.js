@@ -50,11 +50,3 @@ app.set("view engine", "ejs");
 
 // Set routes
 app.use(routes);
-
-//Epayco
-var epayco = require('epayco-sdk-node')({
-  apiKey: 'PUBLIC_KEY',
-  privateKey: 'PRIVATE_KEY',
-  lang: 'ES',
-  test: true
-})

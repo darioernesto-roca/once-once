@@ -1,4 +1,4 @@
-<div id="success-modal" class="modal">
+<!-- <div id="success-modal" class="modal">
     <div class="modal-content">
         <img src="/img/assets/xmark-black.svg" alt="Close" class="close-icon" id="close-icon">
         <p class="success-msg"><span id="success-message"></span></p>
@@ -7,7 +7,7 @@
             <p class="success-link"><a class="normal modal-link" href="/carrito-de-compras">Ir al carrito</a></p>
         </div>
     </div>
-</div>
+</div> -->
 
 
 <section class="prodetails section-p1">
@@ -22,56 +22,49 @@
         </div>
     </div>
     <div class="single-pro-details">
-        <h6>Once Once | <%= product.categories.join(', ') %></h6>
+        <!-- <h6>Once Once | <%= product.categories.join(', ') %></h6> -->
         <h4 id="product-name"><%= product.name %></h4>
         <h2><%= product.price %></h2>
-        <select id="sizeSelect">
+        <!-- <select id="sizeSelect">
             <option>Selecciona la talla</option>
             <% product.size.forEach(function(size) { %>
                 <option><%= size %></option>
             <% }) %>
         </select>
-        <span id="sizeError" style="color: rgb(117, 0, 0); display: none;">*Selecciona una talla</span>
+        <span id="sizeError" style="color: rgb(117, 0, 0); display: none;">*Selecciona una talla</span> -->
 
-        <input id="quantity" type="number" value="1" min="1" max="<%= product.countInStock %>">
-        <button class="normal" id="addToCartBtn" data-title="<%= product.name %>" data-price="<%= product.price %>" data-image="<%= product.images[0] %>">Agregar Al Carrito</button>
+        <!-- <input id="quantity" type="number" value="1" min="1" max="<%= product.countInStock %>"> -->
+        <a class="normal" href='https://api.whatsapp.com/send?phone=573043761576&amp;text=Hola, quisiera averiguar adquirir el producto <%= product.name %> que vi en la página web de Once Once Ropa para Bebés. Link: https://onceonceropaparabebes.com/product/<%= product._id %>' target="_blank">Comprar</a>
         <h4>Detalles del Producto</h4>
         <p><%= product.description %></p>
-        <p>Colores disponibles:</p>
+        <!-- <p>Colores disponibles:</p>
         <div class="colors-container">
             <% product.colors.forEach(function(color) { %>
                 <span class="color-list" style="background-color:<%= color %>;"></span>
             <% }) %>
-        </div>
+        </div> -->
+        <h3>Tallas:</h3> 
+        <ul class="size-list">
+        <% product.size.forEach(function(size) { %>
+            <li><%= size %></li>
+        <% }) %>
+        </ul>
+        
         <p>*Para productos bajo pedido el tiempo de entrega es de aproximadamente 6 días hábiles luego de hacerse efectivo el pago.</p>
 
         <div class="single-pro-links section-m1">
-            <a onclick="window.location.href= document.referrer">Seguir Comprando</a>
-            <a href="/inicio">Ir al Carrito</a>
+            <a href="/">Regresar</a>
+            <!-- <a href="/inicio">Ir al Carrito</a>
             <a id="whatsapp-message" href="https://api.whatsapp.com/send?phone=573043761576&amp;text=Hola, quisiera averiguar por los productos de Once Once"
-                target="_blank">Compra directa: 304 3761576</a>
+                target="_blank">Compra directa: 304 3761576</a> -->
         </div>
     </div>
 </section>
 
 <section class="feature-products section-p1">
     <h2>Productos destacados</h2>
-    <p>Colección Once Once - Valle Kids. Diseños modernos y exclusivos</p>
-    <div class="product-container">
-        <% for (let i = 0; i < 4; i++) { %>
-            <% if (i < product.images.length) { %>
-                <div class="product">
-                    <img src="<%= product.images[i] %>" alt="pro<%= i + 1 %>">
-                    <div class="description">
-                        <span>Once Once</span>
-                        <h5><%= product.name %> <%= i + 1 %></h5>
-                        <h4>COP $<%= product.price %></h4>
-                    </div>
-                    <a href="#"><img src="/img/assets/cart-icon.svg" alt="cart-icon" class="cart-icon"></a>
-                </div>
-            <% } %>
-        <% } %>
-    </div>
+
+
 </section>
 
 <script type="module" src="/sproduct.js"></script>

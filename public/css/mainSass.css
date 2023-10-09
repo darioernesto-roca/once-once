@@ -635,7 +635,7 @@ input.black {
 
 .feature-products .product-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 20px;
   flex-wrap: wrap;
   gap: 10px;
@@ -1361,6 +1361,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  gap: 30px;
 }
 
 .prodetails .single-pro-image {
@@ -1370,7 +1371,7 @@ footer .copyright {
 
 .small-img-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
 
@@ -1404,6 +1405,7 @@ footer .copyright {
 
 .prodetails .single-pro-details h2 {
   font-size: 26px;
+  margin-bottom: 30px;
 }
 
 .prodetails .single-pro-details select {
@@ -1479,6 +1481,34 @@ footer .copyright {
   border-radius: 20%;
   display: inline-block;
   margin-right: 5px;
+}
+
+.single-pro-details .normal {
+  text-decoration: none;
+  font-size: 11px;
+  color: #fff;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.single-pro-details .normal::after {
+  display: none;
+}
+
+.single-pro-details .normal:hover {
+  color: #ea3f2d;
+  cursor: pointer;
+}
+
+.single-pro-details .normal:hover::after {
+  background-color: #ea3f2d;
+  cursor: pointer;
+}
+
+.single-pro-details .size-list {
+  list-style: none;
 }
 
 .mosaic-container {

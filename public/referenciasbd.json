@@ -4,19 +4,13 @@
         {
           "subcategory": "Bautizo",
           "reference": "Emiliano",
-          "color": {
-            "arena": "#fecdd3",
-            "azul": "#1d4ed8",
-            "blanco": "#f8fafc",
-            "amarillo": "#eab308",
-            "rojo": "#dc2626"
-          },
-          "colorsArray": ["#fecdd3", "#1d4ed8", "#f8fafc", "#eab308", "#dc2626"],
-          "size": "desde 3-6 meses hasta 2 años",
+          "colors": ["Arena", "Azul", "Blanco", "Amarillo", "Rojo"],
+          "size": ["desde 3-6 meses hasta 2 años"],
           "hasAccessories": true,
           "priceWithoutAccessories": 220000,
           "priceWithAccessories": 240000,
-          "accessories": "Con elástico en pierna, incluye coratín y tirantes"
+          "accessories": "Con elástico en pierna, incluye coratín y tirantes",
+          "images": ["/emiliano1", "/emiliano2", "/emiliano3", "/emiliano4"]
         },
         {
           "subcategory": "Bautizo",
