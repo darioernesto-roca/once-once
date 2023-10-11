@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="¡Viste a tu hijo como se merece! Cómodo, fresco y elegante">
-    <meta name="keywords"
-        content="ropa, once once, niños, niñas, moda, pajecitos, camisas, vestidos, valledupar">
+    <meta name="description" content="¡Viste a tu hijo como se merece! Cómodo, fresco y elegante">
+    <meta name="keywords" content="ropa, once once, niños, niñas, moda, pajecitos, camisas, vestidos, valledupar">
     <title><%- title %></title>
     <link rel="icon" href="/img/logo/favicon-once-once.jpg">
     <link rel="stylesheet" href="/css/mainSass.css">
     <!-- SDK MercadoPago.js -->
     <script src="https://sdk.mercadopago.com/js/v2"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
     <!-- <script async defer type="module" src="./once-once/script.js"></script> -->
 </head>
@@ -23,15 +24,16 @@
     <!-- <%- include('components/top-header'); -%> -->
     <%- include('components/header'); -%>
 
-    <main class="main">
-        <%- body %>
-    </main>
+        <main class="main">
+            <%- body %>
+        </main>
 
-    <a href="https://api.whatsapp.com/send?phone=573043761576&amp;text=Hola, estuve visitando su sitio Web y quisiera obtener más información sobre Once Once, sus productos y servicios."
-        target="_blank" class="float">
-        <img class="float" src="/img/whatsapp.png" alt="WhatsApp">
-    </a>
-    <%- include('components/footer'); -%>
+        <a href="https://api.whatsapp.com/send?phone=573043761576&amp;text=Hola, estuve visitando su sitio Web y quisiera obtener más información sobre Once Once, sus productos y servicios."
+            target="_blank" class="float">
+            <img class="float" src="/img/whatsapp.png" alt="WhatsApp">
+        </a>
+        <%- include('components/footer'); -%>
 
 </body>
+
 </html>
