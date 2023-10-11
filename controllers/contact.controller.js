@@ -44,8 +44,8 @@ exports.sendEmail = async (req, res) => {
 
     // Sets data for emails
     const mailOptions = {
-      from: "test@gmail.com",
-      to: "darioernesto.roca@gmail.com",
+      from: "info@gmail.com",
+      to: "onceonceropaparabebes@gmail.com",
       subject: "Mensaje de Tienda Virtual | Once Once",
       html: `
           <p>Nombre: ${name}</p>
