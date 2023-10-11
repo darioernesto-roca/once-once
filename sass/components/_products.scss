@@ -69,11 +69,17 @@
 .feature-products .product:hover .cart-icon {
   border: 1px solid #ea542e;
   background-color: #ea542e;
+  transition: all 1.5s ease;
 
 }
 
 .feature-products .product .cart-icon path {
   transition: all 0.5s ease;
 }
+
+.feature-products .product:hover .cart-icon path {
+  fill:#fff;
+}
+
 
 //#ea3f2d

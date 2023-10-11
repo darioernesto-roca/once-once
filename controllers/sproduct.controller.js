@@ -16,9 +16,20 @@ exports.showProduct = async function (req, res) {
     const formattedPrice = formatPrice(product.price);
     const formattedProduct = { ...product.toObject(), price: formattedPrice };
 
+    // Fetch 4 random products
+    const randomProducts = await Product.aggregate([
+      { $sample: { size: 4 } }
+    ]);
+
+    const formattedRandomProducts = randomProducts.map(product => {
+      const formattedPrice = formatPrice(product.price);
+      return { ...product, price: formattedPrice };
+    });
+
     res.render('sproduct', {
       title: product.name,
       product: formattedProduct,
+      featureProducts: formattedRandomProducts,
       req,
     });
   } catch (error) {
