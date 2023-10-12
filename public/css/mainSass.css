@@ -1597,9 +1597,6 @@ footer .copyright {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .menu__link {
-    padding: 0 10px;
-  }
   /* Us page */
   .us-text__container {
     flex-direction: column-reverse;
