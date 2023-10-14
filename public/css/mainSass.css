@@ -1327,6 +1327,10 @@ footer .copyright {
   justify-content: center;
 }
 
+gmp-map {
+  height: 500px;
+}
+
 .order-section {
   display: flex;
   gap: 10px;
