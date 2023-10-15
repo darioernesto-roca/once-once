@@ -1771,6 +1771,9 @@ gmp-map {
   .footer .col {
     align-items: center;
   }
+  .footer h4 {
+    text-align: center;
+  }
   .footer p {
     text-align: center;
   }
