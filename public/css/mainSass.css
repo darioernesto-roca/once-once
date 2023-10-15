@@ -1331,6 +1331,12 @@ gmp-map {
   height: 500px;
 }
 
+.legal-privacy {
+  width: 90%;
+  margin: 0px auto;
+  margin-bottom: 100px;
+}
+
 .legal-privacy a {
   text-decoration: none;
   color: #ea542e;
@@ -1342,6 +1348,10 @@ gmp-map {
 
 .legal-privacy a:visited {
   color: #ea542e;
+}
+
+.legal-privacy .main__btn-container {
+  justify-content: flex-start;
 }
 
 .order-section {
@@ -1752,6 +1762,17 @@ gmp-map {
   }
   .store-modal {
     top: 86px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer .col {
+    align-items: center;
+  }
+  .footer p {
+    text-align: center;
   }
 }
 @media (max-width: 680px) {

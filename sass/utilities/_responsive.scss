@@ -225,6 +225,21 @@
 
     }
   }
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer .col {
+    align-items: center;
+  }
+
+  .footer p {
+    text-align: center;
+  }
+
+}
   
 @media (max-width:680px) {
     .hero {

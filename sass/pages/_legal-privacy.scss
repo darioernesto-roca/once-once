@@ -1,3 +1,9 @@
+.legal-privacy {
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 100px;
+}
+
 .legal-privacy a {
     text-decoration: none;
     color: #ea542e;
@@ -9,4 +15,8 @@
 
 .legal-privacy a:visited {
     color: #ea542e;
+}
+
+.legal-privacy .main__btn-container {
+    justify-content: flex-start;
 }
