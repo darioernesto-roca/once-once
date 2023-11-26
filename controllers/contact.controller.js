@@ -5,6 +5,7 @@ const mg = require("nodemailer-mailgun-transport");
 const { validationResult } = require("express-validator");
 
 
+
 exports.get = (req, res) => {
   const errors = req.query.errors;
   res.render('contact', {
@@ -71,3 +72,21 @@ exports.sendEmail = async (req, res) => {
     res.render("contact", { errors: error, title: "Contacto"});
   }
 };
+
+
+exports.getGoogleMapsScript = async (req, res) => {
+  console.log('Coming from getGoogleMapScript');
+  const { default: fetch } = await import('node-fetch');
+  const googleMapsUrl = `https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_MAPS_API_KEY}&callback=initMap&libraries=maps,marker&v=beta`;
+
+  try {
+    const response = await fetch(googleMapsUrl);
+    const body = await response.text();
+    res.send(body);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error occurred while fetching Google Maps script.');
+  }
+};
+
+
